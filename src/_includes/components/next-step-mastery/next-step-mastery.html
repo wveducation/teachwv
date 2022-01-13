@@ -1,0 +1,35 @@
+{%- from "system/component.html" import component -%} 
+
+<div class="" x-data="{ activeTab: false }">
+    <div class="text-center">
+        <label for="mastery-levels">
+            <span class="sr-only">Mastery Level</span>
+            <select name="mastery-levels" class="w-60 max-w-full p-4 border-1 border-brand_lightgrey rounded-lg" x-model="activeTab" id="mastery-levels" @change="activeTab == this.val">
+                <option selected disabled value="false">Choose a mastery level</option>
+                {% for level in params.mastery_levels %}
+                <option :key="step_{{ level.index + 1 }}" value="step_{{ level.index + 1 }}">{{ level.label }}</option>
+                {% endfor %}
+            </select>
+        </label>
+    </div>
+
+    <div class="mx-auto max-w-2xl mt-4 z-40">
+    <div class="p-6 bg-offwhite border border-brand_lightgrey shadow-xl" x-transition x-show="activeTab != false">
+    {% for step in params.next_steps %}
+        {% set tabID = 'step_' + loop.index %}
+        <div 
+            tabindex="0"
+            role="tabpanel"
+            id="'{{ tabID }}'"
+            class=""
+            aria-labelledby="'{{ tabID }}'"
+            x-show="activeTab == '{{ tabID }}'"
+            x-cloak
+        >
+            <h3 class="text-xl font-sans text-brand_lightblue">{{ params.mastery_levels[loop.index - 1].label }}</h3>
+            <p class="mb-0 text-lg md:text-2xl font-serif">{{ step.instructions }}</p>
+        </div>
+    {% endfor %}
+    </div>
+    </div>
+</div>

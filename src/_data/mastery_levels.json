@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Below Mastery",
+    "index": 0
+  },
+  {
+    "label": "At or Near Mastery",
+    "index": 1
+  },
+  {
+    "label": "Above Mastery",
+    "index": 2
+  }
+]

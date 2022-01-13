@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* A11Y: Disable smooth scrolling for users who prefer reduced motion. */
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+[x-cloak] { display: none !important; }
+
+.fade-right {
+  position: relative;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+@screen md {
+  .fade-right {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.fade-right > *:first-child {
+  padding-right: 2rem;
+  padding-left: 1.5rem;
+}
+.fade-right::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 2rem;
+  background: linear-gradient(to left,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.8) 10%,
+    rgba(255, 255, 255, 0.7) 20%,
+    rgba(255, 255, 255, 0)
+  );
+}
+@screen md {
+  .fade-right::before {
+    content: none;
+  }
+}
+
+/* Typography */
+
+body {
+  @apply font-sans text-black;
+  background: #fafafa;
+}
+
+h1, h2, h3, h4 {
+  @apply font-serif;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+svg {
+  max-width: 100%;
+}
+
+.text-loose-caps {
+  @apply uppercase tracking-widest text-sm;
+}
+
+input[type=submit] {
+  @apply inline-block px-4 md:px-6 py-2 md:py-3 font-bold rounded-full bg-brand_lightblue text-white cursor-pointer;
+}
+
+input[type=submit]:hover {
+  @apply hover:bg-brand_lightblue-hover;
+}
+
+select:focus {
+  @apply outline-lightblue;
+}
+
+*[disabled] {
+  cursor: not-allowed !important;
+}
+
+/* Markdown Field styles */
+
+.markdown-field h1, 
+.markdown-field h2, 
+.markdown-field h3, 
+.markdown-field h4 {
+  @apply text-brand_lightblue mt-6;
+}
+
+.markdown-field h2 {
+  @apply text-3xl;
+}
+
+.markdown-field h2 {
+  @apply text-3xl;
+}
+
+.markdown-field a {
+  @apply bg-brand_light-yellow;
+}
+
+.markdown-field img {
+  display: inline-block;
+}
+
+/* Questions Container */
+
+.questions-container {
+  @apply max-w-5xl mx-auto;
+  position: relative;
+  z-index: 2;
+}
+
+  .questions-container::before,
+  .questions-container::after {
+    @apply bg-offwhite border border-brand_lightgrey;
+    content: '';
+    position: absolute;
+    z-index: -2;
+    bottom: 0;
+    left: 0;
+    display: block;
+    max-width: 100%;
+    height: 100px;
+  }
+
+  .questions-container::before {
+    bottom: -10px;
+    left: 2%;
+    width: 96%;
+  }
+
+  .questions-container::after {
+    bottom: -5px;
+    left: 1%;
+    width: 98%;
+  }
+
+  .qa-panel {
+    max-height: 20rem;
+    overflow-y: scroll;
+  }
+
+/* Syntax Highlighting*/
+
+body :not(pre) > code[class*="language-"],
+body pre[class*="language-"] {
+  @apply bg-gray-800;
+}

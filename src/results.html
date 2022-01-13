@@ -1,0 +1,73 @@
+---
+title: "Next Steps"
+subtitle: "Explore resources by grade, subject, and area."
+layout: "page"
+titleClasses: ''
+global_action:
+    text: 'Homepage'
+    url: "/"
+---
+{%- from "system/component.html" import component -%}
+{% set results = collections.results | sortResultsDirectory %}
+<div class="max-w-xl mx-auto">
+   <aside class="mb-20 text-center" id="skip-to-grade">
+      <h1 class="font-sans font-normal text-loose-caps">Skip to grade</h1>
+      <nav class="flex flex-col items-center mb-6">
+         <ul class="flex flex-wrap justify-center p-1 rounded-full bg-white border border-brand_lightgrey">
+         {% for grade in collections.grades | sortByName %}
+            <li>
+               <a href="#{{ grade.data.id }}" class="flex flex-col justify-center w-10 h-10 text-center rounded-full hover:bg-brand_lightblue hover:text-white">{{ grade.data.id }}</a>
+            </li>
+         {% endfor %}
+         </ul>
+      </nav>
+   </aside>
+
+   {% for result in results %}
+      {% set curGrade = result.data.grade %}
+      {% set curSubject = result.data.subject %}
+      {% if curGrade != prevGrade %}
+      <section class="mb-12" id="{{ result.data.grade }}">
+         <h1 class="text-2xl md:text-4xl font-bold text-brand_blue text-left text-center">{% getItemName collections.grades, result.data.grade %}</h1>
+         {% set striped = 1 %}
+         <div class="border">
+      {% endif %}
+
+         {% if (results[loop.index0-1].data.subject != result.data.subject) or (results[loop.index0-1].data.grade != result.data.grade) %}
+         <div class="block md:grid grid-cols-5 gap-x-default py-4 px-4 {{ 'bg-offwhite' if striped == 1 }}">
+         {% endif %}
+
+            {% if curSubject != prevSubject %}
+            <h2 class="col-start-1 col-end-3 mb-0 font-sans text-brand_blue">{% getItemName collections.subjects, result.data.subject %}</h2>
+            {% endif %}
+
+            {% if (results[loop.index0-1].data.subject != result.data.subject) or (results[loop.index0-1].data.grade != result.data.grade) %}
+            <ul class="col-start-3 col-end-6">
+            {% endif %}
+               <li class="mb-2.5 leading-5"><a href="{{ result.url }}" class="underline text-brand_lightblue">{% getItemName collections.areas, result.data.area %}</a></li>
+            {% if (results[loop.index].data.subject != result.data.subject) or (results[loop.index].data.grade != result.data.grade) %}
+            </ul>
+            {% endif %}
+
+         {% if (results[loop.index].data.subject != result.data.subject) or (results[loop.index].data.grade != result.data.grade) %}
+         {% if striped == 1 %}{% set striped = 0 %}{% else %}{% set striped = 1 %}{% endif %}
+         </div>
+         {% endif %}
+
+      {% if curGrade != results[loop.index0 + 1].data.grade %}
+         </div>
+
+         <footer class="text-right pt-2">
+            <a href="#skip-to-grade" class="text-loose-caps text-brand_grey opacity-30 hover:opacity-60">Back to Top</a>
+         </footer>
+      </section>
+      {% endif %}
+
+      {% set prevGrade = curGrade %}
+      {% if curGrade != results[loop.index0 + 1].data.grade %}
+         {% set prevSubject = null %}
+      {% else %}
+         {% set prevSubject = curSubject %}
+      {% endif %}
+   {% endfor %}
+</div>

@@ -1,0 +1,23 @@
+{%- from "system/component.html" import component -%} 
+<div>
+    <h3 class="text-center text-2xl font-bold text-brand_blue mb-6">Select the Interpretive Guide for Your Child's Score Report</h3>
+
+    <div class="md:max-w-xl mx-auto">
+        <div class="fade-right">
+        <div class="flex md:grid flex-nowrap overflow-x-auto gap-4 md:gap-6 grid-cols-2 text-center">
+            <div class="bg-white w-7/12 md:w-full flex-shrink-0 flex-shrink-1">
+                <a href="/static/files/guide_gen-summative.pdf" target="_blank" class="block overflow-hidden p-1 md:p-2 border rounded-lg border-black border-opacity-20 hover:border-brand_lightblue">
+                    <img src="/static/img/gen-summative_teaser.png" alt="" class="inline-block w-full rounded-md mb-2" loading="lazy" decoding="async">
+                    <h4 class="inline font-sans">General Summative Assessment Scores Report</h4>
+                </a>
+            </div>
+            <div class="bg-white w-7/12 md:w-full flex-shrink-0 flex-shrink-1">
+                <a href="/static/files/guide_lexile-quantile.pdf" target="_blank" class="block overflow-hidden p-1 md:p-2 border rounded-lg border-black border-opacity-20 hover:border-brand_lightblue">
+                    <img src="/static/img/lexile-quantile_teaser.png" alt="" class="inline-block w-full rounded-md mb-2" loading="lazy" decoding="async">
+                    <h4 class="inline font-sans">Lexile and Quantile<br/> Measures Report</h4>
+                </a>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

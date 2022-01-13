@@ -1,0 +1,57 @@
+{%- from "system/component.html" import component -%} 
+<div x-data="{
+    activeTab: ''
+}" x-init="        
+$watch('activeTab', function(value) { 
+    var elPosition = $el.getBoundingClientRect();
+    var viewportYOffset = window.scrollY || window.pageYOffset;
+    window.scrollTo({ top: elPosition.top + viewportYOffset }); 
+})">
+    <h3 class="text-center text-2xl font-bold text-brand_blue mb-6">Select the Interpretive Guide for Your Child's Score Report</h3>
+    <div role="tablist" aria-label="Sample Score Reports" class="flex flex-nowrap justify-start md:justify-center overflow-y-scroll">
+        {{ component('icon-toggle', {
+            text: 'Science',
+            id: 'science',
+            iconClass: 'icon-atomic',
+            classes: 'flex-grow-0 md:flex-grow flex-shrink-0 mb-2'
+        }) }}
+        {{ component('icon-toggle', {
+            text: 'English (ELA)',
+            id: 'ela',
+            iconClass: 'icon-book',
+            classes: 'flex-grow-0 md:flex-grow flex-shrink-0 mb-2'
+        }) }}
+        {{ component('icon-toggle', {
+            text: 'Math',
+            id: 'math',
+            iconClass: 'icon-math',
+            classes: 'flex-grow-0 md:flex-grow flex-shrink-0 mb-2'
+        }) }}
+    </div>
+
+    <div class="py-12" x-show="activeTab" x-cloak>
+        <div tabindex="0" role="tabpanel" id="ela" aria-labelledby="ela" x-show="activeTab == 'ela'">
+            <div class="grid md:grid-cols-2 gap-6 md:gap-14">
+                <div class="text-center">
+                    <img src="https://via.placeholder.com/400x500" alt="" class="inline-block" loading="lazy" decoding="async">
+                    <p class="mt-6"><a href="#" class="underline">Download a sample score report</a></p>
+                </div>
+                <div class="py-4 text-center md:text-left">
+                    <h2 class="font-bold text-2xl">Performance Areas on the State Test</h2>
+                    <ul>
+                        <li><a href="#">More about Alternative ELA</a></li>
+                        <li><a href="#">More about Alternative Math</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div tabindex="0" role="tabpanel" id="math" aria-labelledby="math" x-show="activeTab == 'math'">
+            <h1>Math</h1>
+        </div>
+
+        <div tabindex="0" role="tabpanel" id="science" aria-labelledby="science" x-show="activeTab == 'science'">
+            <h1>Science</h1>
+        </div>
+    </div>
+</div>

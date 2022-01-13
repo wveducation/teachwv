@@ -1,0 +1,7 @@
+{%- set results = collections.results -%}
+{%- set subjects = collections.subjects -%}
+{%- set grades = collections.grades -%}
+{%- set areas = collections.areas -%}
+<script>
+    var finderTree = {% subjectTree results, subjects, grades, areas %};
+</script>

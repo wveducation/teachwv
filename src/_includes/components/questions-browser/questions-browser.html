@@ -1,0 +1,74 @@
+{%- from "system/component.html" import component -%} 
+
+<div class="" x-data="{ activeTab: 'qa_1' }" 
+    x-init="
+        $watch('activeTab', function(value) { 
+            var elPosition = $el.getBoundingClientRect();
+            var viewportYOffset = window.scrollY || window.pageYOffset;
+            window.scrollTo({ top: elPosition.top + viewportYOffset }); 
+        })"
+>
+    {% for question in params.questions %}
+    {% set tabID = 'qa_' + loop.index %}
+    {% if loop.first %}
+    <div class="sticky top-0 z-30 flex flex-col items-center py-4 w-full">
+    <div 
+    role="tablist" 
+    aria-label="Sample Questions"
+    class="flex flex-wrap justify-center gap-x-2 p-1 rounded-full bg-white border border-brand_lightgrey font-bold">
+    {% endif %}
+        
+        <button 
+        role="tab"
+        id="{{ tabID }}"
+        aria-controls="{{ tabID }}"
+        class="w-10 h-10 rounded-full"
+        :class="[activeTab == '{{ tabID }}' ? 'bg-brand_lightblue text-white' : '']"
+        @click="activeTab = '{{ tabID }}'"
+        :aria-selected="[activeTab == '{{ tabID }}' ? 'true' : 'false']"
+        >
+            {{ loop.index }}
+        </button>
+    {% if loop.last %}
+    </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    <div class="questions-container z-40">
+    <div class="md:p-6 lg:p-6 bg-offwhite border border-brand_lightgrey shadow-xl" x-show="activeTab">
+    {% for question in params.questions %}
+        {% set tabID = 'qa_' + loop.index %}
+        <div 
+            tabindex="0"
+            role="tabpanel"
+            id="'{{ tabID }}'"
+            class="grid md:grid-cols-2 gap-x-default"
+            aria-labelledby="'{{ tabID }}'"
+            x-show="activeTab == '{{ tabID }}'"
+            x-cloak
+        >
+            <div class="qa-panel p-4 md:p-6">
+                <div class="text-lg md:text-2xl font-serif">{{ question.qa.question }}</div>
+            </div>
+            <div class="qa-panel relative z-10 bg-white p-4 md:p-6" x-data="{ hidden: true }" @click.outside="hidden = true">
+                <button @click="hidden = false" x-show="hidden" class="absolute z-20 left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 inline-block overflow-hidden px-4 md:px-6 py-2 md:py-4 bg-white hover:bg-brand_lightblue text-brand_darkgrey hover:text-white border border-brand_lightgrey rounded-default">
+                    <div class="icon-eye_open text-4xl"></div>
+                    <span class="text-loose-caps whitespace-nowrap">Reveal Answer</span>
+                </button>
+                <div :class="[ hidden == true ? 'filter blur-md' : '']" class="relative z-0 min-h-question text-lg md:text-2xl font-serif">
+                    {{ question.qa.answer }}
+                    {% if not loop.last %}
+                    <div class="text-right mt-4">
+                        <button @click="activeTab = 'qa_{{ loop.index + 1 }}'" class="text-brand_darkgrey hover:text-brand_lightblue text-loose-caps whitespace-nowrap font-sans">
+                            Next Question
+                        </button>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+    </div>
+</div>

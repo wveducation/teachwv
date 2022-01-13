@@ -1,0 +1,31 @@
+{%- from "system/component.html" import component -%} 
+<section class="py-16 md:py-24 bg-offwhite border-brand_lightgrey border-t border-b text-brand_darkgrey" id="test-questions">
+    <div class="container max-w-3xl text-center">
+        {{ component('titlebar', {
+            title: {
+                text: 'Find Out More About Your Child\'s Performance',
+                classes: 'text-brand_darkblue'
+            },
+            subtitle: {
+                text: 'Enter your child\'s grade and select a subject and area to see descriptions of the skills for each reporting category and suggested steps you can take to help your child.'
+            }
+        }) }}
+    </div>
+    <div class="container block md:grid grid-cols-5 gap-x-default max-w-5xl">
+        <div class="col-start-1 col-end-4">
+            {% image { 
+                src: "./src/static/img/happy-kid-emojis.jpg", 
+                alt: "", 
+                cls: "block",
+                styleName: "medium_half"
+            } %}
+        </div>
+        <div class="col-start-4 col-end-6 flex items-center">
+            {{ component('form-qsearch', {
+                submitText: 'Find Next Steps',
+                theme_wrapperClasses: 'shadow-2xl',
+                theme_selectClasses: 'text-xl'
+            }) }}
+        </div>
+    </div>
+</section>

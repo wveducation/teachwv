@@ -1,0 +1,90 @@
+{%- from "system/component.html" import component -%} 
+<section class="relative py-12 md:py-28 bg-brand_lightblue-11ty text-white">
+    <div class="relative container z-20">
+        <header class="text-center mb-16 max-w-2xl mx-auto">
+            <h2 class="mb-6 text-4xl text-brand_yellow">Additional Free Resources Available to Support Your Child's Learning</h2>
+            <p class="text-lg md:text-xl">Use this information to have a meaningful conversation with your child’s teacher about the skills and content in the grade level and to support your child’s learning at home.</p>
+        </header>
+
+        <div class="grid lg:grid-cols-3 gap-x-default gap-y-default">
+            {% set teaserWrapperClasses = 'block md:flex lg:flex-col md:gap-x-default mb-6 text-center md:text-left lg:text-center h-full' %}
+            {% set imageWrapperClasses = 'md:w-1/3 lg:w-full md:flex-shrink-0' %}
+            {% set contentWrapperClasses = 'md:pt-2 lg:pt-0' %}
+            <div>
+                {{ component('teaser', {
+                    wrapperClasses: teaserWrapperClasses,
+                    imageWrapperClasses: imageWrapperClasses,
+                    contentWrapperClasses: contentWrapperClasses,
+                    footerClasses: 'mt-auto',
+                    image: {
+                        src: './src/static/img/arms-up-student_16-9.jpg',
+                        alt: 'An elated student raises her arms in the air after learning on a laptop computer.',
+                        width: 400,
+                        height: 230
+                    },
+                    title: 'What Can I Do to Help My Child?',
+                    titleClasses: 'text-brand_yellow',
+                    body: 'Visit the college- and career-readiness resource hub for families to find tools to help your child achieve college and career readiness by the time they graduate from high school.',
+                    link: {
+                        url: 'https://wvde.us/college-and-career-readiness/families/',
+                        text: 'Navigate to the Learning Heroes website',
+                        target: '_blank'
+                    },
+                    linkButton: false
+                }) }}
+            </div>
+
+            <div>
+                {{ component('teaser', {
+                    wrapperClasses: teaserWrapperClasses,
+                    imageWrapperClasses: imageWrapperClasses,
+                    contentWrapperClasses: contentWrapperClasses,
+                    footerClasses: 'mt-auto',
+                    image: {
+                        src: './src/static/img/teacher-whiteboard_16-9.jpg',
+                        alt: 'A teacher speaks to a student while holding a dry erase marker next to a whiteboard.',
+                        width: 400,
+                        height: 230
+                    },
+                    title: 'Talking with your child\'s teacher',
+                    titleClasses: 'text-brand_yellow',
+                    body: 'This document titled “Moving Forward: A Guide for Conversations with Your Child’s Teacher” includes helpful tips and questions to discuss with the teacher about your child’s classroom performance, academic progress, and more.',
+                    link: {
+                        url: 'https://wvk12.sharepoint.com/:b:/s/WVDEWebContent/EXvcLgC7Gc9ClqNURfg1yGsBPId41FjQsKmiKsYTzgnUkQ?e=NbcUD2',
+                        text: 'Get the Parent-Teacher Conversation Guide',
+                        target: '_blank'
+                    },
+                    linkButton: false
+                }) }}
+            </div>
+
+            <div>
+                {{ component('teaser', {
+                    wrapperClasses: teaserWrapperClasses,
+                    imageWrapperClasses: imageWrapperClasses,
+                    contentWrapperClasses: contentWrapperClasses,
+                    footerClasses: 'mt-auto',
+                    image: {
+                        src: './src/static/img/online-test.jpg',
+                        alt: 'A student types on a laptop.',
+                        width: 400,
+                        height: 230
+                    },
+                    title: 'Check Out the Test in Action',
+                    titleClasses: 'text-brand_yellow',
+                    body: 'Visit the WVGSA practice test to become more familiar with test items and tools. Once there, just click "Sign In"!',
+                    link: {
+                        url: 'https://login10.cloud1.tds.cambiumast.com/student/V544/Pages/LoginShell.aspx?c=WestVirginia_PT',
+                        text: 'Take a Practice CAASPP Test',
+                        target: '_blank'
+                    },
+                    linkButton: false
+                }) }}
+            </div>
+
+
+        </div>
+    </div>
+    <img src="/static/img/sqiggle-m.svg" alt="" class="absolute z-0 top-0 left-0 animate-ticktock">
+    <img src="/static/img/sqiggle-s.svg" alt="" class="absolute z-0 top-1/3 md:top-0 right-0 animate-ticktock" style="animation-delay: 200ms;">
+</section>

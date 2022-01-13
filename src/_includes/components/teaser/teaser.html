@@ -1,0 +1,47 @@
+{%- from "system/component.html" import component -%}
+<article class="{{ params.wrapperClasses }}">
+    <div class="mb-4 {{ params.imageWrapperClasses }}">
+        {% if params.link.url %}<a href="{{ params.link.url }}" aria-label="{{ params.link.text }}" class="block transform hover:scale-1025" target="{{ params.link.target or '_self' }}">{% endif %}
+        {% if params.image.src %}
+            {% image { 
+                src: params.image.src, 
+                alt: params.image.alt, 
+                cls: "inline-block rounded-default " + params.image.classes,
+                styleName: "medium_half"
+            } %}
+        {% else %}
+            {% image { 
+                src: "./src/static/img/default-image.png", 
+                alt: params.image.alt, 
+                cls: "inline-block rounded-default " + params.image.classes,
+                styleName: "medium_half"
+            } %}
+        {% endif %}
+        {% if params.link.url %}</a>{% endif %}
+    </div>
+
+    <div class="{{ params.contentWrapperClasses }}">
+        {% if params.title %}
+        <h1 class="text-2xl {{ params.titleClasses }}">
+            {% if params.link.url %}<a href="{{ params.link.url }}" target="{{ params.link.target or '_self' }}">{% endif %}
+            {{ params.title }}
+            {% if params.link.url %}</a>{% endif %}
+        </h1>
+        {% endif %}
+
+        {% if params.body %}
+        <div class="mb-4 text-lg">{{ params.body }}</div>
+        {% endif %}
+
+        {% if params.link and params.linkButton %}
+        <footer class="{{ params.footerClasses }}">
+        {{ component('button', {
+            url: params.link.url,
+            text: params.link.text,
+            classes: params.link.classes,
+            target: params.link.target
+        }) }}
+        {% endif %}
+        </footer>
+    </div>
+</article>

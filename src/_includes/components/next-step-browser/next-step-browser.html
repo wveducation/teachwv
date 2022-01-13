@@ -1,0 +1,74 @@
+{%- from "system/component.html" import component -%} 
+
+<div class="" x-data="{ activeTab: 'step_1' }" 
+    x-init="
+        $watch('activeTab', function(value) { 
+            var elPosition = $el.getBoundingClientRect();
+            var viewportYOffset = window.scrollY || window.pageYOffset;
+            window.scrollTo({ top: elPosition.top + viewportYOffset }); 
+        })"
+>
+    {% for step in params.next_steps %}
+    {% set tabID = 'step_' + loop.index %}
+    {% if loop.first %}
+    <div class="sticky top-0 z-30 flex flex-col items-center py-4 w-full">
+    <div 
+    role="tablist" 
+    aria-label="Next Steps"
+    class="flex flex-wrap justify-center gap-x-2 p-1 rounded-full bg-white border border-brand_lightgrey font-bold">
+    {% endif %}
+        
+        <button 
+        role="tab"
+        id="{{ tabID }}"
+        aria-controls="{{ tabID }}"
+        class="w-10 h-10 rounded-full"
+        :class="[activeTab == '{{ tabID }}' ? 'bg-brand_lightblue text-white' : '']"
+        @click="activeTab = '{{ tabID }}'"
+        :aria-selected="[activeTab == '{{ tabID }}' ? 'true' : 'false']"
+        >
+            {{ loop.index }}
+        </button>
+    {% if loop.last %}
+    </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    <div class="mx-auto max-w-2xl z-40">
+    <div class="md:p-6 lg:p-6 bg-offwhite border border-brand_lightgrey shadow-xl" x-show="activeTab">
+    {% for step in params.next_steps %}
+        {% set tabID = 'step_' + loop.index %}
+        <div 
+            tabindex="0"
+            role="tabpanel"
+            id="'{{ tabID }}'"
+            class=""
+            aria-labelledby="'{{ tabID }}'"
+            x-show="activeTab == '{{ tabID }}'"
+            x-cloak
+        >
+            <div class="qa-panel p-4 md:p-6">
+                <div class="text-lg md:text-2xl font-serif">{{ step.instructions }}</div>
+                {% if loop.length > 1 %}
+                    {% if not loop.last %}
+                    <div class="text-right mt-4">
+                        <button @click="activeTab = 'step_{{ loop.index + 1 }}'" class="text-brand_darkgrey hover:text-brand_lightblue text-loose-caps whitespace-nowrap font-sans">
+                            Next Step
+                        </button>
+                    </div>
+                    {% endif %}
+                    {% if loop.last %}
+                    <div class="text-right mt-4">
+                        <button @click="activeTab = 'step_1'" class="text-brand_darkgrey hover:text-brand_lightblue text-loose-caps whitespace-nowrap font-sans">
+                            Back to Beginning
+                        </button>
+                    </div>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+    </div>
+</div>

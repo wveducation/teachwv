@@ -1,0 +1,13 @@
+_site/
+_tmp/
+.DS_Store
+node_modules/
+.vscode/
+_site/
+*git/
+package-lock.json
+.env
+
+# Importer Data
+/data/*
+!/data/results-template.csv

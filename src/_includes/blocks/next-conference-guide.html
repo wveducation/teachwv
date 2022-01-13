@@ -1,0 +1,26 @@
+{%- from "system/component.html" import component -%} 
+<section class="py-12 bg-offwhite border-t border-brand_lightgrey">
+    <div class="container text-center md:text-left">
+        <div class="block md:grid md:grid-cols-12 gap-default">
+            <div class="row-start-1 col-start-7 col-end-13">
+                {% image { 
+                    src: "./src/static/img/teacher-whiteboard.jpg", 
+                    alt: "", 
+                    cls: "inline mb-8 rounded-xl",
+                    styleName: "medium_half"
+                } %}
+            </div>
+            <div class="row-start-1 col-start-1 col-end-6 flex flex-col justify-center">
+                <h2 class="text-3xl md:text-4xl text-brand_lightblue">Talking With Your Child's Teacher</h2>
+                <p class="text-lg md:text-xl mb-6 text-brand_darkgrey">This document titled “Moving Forward: A Guide for Conversations with Your Child’s Teacher” includes helpful tips and questions to discuss with the teacher about your child’s classroom performance, academic progress, and more.</p>
+                <div>
+                    {{ component('button', {
+                        text: 'Download the Guide',
+                        url: 'https://wvk12.sharepoint.com/:b:/s/WVDEWebContent/EXvcLgC7Gc9ClqNURfg1yGsBPId41FjQsKmiKsYTzgnUkQ?e=NbcUD2',
+                        target: '_blank'
+                    })}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

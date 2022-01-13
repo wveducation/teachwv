@@ -1,0 +1,73 @@
+{%- from "system/component.html" import component -%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <meta property="og:title" content="{{title}}" />
+    <meta property="og:type" content="website" />
+    {% if meta.description %}
+    <meta name="description" content="{{meta.description}}"/>
+    <meta property="og:description" content="{{meta.description}}"/>
+    {% endif %}
+    <meta property="og:url" content="https://student-progress.wvde.us{{ page.url }}">
+    <meta property="og:image" content="https://student-progress.wvde.us/static/img/og-image-default.jpg">
+    {% block head %}{% endblock %}
+
+    <link rel="icon" type="image/svg+xml" href="/static/favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="/static/favicon/favicon.png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y5TN3HG0S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0Y5TN3HG0S');
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Vollkorn:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/static/fonts/icons/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+    {% if prism == true %}
+    <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
+    {% endif %}
+  </head>
+  <body>
+    <div id="skip-link" tabindex="-1" class="bg-brand_lightblue text-white">
+      <a class="sr-only focus:not-sr-only block px-5 py-2" href="#main-content">Skip to main content</a>
+    </div>
+
+    {{ component('header', {
+      global_action: {
+        'text': global_action.text,
+        'url': global_action.url
+      }
+    }) }}
+
+    <main id="main-content">
+      {{ content | safe }}
+    </main>
+
+    {% include "./partials/footer.html" %}
+
+    <!-- Alpine Plugins -->
+    <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <!-- Alpine Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.2.3/cdn.min.js" defer></script>
+
+    {% if path == "home" %}
+      <!-- Netlify Identity Widget -->
+      <!-- Needed only if you are using Netlify Identity feature -->
+      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {% endif %}
+
+  </body>
+</html>

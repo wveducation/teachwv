@@ -1,0 +1,28 @@
+<div class="relative z-20 py-2 md:py-4 bg-white filter drop-shadow border-solid border-brand_yellow border-t-4">
+    <nav class="container relative grid grid-cols-4 md:grid-cols-12 gap-x-6 md:gap-x-default" x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
+        <!-- Site Name -->
+        <div class="col-start-2 col-end-5 md:col-start-1 md:col-end-6 flex flex-col justify-center">
+            <a href="/" aria-label="Visit the homepage.">
+                <div class="font-sans font-bold text-md md:text-xl lg:text-2xl text-brand_blue">WV Student Progress Explorer</div>
+            </a>
+        </div>
+
+        <!--Logo-->
+        <div class="row-start-1 row-end-3 md:row-end-1 col-start-1 md:col-start-6 md:col-end-8 flex md:justify-center md:items-center">
+            <a href="/" aria-label="Visit the homepage." class="relative md:absolute top-0 md:-ml-2 p-1 bg-white rounded-full">
+                <img src="/static/img/logo.svg" width="90" height="90" alt="">
+            </a>
+        </div>
+
+        <!--Global Action-->
+        {% if params.global_action %}
+        <div class="row-start-2 md:row-start-1 col-start-2 col-end-5 md:col-start-8 md:col-end-13 flex-grow flex md:items-end md:items-center justify-start md:justify-end lg:w-auto">
+            {{ component('button', {
+                url: params.global_action.url,
+                text: params.global_action.text,
+                theme: "mobilelink"
+            }) }}
+        </div>
+        {% endif %}
+    </nav>
+</div>

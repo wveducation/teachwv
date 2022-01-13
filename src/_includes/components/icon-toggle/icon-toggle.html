@@ -1,0 +1,14 @@
+<button 
+id="button_{{ params.id }}"
+class="flex justify-start items-center px-3 md:px-6 py-2 md:py-6 mx-1 md:mx-4 border rounded-lg font-bold {{ params.classes }}"
+:class="[activeTab == '{{ params.id }}' ? 'bg-brand_lightblue text-white border-brand_lightblue' : 'bg-white text-brand_blue border-black border-opacity-20']" 
+@click="activeTab = '{{ params.id }}'; " 
+role="tab" 
+aria-selected="false" 
+aria-controls="{{ params.id }}" 
+>
+    {% if params.iconClass %}
+    <div class="{{ params.iconClass }} text-2xl md:text-4xl mr-4"></div>
+    {% endif %}
+    <span class="text-md md:text-lg">{{ params.text }}</span>
+</button>

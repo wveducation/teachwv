@@ -1,0 +1,12 @@
+{% set defaultButtonClasses = 'px-4 md:px-6 py-2 md:py-3 font-bold' %}
+{% switch params.theme %}
+    {% case 'light' %}
+        {% set themeClasses = defaultButtonClasses + ' bg-white text-brand_lightblue border-2' %}
+    {% case 'mobilelink' %}
+        {% set themeClasses = 'px-0 md:px-6 py-0 md:py-3 md:bg-white text-brand_lightblue md:bg-brand_lightblue md:text-white md:hover:bg-brand_lightblue-hover' %}
+    {% default %}
+        {% set themeClasses = defaultButtonClasses + ' bg-brand_lightblue text-white hover:bg-brand_lightblue-hover' %}
+{% endswitch %}
+<a href="{{ params.url }}" target="{{ params.target or '_self' }}" class="inline-block rounded-full {{ themeClasses }} {{ params.classes }}" {% if params.ariaLabel %}aria-label="{{ params.ariaLabel }}"{% endif %}>
+    {{ params.text }}
+</a>

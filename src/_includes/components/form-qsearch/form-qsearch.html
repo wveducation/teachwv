@@ -1,0 +1,80 @@
+{% set default_selectClasses = 'p-4 w-full border-0' %}
+{% set default_formClasses = '' %}
+
+{% switch params.appearance %}
+  {% case 'horizontal' %}
+    {% set theme_wrapperClasses = 'md:py-4' %}
+    {% set theme_formClasses = 'block md:flex gap-x-4' %}
+    {% set fieldClasses = 'my-2 md:my-0' %}
+    {% set theme_selectClasses = 'bg-offwhite rounded-lg' %}
+  {% default %}
+    {% set theme_wrapperClasses = 'p-4' %}
+    {% set theme_formClasses = 'block' %}
+    {% set theme_selectClasses = 'md:my-2' %}
+{% endswitch %}
+
+{% set wrapperClasses = [theme_wrapperClasses, params.theme_wrapperClasses] | join(" ") %}
+{% set selectClasses = [default_selectClasses, theme_selectClasses, params.theme_selectClasses] | join(" ") %}
+{% set formClasses = [default_formClasses, theme_formClasses] | join(" ") %}
+<div class="overflow-hidden mx-auto rounded-2xl bg-white {{ wrapperClasses }}">
+  <p class="sr-only"><a href="/results">View all Next Steps</a></p>
+  <form 
+  class="{{ formClasses }}" 
+  x-cloak
+  x-data="{
+    selection: {
+      grade: '{{ params.data.grade }}' || null,
+      subject: '{{ params.data.subject }}' || null,
+      area: '{{ params.data.area }}' || null,
+    },
+    readyToSubmit: true,
+    data: {}
+  }" 
+  x-init="
+    fetch('/api/resultsTree.json')
+    .then(function(response) { return response.json(); })
+    .then(function(response) { data = response; });
+  "
+  x-on:submit="location = `${data[selection.grade].subjects[selection.subject].areas[selection.area].url}`; " 
+  @submit.prevent
+  >
+    <select class="{{ fieldClasses }} {{ selectClasses }}" x-model="selection.grade" @change="selection.subject = null; selection.area = null;">
+      <option>Choose Grade</option>
+      <template 
+        x-for="[id, value] in Object.entries(data)" 
+        :key="id">
+        <option :value="id" :selected="id == selection.grade" x-text="value.name"></option>
+      </template>
+    </select>
+
+    <select class="{{ fieldClasses }} {{ selectClasses }}" x-model="selection.subject" @change="selection.area = null;" :disabled="!selection.grade">
+      <option>Choose Subject</option>
+      <template
+        x-if="selection.grade !== null">
+        <template 
+          x-for="[id, value] in Object.entries(data[selection.grade].subjects)" 
+          :key="id">
+          <option :value="id" :selected="id == selection.subject" x-text="value.name"></option>
+        </template>
+      </template>
+    </select>
+
+    <select class="{{ fieldClasses }} {{ selectClasses }}" x-model="selection.area" :disabled="!selection.subject">
+      <option>Choose Area</option>
+      <template
+        x-if="selection.subject !== null">
+        <template 
+          x-for="[id, value] in Object.entries(data[selection.grade].subjects[selection.subject].areas) || []" 
+          :key="id">
+          <option :value="id" :selected="id == selection.area" x-text="value.name"></option>
+        </template>
+      </template>
+    </select>
+
+    <input type="submit" value="{{ params.submitText if params.submitText else 'Submit' }}" :disabled="!selection.grade && !selection.subject && !selection.area" class="{{ fieldClasses }} block md:inline-block flex-shrink w-full" />
+  </form>
+
+  {% if params.appearance != 'horizontal' %}
+  <p class="text-sm text-center mt-4 opacity-80 hover:opacity-100"><a href="/results" class="underline">View all Next Steps</a></p>
+  {% endif %}
+</div>

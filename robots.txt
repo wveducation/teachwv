@@ -1,0 +1,4 @@
+Sitemap: https://teachwv.com/sitemap.xml
+
+User-agent: *
+Disallow:

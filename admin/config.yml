@@ -1,0 +1,134 @@
+backend:
+  # Use netlify identity as backend
+  name: git-gateway
+  branch: master
+  ### enable below lines for github integration ###
+  # name: github
+  # repo: surjithctly/neat-starter
+media_folder: "src/static/img"
+public_folder: "/static/img"
+
+# Please run "npx netlify-cms-proxy-server" for local backend
+local_backend: true
+# publish_mode: editorial_workflow
+collections:
+  - label: "Post"
+    label_plural: "Posts"
+    name: "post"
+    folder: "src/posts"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: "Result"
+    label_plural: "Results"
+    name: "result"
+    folder: "src/results"
+    slug: "{{fields.grade}}{{fields.subject}}{{fields.area}}"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Subject"
+        name: "subject"
+        widget: "relation"
+        collection: "subject"
+        value_field: "id"
+        search_fields: ["name"]
+        display_fields: ["name"]
+      - label: "Grade"
+        name: "grade"
+        widget: "relation"
+        collection: "grade"
+        value_field: "id"
+        search_fields: ["name"]
+        display_fields: ["name"]
+      - label: "Area"
+        name: "area"
+        widget: "relation"
+        collection: "area"
+        value_field: "id"
+        search_fields: ["name"]
+        display_fields: ["name"]
+      - label: "Description"
+        name: "description"
+        widget: "text"
+      - label: "Questions"
+        name: "questions"
+        widget: "list"
+        fields:
+          - label: "Question/Answer"
+            name: "qa"
+            widget: "object"
+            fields:
+              - { label: "Question", name: "question", widget: "markdown", minimal: true }
+              - { label: "Answer", name: "answer", widget: "markdown", minimal: true }
+      - label: "Next Steps"
+        name: "next_steps"
+        widget: "list"
+        fields:
+          - label: "Instructions"
+            name: "instructions"
+            widget: "markdown"
+            fields:
+              - { label: "Instructions", name: "body", widget: "markdown", minimal: true }
+
+  - label: "Subject"
+    label_plural: 'Subjects'
+    name: "subject"
+    folder: "src/subjects"
+    create: true
+    identifier_field: name
+    editor:
+      preview: false
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "ID", name: "id", widget: "string", pattern: ['^[a-z]+$', "Lowercase a-z characters only. No spaces or special characters."] }
+      - { label: "Featured Image", name: "image", widget: "image" }
+
+  - label: "Grade"
+    label_plural: 'Grades'
+    name: "grade"
+    folder: "src/grades"
+    create: true
+    identifier_field: name
+    editor:
+      preview: false
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "ID", name: "id", widget: "string", pattern: ['^[0-9a-z]+$', "Numbers 0-9 or lowercase a-z characters only. No spaces or special characters."] }
+
+  - label: "Area"
+    label_plural: 'Areas'
+    name: "area"
+    folder: "src/areas"
+    create: true
+    identifier_field: name
+    editor:
+      preview: false
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "ID", name: "id", widget: "string", pattern: ['^[a-z]+$', "Lowercase a-z characters only. No spaces or special characters."] }
+
+  - label: "Settings"
+    name: "settings"
+    editor:
+      preview: false
+    files:
+      - label: "Global Action"
+        name: "global_action"
+        file: "src/_data/global_action.yaml"
+        fields:
+          - { label: URL, name: url, widget: string }
+          - { label: Text, name: text, widget: string }
+      - label: "Meta Settings"
+        name: "settings"
+        file: "src/_data/settings.yaml"
+        fields:
+          - { label: Name, name: name, widget: string }
+          - { label: Author, name: author, widget: string }
+          - { label: URL, name: url, widget: string }
+          - { label: Organization, name: organization, widget: string }

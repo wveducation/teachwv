@@ -13,16 +13,5 @@
                 <img src="/static/img/logo.svg" width="90" height="90" alt="">
             </a>
         </div>
-
-        <!--Global Action-->
-        {% if params.global_action %}
-        <div class="row-start-2 md:row-start-1 col-start-2 col-end-5 md:col-start-8 md:col-end-13 flex-grow flex md:items-end md:items-center justify-start md:justify-end lg:w-auto">
-            {{ component('button', {
-                url: params.global_action.url,
-                text: params.global_action.text,
-                theme: "mobilelink"
-            }) }}
-        </div>
-        {% endif %}
     </nav>
 </div>

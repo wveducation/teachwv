@@ -1,4 +1,0 @@
----
-name: "Functions"
-id: "f"
----

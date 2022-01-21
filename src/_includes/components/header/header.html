@@ -1,13 +1,15 @@
-<div class="relative z-20 py-4 md:py-4 bg-offwhite filter drop-shadow border-solid border-brand_yellow border-t-4">
+{% set isFront = (params.page.url == '/') %}
+<div class="sticky top-0 w-full z-50 py-4 md:py-4 bg-offwhite border-solid border-t-4 border-t-brand_yellow border-b border-b-brand_lightgrey">
     <nav class="block lg:flex px-8 lg:container relative gap-x-16" x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
         <div class="flex justify-between w-full lg:w-auto">
-            <!--Logo-->
+            <!-- Logo -->
             <div class="flex md:justify-center md:items-center">
                 <a href="/" aria-label="Visit the homepage.">
                     <img src="/static/img/logo.svg" width="225" height="90" alt="">
                 </a>
             </div>
 
+            <!-- Navicon -->
             <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="isOpen = !isOpen">
                 <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
                     <path x-show="!isOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>

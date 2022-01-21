@@ -1,11 +1,5 @@
 module.exports = {
-  purge: {
-    mode: "all",
-    content: ["./**/*.html"],
-    options: {
-      whitelist: [],
-    },
-  },
+  content: ["./src/**/*.{html,js}"],
   theme: {
     container: {
       center: true,
@@ -28,9 +22,6 @@ module.exports = {
       animation: {
         'ticktock': 'ticktock 3s linear infinite'
       },
-      backgroundImage: theme => ({
-        'line-sphere': "url('/static/img/line-sphere.svg')"
-      }),
       backgroundPosition: {
         'right-bottom-over': 'right -5vw bottom -5vh'
       },
@@ -53,14 +44,6 @@ module.exports = {
         'footer': '#006F9D',
         'text-black': '#101010',
         'offwhite': '#FBF9F3'
-      },
-      keyframes: {
-        ticktock: {
-          '0%': { transform: 'rotate(-3deg)' },
-          '49.9%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
-          '100%': { transform: 'rotate(3deg)' }
-        }
       },
       gap: {
         'default': '2rem'

@@ -98,67 +98,6 @@ module.exports = function(eleventyConfig) {
     return items[0].data.name;
   });
 
-  eleventyConfig.addShortcode("getSubjectField", (collection, id, fieldName) => {
-
-    let items = collection.filter( (item) => {
-      if (item.data.id == id ) {
-        return item;
-      }
-    });
-    
-    return items[0].data[fieldName];
-  });
-
-  eleventyConfig.addShortcode("subjectTree", (results, grades, subjects, areas) => {
-    const tree = {};
-
-    // Make a list of subjects which are used in any results.
-    results.forEach(result => {
-
-      // if the tree doesn't yet have this result's subject, add it
-      if (!(tree.hasOwnProperty(result.data.grade))) {
-        tree[result.data.grade] = {
-          "name": getNameById(grades, result.data.grade),
-          "subjects": {}
-        };
-      }
-
-      // if this subject id branch doesn't have this grade yet, add it
-      if (!(tree[result.data.grade]['subjects'].hasOwnProperty(result.data.subject))) {
-        tree[result.data.grade]['subjects'][result.data.subject] = {
-          "name": getNameById(subjects, result.data.subject),
-          "areas": {}
-        };
-      }
-
-      // if this subject and grade branch doesn't have this area yet, add it
-      if (!(tree[result.data.grade]['subjects'][result.data.subject]['areas'].hasOwnProperty(result.data.area))) {
-        tree[result.data.grade]['subjects'][result.data.subject]['areas'][result.data.area] = {
-          "name": getNameById(areas, result.data.area),
-          "url": result.url
-        };
-      }
-
-    });
-
-    return JSON.stringify(tree);
-  });
-
-  // Return grades which are referenced on results which also include a given subject.
-  const getNameById = (data, id) => {
-    let name;
-
-    data.every(item => {
-      if (item.data.id == id) {
-        name = item.data.name;
-        return false;
-      }
-      return true;
-    });
-
-    return name;
-  }
-
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
 

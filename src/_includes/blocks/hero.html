@@ -1,28 +1,15 @@
 {%- from "system/component.html" import component -%} 
-<section class="relative py-16 bg-brand_light-yellow bg-hero-abstract text-center md:text-left">
+<section class="relative bg-offwhite text-center md:text-left">
     <div class="container">
         <div class="relative z-40 grid md:grid-cols-2 gap-default">
-            <div class="flex flex-col justify-center">
-                <h1 class="text-4xl md:text-5xl">Moving Forward</h1>
-                <p class="text-lg md:text-xl">Family and school partnerships are key to a child’s success. Having a complete picture of where each child is academically is very important. </p>
-                <p>This past spring, students participated in the administration of the West Virginia General Summative Assessment as part of our statewide testing program. This test provides information about student performance in the areas of mathematics, English language arts, and science.</p>
-                <p>{{ component('button', {
-                    url: '#test-questions',
-                    text: 'Explore Your Child\'s Performance'
-                }) }}</p>
+            <div class="flex flex-col justify-center py-12">
+                <h1 class="text-4xl md:text-5xl text-brand_blue">Discover your Potential</h1>
+                <p class="mb-6 text-lg md:text-xl text-brand_darkgrey">Whether you're a high school student, a college graduate, a certified teacher from out-of-state, returning to the classroom, or somewhere in-between, there is a pathway for you. Let us help you get there!</p>
+                {% include 'components/form-pathways/form-pathways.html' %}
             </div>
             <div>
-                {% image { 
-                    src: "./src/static/img/hero-illustration.png", 
-                    alt: "", 
-                    cls: "",
-                    styleName: "medium_half"
-                } %}
+                <img src="https://via.placeholder.com/600x600" alt="">
             </div>
         </div>
     </div>
-    {{ component('abstract-bg', {
-        fillColor: '#FFE9A9',
-        classes: 'absolute z-10 top-0 left-0 w-full h-full'
-    }) }}
 </section>

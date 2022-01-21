@@ -1,0 +1,17 @@
+<form 
+class="lg:flex flex-wrap gap-4"
+x-cloak
+x-data="{
+    pathway: false
+}" 
+x-on:submit="location = pathway; console.log(pathway);" 
+@submit.prevent
+>
+    <select name="pathways" class="grow max-w-full text-lg max-w-sm" x-model="pathway">
+        <option value="" selected="selected" hidden>Choose your pathway</option>
+        <option value="/become-a-teacher/bachelors-degree">Bachelor’s Degree</option>
+        <option value="/become-a-teacher/high-school-equiv">High School Diploma / High School Equivalency</option>
+        <option value="/become-a-teacher/no-degree">No Degree or Diploma</option>
+    </select>
+    <input type="submit" value="Let's Go!" class="" :disabled="pathway == false">
+</form>

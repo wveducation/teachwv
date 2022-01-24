@@ -11,7 +11,20 @@
             }
         }) }}
     </div>
-    <div class="container max-w-4xl">
-        <p class="text--center">Quotes</p>
+    <div class="container">
+        {{ component('quotes_view', {
+            items: collections.quotes,
+            quantity: 6,
+            columns: {
+                'md': 2,
+                'lg': 3
+            }
+        }) }}
+        <div class="text-center pt-8">
+            {{ component('button', {
+                url: '/stories',
+                text: 'More Stories'
+            }) }}
+        </div>
     </div>
 </section>

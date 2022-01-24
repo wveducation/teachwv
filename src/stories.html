@@ -1,0 +1,26 @@
+---
+layout: default
+title: Stories
+path: /stories
+description: ""
+---
+{%- from "system/component.html" import component -%} 
+<div class="py-12 bg-offwhite border-b">
+    <div class="container">
+        <h1 class="text-5xl text-center">{{ title }}</h1>
+    </div>
+</div>
+
+<div class="container py-16">
+{% if collections.quotes %}
+    {{ component('quotes_view', {
+        items: collections.quotes,
+        columns: {
+            'md': 2,
+            'lg': 3
+        }
+    }) }}
+{% else %}
+<div class="p-6 border-2 text-center rounded">Sorry, testimonials could not be loaded at this time.</div>
+{% endif %}
+</div>

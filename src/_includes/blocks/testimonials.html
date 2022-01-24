@@ -12,6 +12,7 @@
         }) }}
     </div>
     <div class="container">
+    {% if collections.quotes %}
         {{ component('quotes_view', {
             items: collections.quotes,
             quantity: 6,
@@ -26,5 +27,8 @@
                 text: 'More Stories'
             }) }}
         </div>
+    {% else %}
+        <div class="p-6 border-2 text-center rounded">Sorry, testimonials could not be loaded at this time.</div>
+    {% endif %}
     </div>
 </section>

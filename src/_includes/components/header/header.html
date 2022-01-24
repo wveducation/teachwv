@@ -24,7 +24,7 @@
             {% for item in params.navigation.items %}
                 <li class="block border-t lg:border-0">
                     {% set isActivePage = (item.url + '/') == params.page.url %}
-                    <a href="{{ item.url }}" class="block py-2 lg:py-1 lg:px-2 rounded font-bold text-brand_blue text-xl border-2 border-transparent lg:hover:border-brand_yellow {{ 'lg:border-brand_yellow' if isActivePage }}">{{ item.text }}</a>
+                    <a href="{{ item.url }}" class="block py-2 lg:py-1 lg:px-2 rounded font-bold text-brand_blue text-xl border-2 border-transparent lg:hover:border-brand_yellow {{ 'lg:border-brand_yellow lg:bg-white' if isActivePage }}">{{ item.text }}</a>
                 </li>
             {% endfor %}
             </ul>

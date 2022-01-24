@@ -7,6 +7,12 @@
     {% default %}
         {% set themeClasses = defaultButtonClasses + ' bg-brand_lightblue text-white hover:bg-brand_lightblue-hover' %}
 {% endswitch %}
+{% if params.url %}
 <a href="{{ params.url }}" target="{{ params.target or '_self' }}" class="inline-block rounded-full {{ themeClasses }} {{ params.classes }}" {% if params.ariaLabel %}aria-label="{{ params.ariaLabel }}"{% endif %}>
-    {{ params.text }}
+    {% if params.text %}
+        {{ params.text }}
+    {% else %}
+        Click Here
+    {% endif %}
 </a>
+{% endif %}

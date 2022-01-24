@@ -4,6 +4,37 @@ title: Explore the Profession
 path: /explore-the-profession
 description: ""
 ---
-<div class="container py-8">
-    <h1 class="text-5xl text-center">{{ title }}</h1>
+{%- from "system/component.html" import component -%}
+<div class="container py-16 text-center">
+    <h1 class="text-5xl text-brand_blue">{{ title }}</h1>
+    <p class="text-xl max-w-4xl mx-auto">Whether you’re a high school student, a college graduate, a certified teacher from out-of-state, returning to the classroom, or somewhere in between, there is a pathway for you.</p>
+</div>
+{{ component('image-and-card', {
+    title: 'Discover West Virginia',
+    text: 'West Virginia is home to many best kept secrets \– from beautiful landscapes to world-class outdoor adventures, our educators feel like they are working in (almost) heaven.',
+    image: {
+        src: 'https://via.placeholder.com/1600x900'
+    },
+    action: {
+        url: 'https://wvtourism.com',
+        text: 'Explore Tourism'
+    },
+    theme: {
+        image_position: 'left',
+        background: '#576856'
+    }
+}) }}
+<div class="py-16">
+    <div class="container max-w-4xl">
+        {{ component('titlebar', {
+            title: {
+                text: "Benefits of Becoming a Teacher"
+            },
+            subtitle: {
+                text: 'Becoming a teacher in West Virginia gives you an opportunity to change lives in the Mountain State. We know how important it is to support our educators as they work tirelessly to ensure our students’ success. As a West Virginia teacher, you will receive an extensive package that includes both retirement and health insurance benefits. In addition to pay and other perks, the following is a list of benefits you can expect.'
+            }
+        }) }}
+
+        <p class="border p-8 text-center">ACCORDIONS</p>
+    </div>
 </div>

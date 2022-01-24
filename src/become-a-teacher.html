@@ -1,9 +1,42 @@
 ---
 layout: default
-title: Become a Teacher
+title: Become a Teacher in WV
 path: /become-a-teacher
 description: ""
 ---
-<div class="container py-8">
-    <h1 class="text-5xl text-center">{{ title }}</h1>
+{% set pictureOffset = 20 %}
+{%- from "system/component.html" import component -%}
+<div class="py-4 bg-brand_lightgrey mb-{{ pictureOffset }}">
+    <div class="px-4 lg:container">
+        <img src="https://via.placeholder.com/1280x480/333?text=Graphic" class="rounded-lg -mb-{{ pictureOffset }}">
+    </div>
 </div>
+
+<div class="container py-8 md:py-12 text-center">
+    <h1 class="text-4xl md:text-5xl text-center text-brand_blue">{{ title }}</h1>
+    <p class="text-xl max-w-4xl mx-auto">Whether you’re a high school student, a college graduate, a certified teacher from out-of-state, returning to the classroom, or somewhere in between, there is a pathway for you.</p>
+</div>
+
+<section class="container pb-12 mb-12 max-w-5xl">
+    <h2 class="text-2xl text-center text-brand_blue">Choose Your Pathway</h2>
+
+    <div class="grid lg:grid-cols-3 gap-y-2 md:gap-2">
+        {{ component('linkbox', {
+            url: '/',
+            text: 'Bachelor\’s Degree',
+            theme: 'light'
+        }) }}
+
+        {{ component('linkbox', {
+            url: '/',
+            text: 'High School Diploma or Equivalency',
+            theme: 'light'
+        }) }}
+
+        {{ component('linkbox', {
+            url: '/',
+            text: 'No Degree or Diploma',
+            theme: 'light'
+        }) }}
+    </div>
+</section>

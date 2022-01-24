@@ -1,0 +1,11 @@
+{% set defaultButtonClasses = 'px-4 md:px-6 py-6' %}
+{% switch params.theme %}
+    {% case 'light' %}
+        {% set themeClasses = defaultButtonClasses + ' bg-white text-brand_blue border-2 hover:bg-brand_lightblue hover:border-brand_lightblue hover:text-white' %}
+    {% default %}
+        {% set themeClasses = defaultButtonClasses + ' bg-brand_lightblue text-white hover:bg-brand_lightblue-hover' %}
+{% endswitch %}
+<a href="{{ params.url }}" target="{{ params.target or '_self' }}" class="flex justify-center items-center text-center gap-x-6 rounded-lg md:text-lg {{ themeClasses }} {{ params.classes }}" {% if params.ariaLabel %}aria-label="{{ params.ariaLabel }}"{% endif %}>
+    {{ params.text }}
+    {% include '../../../static/img/icon-chevron-right.svg' %}
+</a>

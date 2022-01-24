@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.15 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.16 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1391,6 +1391,11 @@ select {
           animation: ticktock 3s linear infinite;
 }
 
+.auto-rows-min {
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+}
+
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
@@ -1401,6 +1406,10 @@ select {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1583,14 +1592,14 @@ select {
   border-color: rgb(0 123 175 / var(--tw-border-opacity));
 }
 
-.border-t-brand_yellow {
-  --tw-border-opacity: 1;
-  border-top-color: rgb(240 181 29 / var(--tw-border-opacity));
-}
-
 .border-b-brand_lightgrey {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(209 211 212 / var(--tw-border-opacity));
+}
+
+.border-t-brand_yellow {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(240 181 29 / var(--tw-border-opacity));
 }
 
 .border-opacity-20 {
@@ -1686,6 +1695,11 @@ select {
   padding-bottom: 3rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1694,11 +1708,6 @@ select {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .px-0 {
@@ -2122,6 +2131,10 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
     grid-column-start: 1;
   }
 
+  .md\:col-start-2 {
+    grid-column-start: 2;
+  }
+
   .md\:col-end-13 {
     grid-column-end: 13;
   }
@@ -2197,6 +2210,14 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
   .md\:items-center {
     align-items: center;
   }
@@ -2253,6 +2274,11 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .md\:py-24 {

@@ -1,0 +1,21 @@
+{%- from "system/component.html" import component -%} 
+{% set gridClasses = '' %}
+{% for breakpoint, value in params.columns -%}
+  {% set gridClasses  = [gridClasses, breakpoint + ':grid-cols-' + value + ' '] | join %}
+{%- endfor -%}
+
+<div class="grid {{ gridClasses }} gap-default">
+{% for quote in params.items | reverse %}
+    {% if params.quantity %}
+        {% if loop.index0 < params.quantity %}
+        {{ component('quote_teaser', {
+            data: quote.data
+        }) }}
+        {% endif %}
+    {% else %}
+        {{ component('quote_teaser', {
+            data: quote.data
+        }) }}
+    {% endif %}
+{% endfor %}
+</div>

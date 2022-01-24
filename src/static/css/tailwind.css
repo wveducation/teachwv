@@ -50,6 +50,12 @@ html {
   }
 }
 
+/* rounds the right side of a square */
+.clip-rounded-right {
+  /* clip-path: circle(100.0% at -1% 50%); */
+  clip-path: ellipse(100% 140% at left);
+}
+
 /* Typography */
 
 body {

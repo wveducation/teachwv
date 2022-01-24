@@ -1183,6 +1183,14 @@ select {
   grid-column-end: 4;
 }
 
+.col-end-2 {
+  grid-column-end: 2;
+}
+
+.col-end-5 {
+  grid-column-end: 5;
+}
+
 .row-start-1 {
   grid-row-start: 1;
 }
@@ -1408,6 +1416,10 @@ select {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
@@ -1502,16 +1514,16 @@ select {
   white-space: nowrap;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-default {
   border-radius: 0.75rem;
 }
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded {
-  border-radius: 0.25rem;
 }
 
 .rounded-full {
@@ -1530,12 +1542,12 @@ select {
   border-radius: 1rem;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-2 {
   border-width: 2px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-0 {
@@ -1606,14 +1618,14 @@ select {
   --tw-border-opacity: 0.2;
 }
 
-.bg-brand_lightblue {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 123 175 / var(--tw-bg-opacity));
-}
-
 .bg-offwhite {
   --tw-bg-opacity: 1;
   background-color: rgb(251 249 243 / var(--tw-bg-opacity));
+}
+
+.bg-brand_lightblue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 123 175 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -1639,6 +1651,10 @@ select {
   background-repeat: no-repeat;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -1651,13 +1667,23 @@ select {
   padding: 1rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
+.p-2 {
+  padding: 0.5rem;
 }
 
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .px-6 {
@@ -1690,19 +1716,9 @@ select {
   padding-bottom: 6rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .px-4 {
@@ -1734,8 +1750,16 @@ select {
   padding-bottom: 1.25rem;
 }
 
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .text-center {
@@ -1808,6 +1832,10 @@ select {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.not-italic {
+  font-style: normal;
 }
 
 .leading-6 {
@@ -1952,6 +1980,14 @@ html {
   .fade-right::before {
     content: none;
   }
+}
+
+/* rounds the right side of a square */
+
+.clip-rounded-right {
+  /* clip-path: circle(100.0% at -1% 50%); */
+  -webkit-clip-path: ellipse(100% 140% at left);
+          clip-path: ellipse(100% 140% at left);
 }
 
 /* Typography */

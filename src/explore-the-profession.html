@@ -26,19 +26,21 @@ description: ""
 }) }}
 <section class="py-16 border-b">
     <div class="container max-w-4xl">
-        {{ component('titlebar', {
-            title: {
-                text: "Benefits of Becoming a Teacher"
-            },
-            subtitle: {
-                text: 'Becoming a teacher in West Virginia gives you an opportunity to change lives in the Mountain State. We know how important it is to support our educators as they work tirelessly to ensure our students’ success. As a West Virginia teacher, you will receive an extensive package that includes both retirement and health insurance benefits. In addition to pay and other perks, the following is a list of benefits you can expect.'
-            }
-        }) }}
+        <div class="mb-16">
+            {{ component('titlebar', {
+                title: {
+                    text: "Benefits of Becoming a Teacher"
+                },
+                subtitle: {
+                    text: 'Becoming a teacher in West Virginia gives you an opportunity to change lives in the Mountain State. We know how important it is to support our educators as they work tirelessly to ensure our students’ success. As a West Virginia teacher, you will receive an extensive package that includes both retirement and health insurance benefits. In addition to pay and other perks, the following is a list of benefits you can expect.'
+                }
+            }) }}
+        </div>
 
         {{ component('accordion', {
             data: [
                 {
-                    title: 'Teachers Retirement System',
+                    title: 'Insurance Options and Benefits',
                     body: "<p>Full-time employees of the State of West Virginia are eligible for enrollment in the Public Employees Insurance Agency (PEIA) Benefit Plan. The plan offers hospital, surgical, major medical, prescription drug and other medical care benefit coverage to employees and dependents and retirees.</p>" +
                     component('button', { url: '/', text: 'Button'})
                 },

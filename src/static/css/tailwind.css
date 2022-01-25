@@ -100,3 +100,16 @@ body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
   @apply bg-gray-800;
 }
+
+.animate-scrolly {
+  animation: animate-scrolly 300s linear infinite;
+}
+
+@keyframes animate-scrolly {
+  0% {
+    background-position-y: -1600px;
+  }
+  100% {
+    background-position-y: 1600px;
+  }
+}

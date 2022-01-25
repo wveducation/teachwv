@@ -15,41 +15,6 @@ html {
 
 [x-cloak] { display: none !important; }
 
-.fade-right {
-  position: relative;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-}
-@screen md {
-  .fade-right {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-.fade-right > *:first-child {
-  padding-right: 2rem;
-  padding-left: 1.5rem;
-}
-.fade-right::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 2rem;
-  background: linear-gradient(to left,
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0.8) 10%,
-    rgba(255, 255, 255, 0.7) 20%,
-    rgba(255, 255, 255, 0)
-  );
-}
-@screen md {
-  .fade-right::before {
-    content: none;
-  }
-}
-
 /* rounds the right side of a square */
 .clip-rounded-right {
   /* clip-path: circle(100.0% at -1% 50%); */
@@ -87,6 +52,10 @@ input[type=submit] {
 
 input[type=submit]:hover {
   @apply hover:bg-brand_lightblue-hover;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* Forms */

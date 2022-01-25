@@ -24,7 +24,7 @@ description: ""
         background: '#576856'
     }
 }) }}
-<div class="py-16">
+<section class="py-16 border-b">
     <div class="container max-w-4xl">
         {{ component('titlebar', {
             title: {
@@ -35,6 +35,27 @@ description: ""
             }
         }) }}
 
-        <p class="border p-8 text-center">ACCORDIONS</p>
+        {{ component('accordion', {
+            data: [
+                {
+                    title: 'Teachers Retirement System',
+                    body: "<p>Full-time employees of the State of West Virginia are eligible for enrollment in the Public Employees Insurance Agency (PEIA) Benefit Plan. The plan offers hospital, surgical, major medical, prescription drug and other medical care benefit coverage to employees and dependents and retirees.</p>" +
+                    component('button', { url: '/', text: 'Button'})
+                },
+                {
+                    title: 'Teachers Retirement System',
+                    body: "<p>When you become a teacher at a West Virginia public school, you are enrolled in the Teachers' Retirement System (TRS). This system was established to provide educators and school service personnel with a defined retirement plan. The TRS currently served more than 41,000 active members and nearly 37,000 retired members.</p>" +
+                    component('button', { url: '/', text: 'Button'})
+                },
+                {
+                    title: 'WV Retirement Plus',
+                    body: "<p>In addition to the Teachers' Retirement System, employees are offered the voluntary opportunity to participate in the West Virginia Retirement Plus Program, a supplemental retirement plan designed to provide an extra savings alternative for all state, county, city and other political subdivision employees. This retirement program is like a 401(k) plan in structure except that it is designed to supplement a participants primary retirement plan. Employee contributions to the plan are managed via convenient payroll deductions.</p>" +
+                    component('button', { url: '/', text: 'Button'})
+                }
+            ]
+        }) }}
     </div>
-</div>
+</section>
+
+{% include 'blocks/testimonials.html' %}
+{% include 'blocks/contact-prefooter.html' %}

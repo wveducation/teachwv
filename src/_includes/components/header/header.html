@@ -1,5 +1,5 @@
 {% set isFront = (params.page.url == '/') %}
-<div class="sticky top-0 w-full z-50 py-4 md:py-4 bg-offwhite border-solid border-t-4 border-t-brand_yellow border-b border-b-brand_lightgrey {{ '' if not isFront }}">
+<div class="top-0 w-full z-50 py-4 md:py-4 border-solid border-t-4 border-t-brand_yellow {{ 'md:sticky bg-offwhite border-b border-b-brand_lightgrey' if not isFront else 'lg:absolute' }}">
     <nav class="block lg:flex px-8 lg:container max-w-4xl relative gap-x-16" x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
         <div class="flex justify-between w-full lg:w-auto">
             <!-- Logo -->
@@ -24,7 +24,7 @@
             {% for item in params.navigation.items %}
                 <li class="block border-t lg:border-0">
                     {% set isActivePage = (item.url + '/') == params.page.url %}
-                    <a href="{{ item.url }}" class="block py-2 lg:py-1 lg:px-2 rounded font-bold text-brand_blue text-xl border-2 border-transparent lg:hover:border-brand_yellow {{ 'lg:border-brand_yellow lg:bg-white' if isActivePage }}">{{ item.text }}</a>
+                    <a href="{{ item.url }}" class="block py-2 lg:py-1 lg:px-2 rounded font-bold text-brand_blue text-xl border-2 border-transparent lg:hover:border-brand_yellow lg:hover:bg-white {{ 'lg:border-brand_yellow lg:bg-white' if isActivePage }}">{{ item.text }}</a>
                 </li>
             {% endfor %}
             </ul>

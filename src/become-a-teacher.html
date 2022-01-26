@@ -20,22 +20,12 @@ description: ""
     <h2 class="text-2xl text-center text-brand_blue">Choose Your Pathway</h2>
 
     <div class="grid lg:grid-cols-3 gap-y-2 md:gap-2">
+    {% for pathway in collections.pathways | reverse %}
         {{ component('linkbox', {
-            url: '/',
-            text: 'Bachelor\’s Degree',
+            url: pathway.url,
+            text: pathway.data.title,
             theme: 'light'
         }) }}
-
-        {{ component('linkbox', {
-            url: '/',
-            text: 'High School Diploma or Equivalency',
-            theme: 'light'
-        }) }}
-
-        {{ component('linkbox', {
-            url: '/',
-            text: 'No Degree or Diploma',
-            theme: 'light'
-        }) }}
+    {% endfor %}
     </div>
 </section>

@@ -1653,6 +1653,10 @@ select {
   padding: 1.5rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -1731,6 +1735,11 @@ select {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .px-0 {
@@ -2679,10 +2688,6 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
     position: absolute;
   }
 
-  .lg\:col-start-3 {
-    grid-column-start: 3;
-  }
-
   .lg\:col-start-1 {
     grid-column-start: 1;
   }
@@ -2691,12 +2696,28 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
     grid-column-start: 4;
   }
 
-  .lg\:col-end-7 {
-    grid-column-end: 7;
+  .lg\:col-start-10 {
+    grid-column-start: 10;
+  }
+
+  .lg\:col-start-3 {
+    grid-column-start: 3;
   }
 
   .lg\:col-end-4 {
     grid-column-end: 4;
+  }
+
+  .lg\:col-end-10 {
+    grid-column-end: 10;
+  }
+
+  .lg\:col-end-13 {
+    grid-column-end: 13;
+  }
+
+  .lg\:col-end-7 {
+    grid-column-end: 7;
   }
 
   .lg\:col-end-5 {
@@ -2763,6 +2784,10 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-2 {

@@ -5,12 +5,19 @@ title: Default Title
 subtitle: 
 ---
 {%- from "system/component.html" import component -%}
-<div class="relative py-14 md:py-28 bg-brand_lightblue text-white">
-    <div class="relative z-20 container text-center">
-        <h1 class="text-4xl md:text-5xl font-bold mb-0 {{ titleClasses }}">{{ title }}</h1>
-        {% if subtitle %}
-        <div class="text-lg md:text-xl">{{ subtitle }}</div>
-        {% endif %}
+{% set breadcrumbItems = collections.pages | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
+
+<div class="relative bg-offwhite border-b">
+    <div class="md:container">
+        <div class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-3 gap-x-8">
+            <div class="md:col-start-1 md:col-end-3 px-6 md:px-0 py-8 md:py-16">
+                {{ component('breadcrumb', {
+                    items: breadcrumbItems
+                }) }}
+                <h1 class=" text-4xl md:text-5xl font-bold mb-0">{{ title }}</h1>
+            </div>
+            <div class="row-start-1 md:col-start-3 md:col-end-4 md:h-full w-full background-repeat: repeat; bg-50% md:bg-cover" style="background-image: url(/static/img/teacher-grid.png); background-position: center;"></div>
+        </div>
     </div>
 </div>
 
@@ -22,12 +29,19 @@ subtitle:
             {% include("blocks/sidebarnav.html") %}
         </div>
         <div class="lg:col-start-4 lg:col-end-10">
-            {{ content | safe }}
+            {% if subtitle %}
+            <div class="text-lg md:text-xl mb-8">{{ subtitle }}</div>
+            {% endif %}
+            <div class="markdown-field">
+                {{ content | safe }}
+            </div>
         </div>
-        <div class="lg:col-start-10 lg:col-end-13">
-        SIDEBAR
-        </div>
+        <aside class="lg:col-start-10 lg:col-end-13">
+            {% include 'blocks/global-sidebar.html' %}
+        </aside>
     </div>
 {% if container %}
 </div>
 {% endif %}
+
+{% include 'blocks/contact-prefooter.html' %}

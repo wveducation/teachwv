@@ -22,6 +22,9 @@ module.exports = {
       animation: {
         'ticktock': 'ticktock 3s linear infinite'
       },
+      backgroundSize: {
+        '50%': "50%"
+      },
       backgroundPosition: {
         'right-bottom-over': 'right -5vw bottom -5vh'
       },
@@ -43,7 +46,7 @@ module.exports = {
         'brand_lightgrey': '#D1D3D4',
         'footer': '#006F9D',
         'text-black': '#101010',
-        'offwhite': '#FBF9F3'
+        'offwhite': '#f7f4e8'
       },
       gap: {
         'default': '2rem'

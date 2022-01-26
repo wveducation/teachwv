@@ -1,8 +1,12 @@
+{# todo: Get this data from tagged pages. #}
+{% 
+    set pathways = collections.pathways | reverse
+%}
 <form 
 class=""
 x-cloak
 x-data="{
-    pathway: false
+    pathway: '{{ pathways[0].url }}'
 }" 
 x-on:submit="location = pathway; console.log(pathway);" 
 @submit.prevent
@@ -10,10 +14,10 @@ x-on:submit="location = pathway; console.log(pathway);"
     <label for="pathways">Choose your pathway</label>
     <div class="flex flex-col lg:flex-row flex-wrap gap-4">
         <select name="pathways" id="pathways" class="grow max-w-full text-lg md:max-w-sm" x-model="pathway">
-            <option value="/become-a-teacher/bachelors-degree">Bachelor’s Degree</option>
-            <option value="/become-a-teacher/high-school-equiv">High School Diploma / High School Equivalency</option>
-            <option value="/become-a-teacher/no-degree">No Degree or Diploma</option>
+            {% for pathway in pathways %}
+            <option value="{{ pathway.url }}">{{ pathway.data.title }}</option>
+            {% endfor %}
         </select>
-        <input type="submit" value="Let's Go!" class="" :disabled="pathway == false">
+        <input type="submit" value="Let's Go!" class="">
     </div>
 </form>

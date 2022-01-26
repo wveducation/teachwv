@@ -1,4 +1,4 @@
-{% set navPages = collections.all | eleventyNavigation %}
+{% set navPages = collections.pages | eleventyNavigation %}
 
 {% macro renderNavListItem(item, parent = false, level = 0) -%}
 <li class="{% if item.url == page.url %}{% endif %} {% if level == 0 %}border-t{% endif %}" data-level="{{ level }}">

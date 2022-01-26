@@ -22,6 +22,33 @@ collections:
       - { label: "Subtitle", name: "subtitle", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
 
+  - label: "Page"
+    label_plural: "Pages"
+    name: "pages"
+    folder: "src/pages"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
+        name: "eleventyNavigation"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Key", name: "key", widget: "string" }
+          - { 
+            label: "Parent", 
+            name: "parent", 
+            required: false,
+            widget: "relation", 
+            collection: "pages",
+            search_fields: ["title"],
+            value_field: "eleventyNavigation.key",
+            display_fields: ["{{title}} [{{eleventyNavigation.key}}]"]
+          }
+          - { label: "Order", name: "order", widget: "number", default: 0 }
+
   - label: "Quote"
     label_plural: "Quotes"
     name: "quote"

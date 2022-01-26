@@ -1,0 +1,7 @@
+{
+    "layout": "page",
+    "permalink": "/{{ eleventyNavigation.parent }}/{{ page.fileSlug }}/",
+    "tags": [
+        "pages"
+    ]
+}

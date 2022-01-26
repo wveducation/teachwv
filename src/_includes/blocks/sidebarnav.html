@@ -1,0 +1,36 @@
+{% set navPages = collections.pages | eleventyNavigation %}
+
+{% macro renderNavListItem(item, parent = false, level = 0) -%}
+<li class="{% if item.url == page.url %}{% endif %} {% if level == 0 %}border-t{% endif %}" data-level="{{ level }}">
+    <a href="{{ item.url | url }}" class="block  
+    {% if item.url == page.url %}bg-offwhite text-brand_lightblue{% else %}text-brand_blue{% endif %} 
+    {% if level == 0 %}p-3 px-4 text-lg{% else %}py-1{% endif %}
+    " style="{% if level > 0 %}padding-left: {{ 1 * level + 1 }}em;{% endif %}">
+        {{ item.title }}
+    </a>
+    {# Only render children if; 
+        1) The curent page has children.
+        AND
+        2) This page is found within this subtree
+    #}
+    {% set children = [] %}
+    {% for child in item.children %}
+        {% set children = (children.push(child.key), children) %}
+    {% endfor %}
+    {# parse and flatten all keys for this subtree's children #}
+    {% set subtreeKeys = item | checkIfInSubtree(eleventyNavigation.key) %}
+
+    {%- if item.children.length -%}
+    {# check to see if this page item is in the subtree items #}
+    {%- if item.url == page.url or eleventyNavigation.key in subtreeKeys -%}
+        <ul class="" data-level="{{ level + 1 }}">
+        {%- for child in item.children %}{{ renderNavListItem(child, item, level + 1) }}{% endfor -%}
+        </ul>
+    {%- endif -%}
+    {%- endif -%}
+</li>
+{%- endmacro %}
+
+<ul class="border-b">
+{%- for item in navPages %}{{ renderNavListItem(item) }}{%- endfor -%}
+</ul>

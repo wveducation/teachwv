@@ -1,0 +1,13 @@
+<nav role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="sr-only">Breadcrumb</h2>
+    <ol class="flex gap-3">
+    {%- for entry in params.items %}
+        <li class="flex gap-x-3">
+            <a href="{{ entry.url | url }}" class="hover:underline text-brand_lightblue">{{ entry.title }}</a>
+            {% if not loop.last %}
+            <span class="text-brand_lightgrey">/</span>
+            {% endif %}
+        </li>
+    {%- endfor %}
+    </ol>
+</nav>

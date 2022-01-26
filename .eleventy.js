@@ -5,6 +5,7 @@ const htmlmin = require("html-minifier");
 const util = require('util');
 const svgContents = require("eleventy-plugin-svg-contents");
 const Image = require("@11ty/eleventy-img");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 function imageShortcode({src, alt, cls, styleName}) {
   if(alt === undefined) {
@@ -47,6 +48,7 @@ function imageShortcode({src, alt, cls, styleName}) {
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(svgContents); 
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
@@ -79,6 +81,23 @@ module.exports = function(eleventyConfig) {
     let data = [...results];
     // sorts by grade, then subject, then area.
     return data.sort((a, b) => (a.data.grade.localeCompare(b.data.grade) || a.data.subject.localeCompare(b.data.subject) || a.data.area.localeCompare(b.data.area)) );
+  });
+
+  eleventyConfig.addFilter("checkIfInSubtree", (tree, item) => {
+
+    const subtreeKeys = [];
+
+    const getSubtreeKeys = (subtree) => {
+      subtree.children.forEach(kid => {
+        subtreeKeys.push(kid.key);
+        if (kid.children.length) {
+          getSubtreeKeys(kid);
+        }
+      });
+    }
+
+    getSubtreeKeys(tree);
+    return subtreeKeys;
   });
 
   eleventyConfig.addShortcode("image", imageShortcode);

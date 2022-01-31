@@ -1,0 +1,25 @@
+{% set reasons = [
+    "Teaching is a creative outlet.",
+    "You laugh every day. ",
+    "You will celebrate the success of your students with them.",
+    "You have many opportunities to collaborate.",
+    "You get to help people.",
+    "You will witness real growth.",
+    "You will grow along with your students."
+] %}
+<section class="container max-w-6xl mb-12">
+    <div class="grid lg:grid-cols-5 gap-x-default p-6 border-4 border-brand_yellow rounded-xl">
+        <div class="flex flex-col justify-center mb-6 md:mb-12 lg:mb-0 md:mb-0 md:col-start-1 md:col-end-3 text-center md:text-left">
+            <h2 class="text-4xl">Why Teach?</h2>
+            <p class="text-lg md:text-xl">There are many reasons to explore the education profession.</p>
+        </div>
+
+        <ul class="md:col-start-3 md:col-end-6 flex flex-wrap">
+            {% for reason in reasons %}
+            <li class="w-full md:w-auto md:w-1/2 md:pr-8 mb-4 text-center md:text-left">
+                <span class="h-full text-xl bg-offwhite border-b border-b-2">{{ reason }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,65 @@
+{% set items = [
+    {
+        title: "Annual Teacher of the Year / School Service Personnel of the Year Award",
+        image: {
+            src: "https://via.placeholder.com/140x140",
+            alt: ""
+        },
+        details: "<p>Each year, the West Virginia Department of Education presents one deserving teacher and one school service personnel with an award, which recognizes their excellence within the ranks of our state's educators and service personnel. The Teacher of the Year is granted a one-year lease to a vehicle and cash prizes from various community and education partners. The School Service Personnel of the Year is also granted cash prizes and a special get-away experience to a state park. Additionally, the Department recognizes County Teachers of the Year for those educators who contributed in a positive way at the local level. Learn more.</p>"
+    },
+    {
+        title: "National Board Certified Teacher Recognitions",
+        image: {
+            src: "https://via.placeholder.com/140x140",
+            alt: ""
+        },
+        details: "<p>West Virginia is now ranked 11th in the nation for the number of new National Board Certified Teachers (NBCTs), 13th in the country for the percentage of NBCTs and 14th for teachers that successfully renewed in 2020. There was a total number of 35 new NBCT recipients and 66 renewed NBCTs for the class of 2021. Approximately, 1,144 West Virginia teachers have gone through this rigorous process to raise the standard of teaching across the state. In addition to an annual $3,500 salary supplement provided by the Legislature to active classroom teachers that successfully earned certification, most counties also support NBCTs with additional salary enhancements. WBDE provides mentors to assist those pursuing their certification, and it also reimburses the $1,900 in fees associated with the application process.</p>"
+    },
+    {
+        title: "Milken Educator Awards",
+        image: {
+            src: "https://via.placeholder.com/140x140",
+            alt: ""
+        },
+        details: "<p>The Milken Educator Award, an initiative of the Milken Family Foundation, has rewarded and inspired excellence in the world of education by honoring top educators around the country with unrestricted monetary awards. Milken Educators are given access to powerful networking and development tools throughout their careers in education.</p>"
+    }
+] %}
+<section class="py-16">
+    <div class="container max-w-4xl">
+        <div class="mb-8 text-center"><img src="/static/img/teacher-success-logos.png" class="mx-auto" width="400"></div>
+
+        {{ component('titlebar', {
+            title: {
+                text: "Celebrating Teacher Success",
+                classes: "mb-8"
+            }
+        }) }}
+
+        {{ component('accordion', {
+            classes: 'bg-white',
+            data: [
+                {
+                    title: "Annual Teacher of the Year / School Service Personnel of the Year Award",
+                    body: "<p>Each year, the West Virginia Department of Education presents one deserving teacher and one school service personnel with an award, which recognizes their excellence within the ranks of our state's educators and service personnel. The Teacher of the Year is granted a one-year lease to a vehicle and cash prizes from various community and education partners. The School Service Personnel of the Year is also granted cash prizes and a special get-away experience to a state park. Additionally, the Department recognizes County Teachers of the Year for those educators who contributed in a positive way at the local level.</p>" +
+                    component('button', {
+                        url: 'https://wvde.us/educator-development-and-support/celebrating-education/',
+                        text: 'Learn More'
+                    })
+                },
+                {
+                    title: "National Board Certified Teacher Recognitions",
+                    body: "<p>West Virginia is now ranked 11th in the nation for the number of new National Board Certified Teachers (NBCTs), 13th in the country for the percentage of NBCTs and 14th for teachers that successfully renewed in 2020. There was a total number of 35 new NBCT recipients and 66 renewed NBCTs for the class of 2021. Approximately, 1,144 West Virginia teachers have gone through this rigorous process to raise the standard of teaching across the state. In addition to an annual $3,500 salary supplement provided by the Legislature to active classroom teachers that successfully earned certification, most counties also support NBCTs with additional salary enhancements. WBDE provides mentors to assist those pursuing their certification, and it also reimburses the $1,900 in fees associated with the application process.</p>"
+                },
+                {
+                    title: "Milken Educator Awards",
+                    body: "<p>The Milken Educator Award, an initiative of the Milken Family Foundation, has rewarded and inspired excellence in the world of education by honoring top educators around the country with unrestricted monetary awards. Milken Educators are given access to powerful networking and development tools throughout their careers in education.</p>" +
+                    component('button', {
+                        url: 'http://www.mff.org/',
+                        text: 'Milken Family Foundation'
+                    })
+                }
+            ]
+        }) }}
+
+    </div>
+</section>

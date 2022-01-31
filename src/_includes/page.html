@@ -30,7 +30,7 @@ subtitle:
         </div>
         <div class="lg:col-start-4 lg:col-end-10">
             {% if subtitle %}
-            <div class="text-lg md:text-xl mb-8">{{ subtitle }}</div>
+            <div class="text-lg md:text-xl mb-8 markdown-field">{{ subtitle | markdown | safe }}</div>
             {% endif %}
             <div class="markdown-field">
                 {{ content | safe }}

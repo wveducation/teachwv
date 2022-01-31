@@ -46,7 +46,7 @@ module.exports = {
         'brand_lightgrey': '#D1D3D4',
         'footer': '#006F9D',
         'text-black': '#101010',
-        'offwhite': '#f7f4e8'
+        'offwhite': '#faf6f0'
       },
       gap: {
         'default': '2rem'

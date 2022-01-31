@@ -1,12 +1,13 @@
 {#
 params:
+    classes
     item:
         title
         body
 #}
 <div>
     {% for item in params.data %}
-    <details class="mb-2 border border-brand_lightgrey rounded-xl">
+    <details class="mb-2 border border-brand_lightgrey rounded-xl {{ params.classes }}">
         <summary class="p-4 text-lg text-brand_lightblue font-bold cursor-pointer">{{ item.title }}</summary>
         <div class="px-4 pb-4">{{ item.body | safe }}</div>
     </details>

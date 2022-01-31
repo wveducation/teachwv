@@ -5,59 +5,21 @@ path: /explore-the-profession
 description: ""
 ---
 {%- from "system/component.html" import component -%}
-<div class="container py-16 text-center">
-    <h1 class="text-5xl text-brand_blue">{{ title }}</h1>
+<div class="py-4 mb-24" style="background-color: #896688;">
+    <div class="px-4 lg:container">
+        <img src="https://via.placeholder.com/1280x480/5e2d5d?text=Graphic" class="block rounded-lg -mb-24">
+    </div>
+</div>
+
+<div class="container pt-8 md:pt-12 text-center mb-12">
+    <h1 class="text-4xl md:text-5xl text-center text-brand_blue">{{ title }}</h1>
     <p class="text-xl max-w-4xl mx-auto">Whether you’re a high school student, a college graduate, a certified teacher from out-of-state, returning to the classroom, or somewhere in between, there is a pathway for you.</p>
 </div>
-{{ component('image-and-card', {
-    title: 'Discover West Virginia',
-    text: 'West Virginia is home to many best kept secrets \– from beautiful landscapes to world-class outdoor adventures, our educators feel like they are working in (almost) heaven.',
-    image: {
-        src: 'https://via.placeholder.com/1600x900'
-    },
-    action: {
-        url: 'https://wvtourism.com',
-        text: 'Explore Tourism'
-    },
-    theme: {
-        image_position: 'left',
-        background: '#576856'
-    }
-}) }}
-<section class="py-16 border-b">
-    <div class="container max-w-4xl">
-        <div class="mb-16">
-            {{ component('titlebar', {
-                title: {
-                    text: "Benefits of Becoming a Teacher"
-                },
-                subtitle: {
-                    text: 'Becoming a teacher in West Virginia gives you an opportunity to change lives in the Mountain State. We know how important it is to support our educators as they work tirelessly to ensure our students’ success. As a West Virginia teacher, you will receive an extensive package that includes both retirement and health insurance benefits. In addition to pay and other perks, the following is a list of benefits you can expect.'
-                }
-            }) }}
-        </div>
 
-        {{ component('accordion', {
-            data: [
-                {
-                    title: 'Insurance Options and Benefits',
-                    body: "<p>Full-time employees of the State of West Virginia are eligible for enrollment in the Public Employees Insurance Agency (PEIA) Benefit Plan. The plan offers hospital, surgical, major medical, prescription drug and other medical care benefit coverage to employees and dependents and retirees.</p>" +
-                    component('button', { url: '/', text: 'Button'})
-                },
-                {
-                    title: 'Teachers Retirement System',
-                    body: "<p>When you become a teacher at a West Virginia public school, you are enrolled in the Teachers' Retirement System (TRS). This system was established to provide educators and school service personnel with a defined retirement plan. The TRS currently served more than 41,000 active members and nearly 37,000 retired members.</p>" +
-                    component('button', { url: '/', text: 'Button'})
-                },
-                {
-                    title: 'WV Retirement Plus',
-                    body: "<p>In addition to the Teachers' Retirement System, employees are offered the voluntary opportunity to participate in the West Virginia Retirement Plus Program, a supplemental retirement plan designed to provide an extra savings alternative for all state, county, city and other political subdivision employees. This retirement program is like a 401(k) plan in structure except that it is designed to supplement a participants primary retirement plan. Employee contributions to the plan are managed via convenient payroll deductions.</p>" +
-                    component('button', { url: '/', text: 'Button'})
-                }
-            ]
-        }) }}
-    </div>
-</section>
-
+{% include 'blocks/why-teach.html' %}
+{% include 'blocks/discover-wv.html' %}
+{% include 'blocks/real-issues.html' %}
+{% include 'blocks/teaching-benefits.html' %}
+{% include 'blocks/celebrating-teacher-success.html' %}
 {% include 'blocks/testimonials.html' %}
 {% include 'blocks/contact-prefooter.html' %}

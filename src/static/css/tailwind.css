@@ -84,19 +84,36 @@ select {
 }
 
 .markdown-field h3 {
-  @apply text-2xl;
+  @apply pl-4 border-l-2 text-2xl text-brand_blue;
 }
 
 .markdown-field h4 {
-  @apply text-xl;
+  @apply text-lg text-black border-b;
 }
 
 .markdown-field a {
-  @apply bg-brand_light-yellow;
+  @apply bg-brand_light-yellow hover:bg-brand_lightblue hover:text-white;
 }
 
 .markdown-field img {
   display: inline-block;
+}
+
+.markdown-field ul,
+.markdown-field ol {
+  @apply ml-6 mb-6;
+}
+
+.markdown-field ul {
+  @apply list-decimal;
+}
+
+.markdown-field ul {
+  @apply list-disc;
+}
+
+.markdown-field li {
+  @apply mb-2;
 }
 
 /* Syntax Highlighting*/

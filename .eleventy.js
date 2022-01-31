@@ -6,6 +6,7 @@ const util = require('util');
 const svgContents = require("eleventy-plugin-svg-contents");
 const Image = require("@11ty/eleventy-img");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const MarkdownIt = require("markdown-it");
 
 function imageShortcode({src, alt, cls, styleName}) {
   if(alt === undefined) {
@@ -55,6 +56,14 @@ module.exports = function(eleventyConfig) {
 
   // Merge data instead of overriding
   eleventyConfig.setDataDeepMerge(true);
+
+  eleventyConfig.addFilter('markdown', (content) => {
+    const md = new MarkdownIt({
+      html: true
+    });
+  
+    return md.render(content);
+  });
 
   eleventyConfig.addFilter('console', function(value) {
     const str = util.inspect(value);

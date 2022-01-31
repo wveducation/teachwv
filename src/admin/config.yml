@@ -29,7 +29,7 @@ collections:
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Subtitle", name: "subtitle", widget: "markdown", required: false, minimal: true, buttons: ['link'] }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list", required: false, hint: "Tag with 'pathways' to use as pathway." }
       - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/

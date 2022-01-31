@@ -1,22 +1,19 @@
 ---
 title: Pathways to Teaching
-subtitle: Curabitur cursus elit eu semper tempor. Quisque ultrices, eros vitae
-  efficitur feugiat, diam neque consectetur nisi, et congue dui lorem sed magna.
+subtitle: There are currently four overarching options for individuals to
+  acquire a Provisional (non-transferable) Professional Teaching Certificate.
 eleventyNavigation:
   order: 0
   title: Pathways to Teaching
   key: pathways-to-teaching
 ---
-Vestibulum eu molestie nisi, sed semper arcu. Ut sollicitudin, ante eget dapibus placerat, nulla ligula tempus massa, ac imperdiet ex justo non augue. Mauris id tortor sit amet turpis ullamcorper accumsan non sit amet magna. Quisque urna quam, iaculis id ante sit amet, eleifend vehicula libero. Pellentesque scelerisque malesuada purus, eu pellentesque ex congue sagittis. Duis sit amet elit vel sem hendrerit fringilla nec eu quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+All licensure pathways require the following: 
 
-## Maecenas facilisis condimentum nibh a tempus.
+* Bachelor’s degree from a regionally accredited institution of higher education (IHE) with the minimum overall cumulative grade point average (GPA) of 2.5 
+* Successful completion of the basic skills, content specialization and professional learning tests as described in the West Virginia Licensure Testing Directory 
+* Successful completion of state-approved program/coursework 
+* Qualifying outcome on criminal history checks as defined in WVBE policy. 
 
-In posuere, orci quis aliquet molestie, justo turpis accumsan lorem, sed ullamcorper nunc ante at lectus. Nunc lacus felis, congue ut purus vitae, semper finibus orci. Proin venenatis, lorem id aliquam auctor, quam metus lacinia ex, ac consequat nunc dolor a nunc. Integer vitae bibendum est, sit amet consectetur lorem. Praesent sit amet massa eget eros semper auctor ac sit amet est. 
+If you’ve been asking, “How do I become a teacher in West Virginia?” check out this helpful resource which explains our four pathways to becoming an educator.
 
-### Maecenas eget dictum
-
-Nam dolor metus, facilisis eu urna ultrices, laoreet cursus justo. Maecenas eget dictum nisl, non aliquet felis. Vestibulum et pellentesque nunc.
-
-## Aenean eu est facilisis
-
-Curabitur sit amet dui et erat tempus mollis ac eu dolor. Aenean eu est facilisis, vehicula est a, mollis erat. In commodo volutpat diam ut convallis. Suspendisse in nisl eget urna ultricies rutrum. Nullam a sem vitae lorem sodales pretium vitae imperdiet dolor. Donec sollicitudin sit amet orci non elementum. Nulla augue erat, dapibus laoreet pulvinar et, finibus vitae massa. Integer iaculis urna sit amet massa sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor erat non purus luctus maximus.
+DOWNLOAD “OUR PATHWAYS EXPLAINED” One-Pager

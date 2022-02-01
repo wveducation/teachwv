@@ -2523,6 +2523,14 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
          column-gap: 2rem;
   }
 
+  .md\:border-b-0 {
+    border-bottom-width: 0px;
+  }
+
+  .md\:bg-transparent {
+    background-color: transparent;
+  }
+
   .md\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -2573,6 +2581,11 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .md\:py-24 {

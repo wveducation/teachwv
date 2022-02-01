@@ -1360,6 +1360,10 @@ select {
   width: 15rem;
 }
 
+.w-\[70vw\] {
+  width: 70vw;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -1372,12 +1376,12 @@ select {
   max-width: 48rem;
 }
 
-.max-w-2xl {
-  max-width: 42rem;
-}
-
 .max-w-6xl {
   max-width: 72rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .max-w-full {
@@ -1390,6 +1394,10 @@ select {
 
 .flex-shrink {
   flex-shrink: 1;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
 }
 
 .flex-grow-0 {
@@ -1418,6 +1426,11 @@ select {
   cursor: pointer;
 }
 
+.snap-x {
+  -ms-scroll-snap-type: x var(--tw-scroll-snap-strictness);
+      scroll-snap-type: x var(--tw-scroll-snap-strictness);
+}
+
 .snap-y {
   -ms-scroll-snap-type: y var(--tw-scroll-snap-strictness);
       scroll-snap-type: y var(--tw-scroll-snap-strictness);
@@ -1429,6 +1442,10 @@ select {
 
 .snap-start {
   scroll-snap-align: start;
+}
+
+.snap-center {
+  scroll-snap-align: center;
 }
 
 .auto-rows-min {
@@ -1558,6 +1575,10 @@ select {
 
 .overflow-x-auto {
   overflow-x: auto;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 .overflow-y-scroll {
@@ -1779,6 +1800,11 @@ select {
   padding-bottom: 6rem;
 }
 
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1812,11 +1838,6 @@ select {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-.px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 .py-0 {
@@ -2471,6 +2492,10 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
     flex-shrink: 0;
   }
 
+  .md\:shrink {
+    flex-shrink: 1;
+  }
+
   .md\:flex-grow {
     flex-grow: 1;
   }
@@ -2563,6 +2588,11 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
     padding-bottom: 3rem;
   }
 
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -2586,11 +2616,6 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
-  }
-
-  .md\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .md\:py-24 {

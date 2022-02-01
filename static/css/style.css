@@ -1276,6 +1276,10 @@ select {
   margin-right: 1rem;
 }
 
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -2160,7 +2164,8 @@ select {
 }
 
 .markdown-field h4 {
-  border-bottom-width: 1px;
+  border-left-width: 2px;
+  padding-left: 1rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
@@ -2205,27 +2210,27 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
 }
 
 .animate-scrolly {
-  -webkit-animation: animate-scrolly 300s linear infinite;
-          animation: animate-scrolly 300s linear infinite;
+  -webkit-animation: animate-scrolly 240s linear infinite alternate;
+          animation: animate-scrolly 240s linear infinite alternate;
 }
 
 @-webkit-keyframes animate-scrolly {
   0% {
-    background-position-y: -1600px;
+    background-position-y: 0;
   }
 
   100% {
-    background-position-y: 1600px;
+    background-position-y: 200%;
   }
 }
 
 @keyframes animate-scrolly {
   0% {
-    background-position-y: -1600px;
+    background-position-y: 0;
   }
 
   100% {
-    background-position-y: 1600px;
+    background-position-y: 200%;
   }
 }
 

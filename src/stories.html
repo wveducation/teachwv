@@ -53,18 +53,22 @@ description: ""
     {% endfor %}
 </div>
 
-<div class="container py-24">
-    <h1 class="text-5xl mb-16 text-center">Testimonials</h1>
-    {% if collections.quotes %}
-        {{ component('quotes_view', {
-            items: collections.quotes,
-            columns: {
-                'md': 2,
-                'lg': 3
-            }
-        }) }}
-    {% else %}
-    <div class="p-6 border-2 text-center rounded">Sorry, testimonials could not be loaded at this time.</div>
-    {% endif %}
+<div class="py-24">
+    <div class="container">
+        <h1 class="text-5xl mb-16 text-center">Testimonials</h1>
+    </div>
+    <div class="max-w-6xl mx-auto px-0 md:px-8">
+        {% if collections.quotes %}
+            {{ component('quotes_view', {
+                items: collections.quotes,
+                columns: {
+                    'md': 2,
+                    'lg': 3
+                }
+            }) }}
+        {% else %}
+        <div class="p-6 border-2 text-center rounded">Sorry, testimonials could not be loaded at this time.</div>
+        {% endif %}
+    </div>
 </div>
 

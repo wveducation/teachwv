@@ -1,4 +1,13 @@
-<figure class="flex flex-col justify-between border bg-offwhite shadow rounded-md overflow-hidden">
+{# 
+params:
+    classes: <string>
+    data:
+        quote: <string>
+        title: <string>
+        portrait: <url>
+        position: <string>
+#}
+<figure class="flex flex-col justify-between border bg-offwhite shadow rounded-md overflow-hidden {{ params.classes }}">
     <blockquote class="p-6 text-lg">&ldquo;{{ params.data.quote }}&rdquo;</blockquote>
     {% if params.data.portrait %}
     <figcaption class="grid grid-cols-4 gap-4 bg-white">

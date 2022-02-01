@@ -5,6 +5,7 @@ params:
     action:
         url <string>
         text <string>
+        external <boolean>
     image:
         src <string>
         alt <string>
@@ -24,12 +25,13 @@ params:
     <div class="block overflow-hidden md:grid lg:grid-rows-1 lg:grid-cols-6">
         <img class="{{ imagePositionClasses }} lg:rounded-xl" src="{{ params.image.src }}" alt="{{ params.image.alt }}" />
         <div class="{{ cardPositionClasses }} md:mx-6 lg:mx-auto md:-mt-8 lg:-mt-0 md:mb-8 lg:mb-auto flex flex-col justify-center">
-            <div class="bg-white p-8">
+            <div class="bg-white p-8 text-center md:text-left">
                 <h1 class="text-4xl">{{ params.title }}</h1>
                 <p class="text-xl">{{ params.text }}</p>
                 {{ component('button', {
                     url: params.action.url,
-                    text: params.action.text
+                    text: params.action.text,
+                    external: params.action.external
                 }) }}
             </div>
         </div>

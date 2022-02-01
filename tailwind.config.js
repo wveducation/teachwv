@@ -48,6 +48,9 @@ module.exports = {
         'text-black': '#101010',
         'offwhite': '#faf6f0'
       },
+      fontSize: {
+        'hero': 'clamp(2.5rem, 3vw, 3rem)'
+      },
       gap: {
         'default': '2rem'
       },

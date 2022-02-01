@@ -1,6 +1,6 @@
 {% set isFront = (params.page.url == '/') %}
-<div class="top-0 w-full z-50 py-4 md:py-4 border-solid border-t-4 border-t-brand_yellow {{ 'md:sticky bg-offwhite border-b border-b-brand_lightgrey' if not isFront else 'lg:absolute' }}">
-    <nav class="block lg:flex px-8 lg:container max-w-4xl relative gap-x-16" x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
+<div class="top-0 w-full z-50 py-4 md:py-4 border-solid border-t-4 border-t-brand_yellow {{ 'md:sticky bg-offwhite border-b border-b-brand_lightgrey' if not isFront else 'lg:absolute bg-white/50' }}">
+    <nav class="block lg:flex px-8 lg:container relative gap-x-16" x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
         <div class="flex justify-between w-full lg:w-auto">
             <!-- Logo -->
             <div class="flex md:justify-center md:items-center">

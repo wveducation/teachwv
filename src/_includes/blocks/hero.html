@@ -1,17 +1,14 @@
 {%- from "system/component.html" import component -%} 
-<section class="relative bg-offwhite text-center md:text-left border-b border-b-brand_lightgrey">
+<section class="relative bg-offwhite border-b border-b-brand_lightgrey">
     <div class="px-8 lg:px-auto lg:container">
-        <div class="relative z-40 grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 auto-rows-min gap-default lg:min-h-[80vh]">
-            <div class="md:flex md:flex-col md:justify-center py-4 md:py-40">
-                <h1 class="text-4xl md:text-5xl text-brand_blue">Discover your Potential</h1>
+        <div class="relative z-40 md:grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 auto-rows-min md:gap-default lg:min-h-[80vh]">
+            <div class="md:flex md:flex-col md:justify-center py-12 md:py-12 lg:py-40">
+                <h1 class="text-4xl lg:text-hero leading-none text-brand_blue">Discover your Potential. <br/>Find your purpose. <br/>Become a teacher.</h1>
                 <p class="mb-6 text-lg md:text-xl text-brand_darkgrey">Whether you're a high school student, a college graduate, a certified teacher from out-of-state, returning to the classroom, or somewhere in-between, there is a pathway for you. Let us help you get there!</p>
                 {% include 'components/form-pathways/form-pathways.html' %}
             </div>
-            <div class="row-start-1 md:col-start-2 flex gap-x-4">
-                <div class="w-1/3 lg:w-1/4 h-full animate-scrolly" style="background-image: url('/static/img/portraits-strip-01.png'); background-size: 100% auto;"></div>
-                <div class="w-1/3 lg:w-1/4 h-full animate-scrolly" style="background-image: url('/static/img/portraits-strip-02.png'); background-size: 100% auto; animation-direction: reverse; animation-delay: 500ms;"></div>
-                <div class="w-1/3 lg:w-1/4 h-full animate-scrolly" style="background-image: url('/static/img/portraits-strip-03.png'); background-size: 100% auto;"></div>
-                <div class="hidden lg:block lg:w-1/4 h-full animate-scrolly" style="background-image: url('/static/img/portraits-strip-01.png'); background-size: 100% auto; animation-direction: reverse;"></div>
+            <div class="row-start-1 md:col-start-2 h-[40vh] md:h-auto">
+                <div class="h-full w-full" style="background-image: url('/static/img/teachwv-hero.png'); background-size: 100% auto;"></div>
             </div>
         </div>
     </div>

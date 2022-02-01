@@ -1,4 +1,4 @@
-<section class="py-16 border-b bg-offwhite">
+<section class="py-16 border-b border-t bg-offwhite">
     <div class="container max-w-4xl">
         <div class="mb-16">
             {{ component('titlebar', {
@@ -17,17 +17,17 @@
                 {
                     title: 'Insurance Options and Benefits',
                     body: "<p>Full-time employees of the State of West Virginia are eligible for enrollment in the Public Employees Insurance Agency (PEIA) Benefit Plan. The plan offers hospital, surgical, major medical, prescription drug and other medical care benefit coverage to employees and dependents and retirees. Detailed information concerning types of coverage plans is provided by the Public Employees Insurance Agency.</p>" +
-                    component('button', { url: 'https://peia.wv.gov', text: 'Public Employees Insurance Agency'})
+                    component('button', { url: 'https://peia.wv.gov', text: 'Public Employees Insurance Agency', external: true })
                 },
                 {
                     title: 'Teachers Retirement System',
                     body: "<p>When you become a teacher at a West Virginia public school, you are enrolled in the Teachers' Retirement System (TRS). This system was established to provide educators and school service personnel with a defined retirement plan. The TRS currently served more than 41,000 active members and nearly 37,000 retired members. Specific information regarding retirement benefits is available on the West Virginia Consolidated Public Retirement Board's site.</p>" +
-                    component('button', { url: 'https://www.wvretirement.com/TRS.html', text: 'West Virginia Consolidated Public Retirement Board'})
+                    component('button', { url: 'https://www.wvretirement.com/TRS.html', text: 'West Virginia Consolidated Public Retirement Board', external: true})
                 },
                 {
                     title: 'WV Retirement Plus',
                     body: "<p>In addition, employees are offered the voluntary opportunity to participate in the West Virginia Retirement Plus Program, a supplemental retirement plan designed to provide an extra savings alternative for all state, county, city and other political subdivision employees. This retirement program is like a 401(k) plan in structure except that it is designed to supplement a participants primary retirement plan. Employee contributions to the plan are managed via convenient payroll deductions.</p>" +
-                    component('button', { url: 'http://www.wv457.com', text: 'West Virginia Retirement Plus Program'})
+                    component('button', { url: 'http://www.wv457.com', text: 'West Virginia Retirement Plus Program', external: true})
                 }
             ]
         }) }}

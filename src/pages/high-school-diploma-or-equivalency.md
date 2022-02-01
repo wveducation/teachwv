@@ -11,7 +11,7 @@ eleventyNavigation:
   key: high-school-diploma-equivalent
   parent: pathways-to-teaching
 ---
-## Traditional programs that lead to licensure
+## Traditional Programs that Lead to Licensure
 
 West Virginia is home to a variety of colleges and universities that offer education preparation programs leading to a bachelor’s degree, master’s degree or providing coursework required for licensure at the graduate level as part of a post-bachelor’s certification program. To get started, view the resources below to help you on your journey to becoming a teacher in West Virginia.
 

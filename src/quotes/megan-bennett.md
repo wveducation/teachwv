@@ -1,6 +1,7 @@
 ---
 title: Megan Bennett
-quote: I want my students to know that someone cares about and believes in them.
-position: Morgan County Science Teacher
-portrait: https://i.pravatar.cc/150?img=28
+position: Science Teacher, Paw Paw High School
+quote: My favorite aspect of my job is being able to build relationships with my
+  students. I want my students to know that someone cares about and believes in
+  them.
 ---

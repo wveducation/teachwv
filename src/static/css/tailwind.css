@@ -88,7 +88,7 @@ select {
 }
 
 .markdown-field h4 {
-  @apply text-lg text-black border-b;
+  @apply pl-4 text-lg text-black border-l-2;
 }
 
 .markdown-field a {
@@ -124,14 +124,14 @@ body pre[class*="language-"] {
 }
 
 .animate-scrolly {
-  animation: animate-scrolly 300s linear infinite;
+  animation: animate-scrolly 240s linear infinite alternate;
 }
 
 @keyframes animate-scrolly {
   0% {
-    background-position-y: -1600px;
+    background-position-y: 0;
   }
   100% {
-    background-position-y: 1600px;
+    background-position-y: 200%;
   }
 }

@@ -7,6 +7,7 @@ eleventyNavigation:
   order: 0
   title: Funding Your Education
   key: funding-your-education
+  parent: make-a-gameplan
 ---
 * [Free Application for Federal Student Aid (FAFSA®)](https://studentaid.ed.gov/sa/fafsa)  
 * [Underwood-Smith Teaching Scholars](http://underwoodsmith.org/) 

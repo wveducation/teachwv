@@ -25,6 +25,11 @@
         <h1 class="text-2xl {{ params.titleClasses }}">
             {% if params.link.url %}<a href="{{ params.link.url }}" target="{{ params.link.target or '_self' }}">{% endif %}
             {{ params.title }}
+            {% if params.link.external == true %}
+            <svg width="12" height="12" class="inline-block ml-1 mb-2" viewBox="0 0 40 40" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40 32.5554L40 2.5808e-06L7.44455 0L7.44455 9.48877L23.838 9.4502L0 33.2882L6.71153 39.9997L30.5495 16.1617L30.5109 32.5552L40 32.5554Z" fill="inherit" />
+            </svg>
+            {% endif %}
             {% if params.link.url %}</a>{% endif %}
         </h1>
         {% endif %}

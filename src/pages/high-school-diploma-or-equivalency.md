@@ -15,8 +15,10 @@ eleventyNavigation:
 
 West Virginia is home to a variety of colleges and universities that offer education preparation programs leading to a bachelor’s degree, master’s degree or providing coursework required for licensure at the graduate level as part of a post-bachelor’s certification program. To get started, view the resources below to help you on your journey to becoming a teacher in West Virginia.
 
-<a href="/" class="btn">Download The Traditional Pathway Checklist</a>
+### What Can I Expect?
 
-### What to Expect
+Download these helpful resources.
 
-<a href="/" class="btn">Link to Branded Flowchart</a>
+<a href="/" class="btn">Traditional Pathway Checklist</a>
+
+<a href="/" class="btn">Traditional Pathway Progress Map</a>

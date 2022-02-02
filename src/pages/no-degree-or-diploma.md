@@ -39,4 +39,4 @@ Students are placed in a yearlong residency as a Clinical Teacher of Record (CTR
 
 At the end of the third year at the Institution, students have earned required credit hours and graduate with a bachelor’s degree in education. Participating school districts agree to give hiring preference for teaching positions, when possible, to partnering IHE graduates of the Grow Your Own (GYO) West Virginia Teaching Pathway program.  
 
-[DOWNLOAD THE GROW YOUR OWN COURSE MENU](/)
+<a href="/" class="btn">Download The Grow Your Own Course Menu</a>

@@ -15,11 +15,13 @@ eleventyNavigation:
 
 West Virginia is home to a variety of colleges and universities that offer education preparation programs leading to a bachelor’s degree, master’s degree or providing coursework required for licensure at the graduate level as part of a post-bachelor’s certification program. To get started, view the resources below to help you on your journey to becoming a teacher in West Virginia.
 
-<a href="/" class="btn">Download The Traditional Pathway Checklist</a>
+### What Can I Expect?
 
-### What to Expect
+Download these helpful resources.
 
-<a href="/" class="btn">Link To Branded Flowchart </a>
+<a href="/" class="btn">Traditional Pathway Checklist</a>
+
+<a href="/" class="btn">Traditional Pathway Progress Map</a>
 
 ---
 
@@ -27,11 +29,13 @@ West Virginia is home to a variety of colleges and universities that offer educa
 
 Many West Virginia school districts provide alternative certification programs which may only be used when an area of critical need and shortage exists and allow individuals to teach while they are completing program requirements. To get started, view the resources below to help you on your journey to becoming a teacher in West Virginia.
 
-<a href="/" class="btn">Download The County-Based Alternative Certification Checklist</a>
+### What Can I Expect?
 
-### What to Expect
+Download these helpful resources.
 
-<a href="/" class="btn">Link To Branded Flowchart</a>
+<a href="/" class="btn">County-Based Alternative Certification Checklist</a>
+
+<a href="/" class="btn">County-Based Alternative Certification Progress Map</a>
 
 ---
 
@@ -39,11 +43,13 @@ Many West Virginia school districts provide alternative certification programs w
 
 In response to the passage of Senate Bill 14, this new pathway has been created to allow individuals who possess a bachelor’s degree from a regionally accredited institution of higher education and an overall 2.5 GPA to complete coursework pursuant to §§18A-3-2a(a)(1)(C) for receiving a Professional Teaching Certificate. To get started, view the resources below to help you on your journey to becoming a teacher in West Virginia.
 
-<a href="/" class="btn">Download The State-Approved Teacher Prep Checklist</a>
+### What Can I Expect?
 
-### What to Expect
+Download these helpful resources.
 
-<a href="/" class="btn">Link To Branded Flowchart</a>
+<a href="/" class="btn">State-Approved Teacher Prep Checklist</a>
+
+<a href="/" class="btn">State-Approved Teacher Prep Progress Map</a>
 
 ---
 
@@ -51,8 +57,10 @@ In response to the passage of Senate Bill 14, this new pathway has been created 
 
 This option was designed to provide an accelerated pathway for individuals who possess a bachelor’s degree and meet minimal qualifications to complete WVDE-approved training and coursework options which are substantially aligned to the West Virginia Professional Teaching Standards to acquire a Provisional Professional Teaching Certificate. To get started, view the resources below to help you on your journey to becoming a teacher in West Virginia.
 
-<a href="/" class="btn">Download The Wvde Alternative Certification Checklist</a>
+### What Can I Expect?
 
-### What to Expect
+Download these helpful resources.
 
-<a href="/" class="btn">Link To Branded Flowchart</a>
+<a href="/" class="btn">WVDE Alternative Certification Checklist</a>
+
+<a href="/" class="btn">WVDE Alternative Certification Checklist Progress Map</a>

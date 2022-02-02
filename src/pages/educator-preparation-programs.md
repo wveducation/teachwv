@@ -32,3 +32,7 @@ Programs can offer students specialized coursework in the grade level and subjec
 * [West Virginia University](https://cehs.wvu.edu)
 * [West Virginia Wesleyan College](https://www.wvwc.edu/programs/education/)
 * [Wheeling University](https://wheeling.edu/areas-of-study/education/)
+
+## Looking for a Program? 
+
+<a href="https://wvde.state.wv.us/certification/approved-programs/?byschool">Explore the areas of certification</a> that each college/university offers.

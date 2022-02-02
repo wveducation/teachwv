@@ -9,6 +9,42 @@
         <!-- Include the script that builds the page and powers Netlify CMS -->
         <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 
+        <script>
+        CMS.registerEditorComponent({
+            id: 'link_button',
+            label: 'Button Link',
+            // A bogus field so that the component doesn't look weird when rendered:
+            fields: [
+                { 
+                    name: 'url',
+                    label: 'URL', 
+                    widget: 'string',
+                    default: '/'
+                },
+                { 
+                    name: 'text',
+                    label: 'Text', 
+                    widget: 'string',
+                    default: 'View More'
+                }
+            ],
+            // Never match anything so that the separator will be recognized as a horizontal rule when the document is reloaded:
+            pattern: /<a href="(.*?)" class=".*\s*btn\s*.*">(.*?)<\/a>/ms,
+            fromBlock(match) {
+                return {
+                    url: match[1],
+                    text: match[2]
+                };
+            },
+            toBlock(data) {
+                return `<a href="${data.url}" class="btn">${data.text}</a>`;
+            },
+            toPreview(data) {
+                return `<a href="${data.url}" class="btn">${data.text}</a>`;
+            }
+        });
+        </script>
+
         <!-- Netlify Identity Widget -->
         <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </body>

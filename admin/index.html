@@ -1,1 +1,46 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Content Manager</title></head><body><script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script><script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script></body></html>
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Content Manager</title></head><body><script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script><script>CMS.registerEditorComponent({
+            id: 'link_button',
+            label: 'Button Link',
+            // A bogus field so that the component doesn't look weird when rendered:
+            fields: [
+                { 
+                    name: 'url',
+                    label: 'URL', 
+                    widget: 'string',
+                    default: '/'
+                },
+                { 
+                    name: 'text',
+                    label: 'Text', 
+                    widget: 'string',
+                    default: 'View More'
+                }
+            ],
+            // Never match anything so that the separator will be recognized as a horizontal rule when the document is reloaded:
+            pattern: /<a href="(.*?)" class=".*\s*btn\s*.*">(.*?)<\/a>/ms,
+            fromBlock(match) {
+                return {
+                    url: match[1],
+                    text: match[2]
+                };
+            },
+            toBlock(data) {
+                return `<a href="${data.url}" class="btn">${data.text}</a>`;
+            },
+            toPreview(data) {
+                return `<a href="${data.url}" class="btn">${data.text}</a>`;
+            }
+        });
+
+        CMS.registerEditorComponent({
+            id: 'separator',
+            label: 'Horizontal Rule',
+            // Never match anything so that the separator will be recognized as a horizontal rule when the document is reloaded:
+            pattern: /.^/,
+            toBlock(obj) {
+                return '---';
+            },
+            toPreview(obj) {
+                return '<hr>';
+            }
+        });</script><script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script></body></html>

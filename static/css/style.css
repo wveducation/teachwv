@@ -2198,8 +2198,9 @@ select {
 }
 
 .markdown-field a {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 238 191 / var(--tw-bg-opacity));
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 123 175 / var(--tw-border-opacity));
 }
 
 .markdown-field a:hover {
@@ -2207,6 +2208,37 @@ select {
   background-color: rgb(0 123 175 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.markdown-field a.btn {
+  display: inline-block;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 123 175 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.markdown-field a.btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 107 153 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .markdown-field a.btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .markdown-field a.btn {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 .markdown-field img {
@@ -2225,6 +2257,12 @@ select {
 
 .markdown-field li {
   margin-bottom: 0.5rem;
+}
+
+.markdown-field hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-top-width: 2px;
 }
 
 /* Syntax Highlighting*/

@@ -19,9 +19,9 @@ West Virginia is home to a variety of colleges and universities that offer educa
 
 Download these helpful resources.
 
-<a href="/" class="btn">Traditional Pathway Checklist</a>
+<a href="/static/files/TeachWV Checklist-Traditional-FINAL.pdf" class="btn">Traditional Pathway Checklist</a>
 
-<a href="/" class="btn">Traditional Pathway Progress Map</a>
+<a href="/static/files/TeachWV Flow Chart-OPTION 1-FINAL.pdf" class="btn">Traditional Pathway Progress Map</a>
 
 ---
 

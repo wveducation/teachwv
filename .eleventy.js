@@ -9,6 +9,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const MarkdownIt = require("markdown-it");
 
 function imageShortcode({src, alt, cls, styleName}) {
+
   if(alt === undefined) {
     // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on myImage from: ${src}`);
@@ -21,11 +22,14 @@ function imageShortcode({src, alt, cls, styleName}) {
   let styles = {
     medium_half: {
       sizes: "(max-width: 767px) 100vw, 600px"
+    },
+    large: {
+      sizes: "(max-width: 1280px) 100vw, 1280px"
     }
   }
 
   let options = {
-    widths: [640, 768, 1024],
+    widths: [640, 768, 1024, 1280],
     formats: ['webp', 'jpeg'],
     urlPath: "/static/img/",
     outputDir: "./_site/static/img/"

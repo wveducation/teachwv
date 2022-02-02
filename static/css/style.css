@@ -1308,6 +1308,10 @@ select {
   aspect-ratio: 16 / 9;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -1730,8 +1734,8 @@ select {
   background-color: rgb(255 255 255 / 0.5);
 }
 
-.bg-50\% {
-  background-size: 50%;
+.bg-abstract-beams {
+  background-image: linear-gradient(to right,           #518CB2,           #518CB2 10%,           #365F8A 10%,           #365F8A 18%,           #518CB2 18%,           #518CB2 19%,           #365F8A 19%,           #365F8A 21%,           #8B8E94 21%,           #8B8E94 35%,           #D8AB44 35%,           #D8AB44 48%,           #CC6918 48%,           #CC6918 70%,           #518CB2 70%,           #518CB2 72%,           #CFB465 72%         );
 }
 
 .bg-right-bottom-over {
@@ -2569,6 +2573,10 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
   .md\:bg-brand_lightblue {
     --tw-bg-opacity: 1;
     background-color: rgb(0 123 175 / var(--tw-bg-opacity));
+  }
+
+  .md\:bg-hero-grid {
+    background-image: url('/static/img/teachwv-hero.png');
   }
 
   .md\:bg-cover {

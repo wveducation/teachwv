@@ -1,6 +1,6 @@
 {%- from "system/component.html" import component -%} 
 {% set gridClasses = '' %}
-{% set quoteClasses = 'w-[70vw] md:w-auto shrink-0 md:shrink snap-center' %}
+{% set quoteClasses = 'w-[80vw] md:w-auto shrink-0 md:shrink snap-center' %}
 {% for breakpoint, value in params.columns -%}
   {% set gridClasses  = [gridClasses, breakpoint + ':grid-cols-' + value + ' '] | join %}
 {%- endfor -%}

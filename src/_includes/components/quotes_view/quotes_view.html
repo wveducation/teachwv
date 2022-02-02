@@ -6,7 +6,7 @@
 {%- endfor -%}
 
 <div class="overflow-x-scroll flex snap-x snap-mandatory md:grid px-8 md:px-0 {{ gridClasses }} gap-default">
-{% for quote in params.items | reverse %}
+{% for quote in params.items %}
     {% if params.quantity %}
         {% if loop.index0 < params.quantity %}
         {{ component('quote_teaser', {

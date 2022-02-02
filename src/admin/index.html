@@ -43,6 +43,20 @@
                 return `<a href="${data.url}" class="btn">${data.text}</a>`;
             }
         });
+
+        CMS.registerEditorComponent({
+            id: 'separator',
+            label: 'Horizontal Rule',
+            // Never match anything so that the separator will be recognized as a horizontal rule when the document is reloaded:
+            pattern: /.^/,
+            toBlock(obj) {
+                return '---';
+            },
+            toPreview(obj) {
+                return '<hr>';
+            }
+        });
+
         </script>
 
         <!-- Netlify Identity Widget -->

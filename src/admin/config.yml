@@ -60,7 +60,7 @@ collections:
       - { label: "Name", name: "title", widget: "string" }
       - { label: "Position", name: "position", widget: "string" }
       - { label: "Quote", name: "quote", widget: "text", hint: "Please do not wrap this field in quotation marks. This is added automatically." }
-      - { label: "Portrait", name: "portrait", widget: "image", required: false, media_folder: "../static/portraits" }
+      - { label: "Portrait", name: "portrait", widget: "image", required: false }
 
   - label: "Settings"
     name: "settings"

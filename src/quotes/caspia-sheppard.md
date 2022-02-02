@@ -5,4 +5,5 @@ position: 2021 National Board Certified Teacher & CTE Instructor, Boone County
 quote: The West Virginia educational system is unique in the ‘small town’
   atmosphere of learning. Instructors provide more one-on-one instruction,
   emotional and social support, and an individualized learning path.
+portrait: /static/img/Caspia-Sheppard-160x160.jpg
 ---

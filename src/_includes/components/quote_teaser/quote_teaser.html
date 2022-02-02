@@ -7,15 +7,16 @@ params:
         portrait: <url>
         position: <string>
 #}
+{% set overflowClasses = "before:content-[''] before:absolute before:bottom-full before:left-0 before:w-full before:h-12 before:bg-gradient-to-b before:from-transparent before:to-offwhite" %}
 <figure class="flex flex-col justify-between border bg-offwhite shadow rounded-md overflow-hidden {{ params.classes }}">
-    <blockquote class="p-6 text-lg">&ldquo;{{ params.data.quote }}&rdquo;</blockquote>
+    <blockquote class="relative p-6 text-lg h-48 overflow-y-scroll">&ldquo;{{ params.data.quote }}&rdquo;</blockquote>
     {% if params.data.portrait %}
-    <figcaption class="grid grid-cols-4 gap-4 bg-white">
+    <figcaption class="relative bg-white pl-[80px] {{ overflowClasses }}">
     {% else %}
-    <figcaption class="pl-4 bg-white">
+    <figcaption class="relative pl-4 bg-white overflow-x-hidden {{ overflowClasses }}">
     {% endif %}
-        <div class="block col-start-1 col-end-2 clip-rounded-right" style="background-image: url({{ params.data.portrait }}); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
-        <div class="col-start-2 col-end-5 flex flex-col justify-center p-2">
+        <img src="{{ params.data.portrait }}" class="absolute block rounded-full -left-4 -top-4 w-[90px] h-[90px]" alt="">
+        <div class="col-start-2 col-end-5 flex flex-col justify-center px-2 pt-2 pb-6">
             <cite class="text-xl font-bold not-italic">{{ params.data.title }}</cite>
             <div class="">{{ params.data.position }}</div>
         </div>

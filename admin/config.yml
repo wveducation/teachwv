@@ -12,15 +12,6 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  - label: "Post"
-    label_plural: "Posts"
-    name: "post"
-    folder: "src/posts"
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Subtitle", name: "subtitle", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
 
   - label: "Page"
     label_plural: "Pages"

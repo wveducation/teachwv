@@ -10,6 +10,10 @@ eleventyNavigation:
 ---
 ## Plan your Next Steps
 
-* [Educator Preparation Programs](/make-a-gameplan/educator-preparation-programs/)
-* [Funding your Education](/make-a-gameplan/funding-your-education/)
-* [Pathways to Teaching](/make-a-gameplan/pathways-to-teaching/)
+---
+
+### Educator Preparation Programs
+
+Teacher preparation programs are designed to prepare both undergraduate and graduate students to become licensed teachers.
+
+<a href="/make-a-gameplan/educator-preparation-programs/" class="btn">Learn More</a>

@@ -25,6 +25,28 @@ module.exports = {
       backgroundSize: {
         '50%': "50%"
       },
+      backgroundImage: {
+        'hero-grid': "url('/static/img/teachwv-hero.png')",
+        'abstract-beams': "linear-gradient(to right, \
+          #518CB2, \
+          #518CB2 10%, \
+          #365F8A 10%, \
+          #365F8A 18%, \
+          #518CB2 18%, \
+          #518CB2 19%, \
+          #365F8A 19%, \
+          #365F8A 21%, \
+          #8B8E94 21%, \
+          #8B8E94 35%, \
+          #D8AB44 35%, \
+          #D8AB44 48%, \
+          #CC6918 48%, \
+          #CC6918 70%, \
+          #518CB2 70%, \
+          #518CB2 72%, \
+          #CFB465 72% \
+        )"
+      },
       backgroundPosition: {
         'right-bottom-over': 'right -5vw bottom -5vh'
       },

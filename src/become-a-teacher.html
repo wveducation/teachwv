@@ -7,7 +7,12 @@ description: "There are many ways to become a teacher in West Virginia, and the 
 {%- from "system/component.html" import component -%}
 <div class="py-4 mb-24" style="background-color: #668589;">
     <div class="px-4 lg:container">
-        <img src="/static/img/Become-a-Teacher_1280x480.jpg" class="block rounded-lg -mb-24">
+        {% image { 
+            src: "./src/static/img/Become-a-Teacher_1280x480.jpg", 
+            alt: "",
+            cls: "block rounded-lg -mb-24",
+            styleName: "large"
+        } %}
     </div>
 </div>
 

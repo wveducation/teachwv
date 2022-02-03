@@ -7,7 +7,12 @@ description: "Why Teach in West Virginia? There are many reasons to explore the 
 {%- from "system/component.html" import component -%}
 <div class="py-4 mb-24" style="background-color: #85617a;">
     <div class="px-4 lg:container">
-        <img src="/static/img/Explore-the-Profession_1280x480.jpg" class="block rounded-lg -mb-24">
+        {% image { 
+            src: "./src/static/img/Explore-the-Profession_1280x480.jpg", 
+            alt: "",
+            cls: "block rounded-lg -mb-24",
+            styleName: "large"
+        } %}
     </div>
 </div>
 

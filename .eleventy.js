@@ -24,7 +24,10 @@ function imageShortcode({src, alt, cls, styleName}) {
       sizes: "(max-width: 767px) 100vw, 600px"
     },
     large: {
-      sizes: "(max-width: 1280px) 100vw, 1280px"
+      sizes: [
+        "(min-width: 768px) 1024px",
+        "(min-width: 1024px) 1280px"
+      ]
     }
   }
 

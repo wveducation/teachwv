@@ -29,7 +29,7 @@
                 }
             ],
             // Never match anything so that the separator will be recognized as a horizontal rule when the document is reloaded:
-            pattern: /<a href="(.*?)" class=".*\s*btn\s*.*">(.*?)<\/a>/ms,
+            pattern: /<a href="(.*?)" class="btn">(.*?)<\/a>/ms,
             fromBlock(match) {
                 return {
                     url: match[1],

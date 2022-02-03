@@ -1123,8 +1123,12 @@ select {
   top: 50%;
 }
 
-.-left-4 {
-  left: -1rem;
+.-left-2 {
+  left: -0.5rem;
+}
+
+.top-2 {
+  top: 0.5rem;
 }
 
 .z-20 {
@@ -1336,8 +1340,8 @@ select {
   height: 12rem;
 }
 
-.h-\[90px\] {
-  height: 90px;
+.h-\[80px\] {
+  height: 80px;
 }
 
 .min-h-question {
@@ -1372,8 +1376,8 @@ select {
   width: 15rem;
 }
 
-.w-\[90px\] {
-  width: 90px;
+.w-\[80px\] {
+  width: 80px;
 }
 
 .w-\[80vw\] {
@@ -2347,20 +2351,9 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
   width: 100%;
 }
 
-.before\:bg-gradient-to-b::before {
+.before\:bg-quote-gradient::before {
   content: var(--tw-content);
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
-.before\:from-transparent::before {
-  content: var(--tw-content);
-  --tw-gradient-from: transparent;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(0 0 0 / 0));
-}
-
-.before\:to-offwhite::before {
-  content: var(--tw-content);
-  --tw-gradient-to: #faf6f0;
+  background-image: linear-gradient(to top, rgba(250, 246, 240, 1), rgba(250, 246, 240, 0));
 }
 
 .before\:content-\[\'\'\]::before {
@@ -2829,6 +2822,10 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
     --tw-bg-opacity: 1;
     background-color: rgb(0 107 153 / var(--tw-bg-opacity));
   }
+
+  .md\:n\+5\:hidden:nth-child(n+5) {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -3296,5 +3293,9 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
   .lg\:hover\:bg-white:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .lg\:n\+5\:flex:nth-child(n+5) {
+    display: flex;
   }
 }

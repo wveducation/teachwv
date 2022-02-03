@@ -28,7 +28,10 @@ module.exports = {
         '50%': "50%"
       },
       backgroundImage: {
-        'hero-grid': "url('/static/img/teachwv-hero.png')",
+        'hero-grid': "url('/static/img/teachwv-grid-titlebar.jpg')",
+        'hero-grid-titlebar': "url('/static/img/teachwv-grid-titlebar.jpg')",
+        'hero-small-white': "url('/static/img/teachwv-hero_small_white.jpg')",
+        'hero-large-offwhite': "url('/static/img/teachwv-hero_large_offwhite.jpg')",
         'abstract-beams': "linear-gradient(to right, \
           #518CB2, \
           #518CB2 10%, \

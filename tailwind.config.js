@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
@@ -45,7 +47,8 @@ module.exports = {
           #518CB2 70%, \
           #518CB2 72%, \
           #CFB465 72% \
-        )"
+        )",
+        'quote-gradient': "linear-gradient(to top, rgba(250, 246, 240, 1), rgba(250, 246, 240, 0))"
       },
       backgroundPosition: {
         'right-bottom-over': 'right -5vw bottom -5vh'
@@ -94,6 +97,10 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/typography"),
-    require("@tailwindcss/forms")
+    require("@tailwindcss/forms"),
+    plugin(function ({ addVariant }) {
+      // Add a `third` variant, ie. `third:pb-0`
+      addVariant('n+5', '&:nth-child(n+5)')
+    })
   ],
 };

@@ -1,0 +1,43 @@
+{%- from "system/component.html" import component -%}
+{% set destinations = [
+    {
+        title: "Become a Teacher",
+        imageSrc: "./src/static/img/Become-a-Teacher_1280x480.jpg",
+        url: "/become-a-teacher/"
+    },
+    {
+        title: "Explore the Profession",
+        imageSrc: "./src/static/img/Explore-the-Profession_1280x480.jpg",
+        url: "/explore-the-profession/"
+    },
+    {
+        title: "Become a Substitute",
+        imageSrc: "./src/static/img/Become-a-Substitute_1280x480.jpg",
+        url: "/pathways-to-teaching/become-a-substitute/"
+    }
+] %}
+<section class="bg-white py-20 border-b text-center">
+    <div class="container mb-8">
+        <h1 class="text-4xl text-brand_lightblue">Top Destinations</h1>
+    </div>
+    <div class="max-w-6xl md:px-8 mx-auto">
+        <div class="overflow-x-scroll flex snap-x snap-mandatory md:grid grid-cols-3 gap-4 px-8 md:px-0">
+        {% for item in destinations %}
+            <article class="relative border-2 rounded-lg hover:border-brand_lightblue w-[80vw] md:w-auto shrink-0 md:shrink snap-center">
+                {% if item.imageSrc %}
+                {% image { 
+                    src: item.imageSrc, 
+                    alt: "",
+                    cls: "block",
+                    styleName: "medium_half"
+                } %}
+                {% endif %}
+                <div class="p-4">
+                    <h2 class="text-xl mb-0">{{ item.title }}</h2>
+                    <a class="absolute top-0 left-0 w-full h-full" href="{{ item.url }}" aria-label="Visit {{ item.title }}"></a>
+                </div>
+            </article>
+        {% endfor %}
+        </div>
+    </div>
+</section>

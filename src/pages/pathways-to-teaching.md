@@ -17,7 +17,7 @@ All licensure pathways require the following: 
 
 If you’ve been asking, “How do I become a teacher in West Virginia?” check out this helpful resource which explains our four pathways to becoming an educator.
 
-[DOWNLOAD “OUR PATHWAYS EXPLAINED” One-Pager](/)
+<a href="/static/files/Our Pathways Explained.pdf" class="btn">Download “Our Pathways Explained” one-pager</a>
 
 ## Pathways by Education Level
 
@@ -25,6 +25,6 @@ Whether you’re a high school student, a college graduate, a certified teacher 
 
 Choose the pathway for your education level:
 
-* [Bachelor's Degree](http://localhost:8080/pathways-to-teaching/bachelors-degree/)
-* [High School Diploma or Equivalency](http://localhost:8080/pathways-to-teaching/high-school-diploma-or-equivalency/)
-* [No Degree or Diploma](http://localhost:8080/pathways-to-teaching/no-degree-or-diploma/)
+* [Bachelor's Degree](/pathways-to-teaching/bachelors-degree/)
+* [High School Diploma or Equivalency](/pathways-to-teaching/high-school-diploma-or-equivalency/)
+* [No Degree or Diploma](/pathways-to-teaching/no-degree-or-diploma/)

@@ -1,7 +1,7 @@
 {%- from "system/component.html" import component -%}
 <article class="{{ params.wrapperClasses }}">
     <div class="mb-4 {{ params.imageWrapperClasses }}">
-        {% if params.link.url %}<a href="{{ params.link.url }}" aria-label="{{ params.link.text }}" class="block transform hover:scale-1025" target="{{ params.link.target or '_self' }}">{% endif %}
+        {% if params.link.url %}<a href="{{ params.link.url }}" {{ 'rel=noopener' if params.link.external }} aria-label="{{ params.link.text }}" class="block transform hover:scale-1025" target="{{ params.link.target or '_self' }}">{% endif %}
         {% if params.image.src %}
             {% image { 
                 src: params.image.src, 
@@ -23,7 +23,7 @@
     <div class="{{ params.contentWrapperClasses }}">
         {% if params.title %}
         <h1 class="text-2xl {{ params.titleClasses }}">
-            {% if params.link.url %}<a href="{{ params.link.url }}" target="{{ params.link.target or '_self' }}">{% endif %}
+            {% if params.link.url %}<a href="{{ params.link.url }}" {{ 'rel=noopener' if params.link.external }} target="{{ params.link.target or '_self' }}">{% endif %}
             {{ params.title }}
             {% if params.link.external == true %}
             <svg width="12" height="12" class="inline-block ml-1 mb-2" viewBox="0 0 40 40" fill="inherit" xmlns="http://www.w3.org/2000/svg">

@@ -1360,6 +1360,10 @@ select {
   width: 1.5rem;
 }
 
+.w-\[80vw\] {
+  width: 80vw;
+}
+
 .w-8 {
   width: 2rem;
 }
@@ -1378,10 +1382,6 @@ select {
 
 .w-\[80px\] {
   width: 80px;
-}
-
-.w-\[80vw\] {
-  width: 80vw;
 }
 
 .max-w-4xl {
@@ -1475,6 +1475,10 @@ select {
 
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-1 {
@@ -1858,6 +1862,11 @@ select {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-0 {
@@ -2381,14 +2390,14 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
   border-color: rgb(52 87 92 / var(--tw-border-opacity));
 }
 
-.hover\:border-purple-400:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(192 132 252 / var(--tw-border-opacity));
-}
-
 .hover\:border-brand_lightblue:hover {
   --tw-border-opacity: 1;
   border-color: rgb(0 123 175 / var(--tw-border-opacity));
+}
+
+.hover\:border-purple-400:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(192 132 252 / var(--tw-border-opacity));
 }
 
 .hover\:bg-brand_lightblue-hover:hover {

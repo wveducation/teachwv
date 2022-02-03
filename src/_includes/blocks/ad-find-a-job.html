@@ -1,5 +1,10 @@
+{%- from "system/component.html" import component -%}
 <section class="relative mb-4 border rounded-lg text-center hover:border-brand_blue overflow-hidden">
-    <img src="/static/img/TeachWV-Career.jpg" alt="">
+    {% image { 
+        src: "./static/img/TeachWV-Career.jpg", 
+        alt: "",
+        styleName: "medium_half"
+    } %}
     <div class="p-4">
         <h1 class="text-xl">Find a Teaching Job <br/>in West Virginia.</h1>
 

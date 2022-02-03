@@ -17,3 +17,9 @@ eleventyNavigation:
 Teacher preparation programs are designed to prepare both undergraduate and graduate students to become licensed teachers.
 
 <a href="/make-a-gameplan/educator-preparation-programs/" class="btn">Learn More</a>
+
+### Classroom 2 Career Navigator
+
+Navigate your future to find information on careers, colleges, military service, entrepreneurship, and on-the-job training.
+
+<a href="http://wvclassroom2career.com" class="btn">Classroom 2 Career</a>

@@ -18,17 +18,21 @@ collections:
     name: "pages"
     folder: "src/pages"
     create: true
+    editor:
+      preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "markdown", required: false, minimal: true, buttons: ['link'] }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list", required: false, hint: "Tag with 'pathways' to use as pathway." }
+      - { label: "Tags", name: "tags", widget: "list", required: false, hint: "Tag with 'pathways' to use as pathway. Pathways automatically show up anywhere pathways are mentioned (hero form, the [Become a Teacher](/become-a-teacher/) page, etc." }
       - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
         name: "eleventyNavigation"
         widget: "object"
+        collapsed: true
+        hint: "Influences sidebar navigation. Uses the [eleventy-navigation](https://www.11ty.dev/docs/plugins/navigation/) plugin."
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Key", name: "key", widget: "string", hint: "This is a machine-name for this page. This should be unique, lowercase, no-spaces (use - or _ ), and never change (do not edit once set)." }
           - { 
             label: "Parent", 
             name: "parent", 
@@ -54,6 +58,7 @@ collections:
     create: true
     choose_url: false
     sortable_fields: ['title', 'cardinality']
+    summary: "{{title}} (Cardinality: {{fields.cardinality | default('0')}})"
     fields:
       - { label: "Name", name: "title", widget: "string" }
       - { label: "Position", name: "position", widget: "string" }

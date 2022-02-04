@@ -1764,7 +1764,7 @@ select {
 }
 
 .bg-hero-small-white {
-  background-image: url('/static/img/teachwv-hero_small_white.jpg');
+  background-image: url('/static/img/teachwv-hero_small_white.webp');
 }
 
 .bg-right-bottom-over {
@@ -2701,11 +2701,11 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
   }
 
   .md\:bg-hero-grid-titlebar {
-    background-image: url('/static/img/teachwv-grid-titlebar.jpg');
+    background-image: url('/static/img/teachwv-grid-titlebar.webp');
   }
 
   .md\:bg-hero-large-offwhite {
-    background-image: url('/static/img/teachwv-hero_large_offwhite.jpg');
+    background-image: url('/static/img/teachwv-hero_large_offwhite.webp');
   }
 
   .md\:bg-cover {

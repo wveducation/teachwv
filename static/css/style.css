@@ -2013,6 +2013,10 @@ select {
   line-height: 1.5rem;
 }
 
+.leading-\[1\.2em\] {
+  line-height: 1.2em;
+}
+
 .tracking-widest {
   letter-spacing: 0.1em;
 }

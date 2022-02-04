@@ -50,6 +50,18 @@ npm run build
 npm run start
 ```
 
+## Local Netlify CMS
+
+If you'd like to log into the Netlify CMS locally (/admin), you'll need to run this proxy server. You'll be able to bypass the "Login with Netlify Identity" screen this way.
+
+```
+npx netlify-cms-proxy-server
+```
+
+You may find that if your site isn't running on the default port (8081), you'll need to make a configuration change. 
+
+- [Netlify: Configure the Netlify CMS proxy server port number](https://www.netlifycms.org/docs/beta-features/#configure-the-netlify-cms-proxy-server-port-number)
+
 ------
 
 ## Authors

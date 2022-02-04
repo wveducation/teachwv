@@ -23,6 +23,14 @@ function imageShortcode({src, alt, cls, styleName, lazy = true}) {
     avatar: {
       sizes: ""
     },
+    ad_small: {
+      sizes: [
+        "(max-width: 639px) 590px",
+        "(max-width: 1023px) 350px",
+        "(max-width: 1400px) 290px",
+        "350px"
+      ]
+    },
     teasers_3: {
       sizes: [
         "(max-width: 640px) 510px",
@@ -52,11 +60,14 @@ function imageShortcode({src, alt, cls, styleName, lazy = true}) {
   let sizes = styles[styleName].sizes;
 
   let imageAttributes = {
-    class: cls,
     alt,
     sizes,
     decoding: "async",
   };
+
+  if (cls) {
+    imageAttributes.class = cls;
+  }
 
   // sometimes hero images should not lazy load if they impact LCP metrics. (top of page)
   if (lazy == true) {

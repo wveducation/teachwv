@@ -2,7 +2,8 @@
 layout: default
 title: Explore the Profession
 path: /explore-the-profession
-description: "Why Teach in West Virginia? There are many reasons to explore the education profession."
+meta:
+    description: "Why Teach in West Virginia? There are many reasons to explore the education profession."
 ---
 {%- from "system/component.html" import component -%}
 <div class="py-4 mb-24" style="background-color: #85617a;">
@@ -11,7 +12,8 @@ description: "Why Teach in West Virginia? There are many reasons to explore the 
             src: "./src/static/img/Explore-the-Profession_1280x480.jpg", 
             alt: "",
             cls: "block rounded-lg -mb-24",
-            styleName: "large"
+            styleName: "large",
+            lazy: false
         } %}
     </div>
 </div>

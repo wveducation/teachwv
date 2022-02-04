@@ -64,6 +64,7 @@ module.exports = {
         'brand_lightblue': '#007baf',
         'brand_lightblue-hover': '#006b99',
         'brand_lightblue-11ty': '#006f9e',
+        'brand_lightblue-a11y': '#0077aa',
         'brand_darkblue': '#00133F',
         'brand_maroon': '#A7253F',
         'brand_gold': '#D3B257',

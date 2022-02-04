@@ -2,7 +2,8 @@
 layout: default
 title: Become a Teacher in WV
 path: /become-a-teacher
-description: "There are many ways to become a teacher in West Virginia, and the pathway you choose will depend on your educational background and professional experiences."
+meta:
+    description: "There are many ways to become a teacher in West Virginia, and the pathway you choose will depend on your educational background and professional experiences."
 ---
 {%- from "system/component.html" import component -%}
 <div class="py-4 mb-24" style="background-color: #668589;">
@@ -11,7 +12,8 @@ description: "There are many ways to become a teacher in West Virginia, and the 
             src: "./src/static/img/Become-a-Teacher_1280x480.jpg", 
             alt: "",
             cls: "block rounded-lg -mb-24",
-            styleName: "large"
+            styleName: "large",
+            lazy: false
         } %}
     </div>
 </div>

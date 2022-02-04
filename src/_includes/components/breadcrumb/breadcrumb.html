@@ -8,8 +8,8 @@ params
     <h2 id="system-breadcrumb" class="sr-only">Breadcrumb</h2>
     <ol class="flex gap-3">
     {%- for entry in params.items %}
-        <li class="flex gap-x-3">
-            <a href="{{ entry.url | url }}" class="hover:underline text-brand_lightblue">{{ entry.title }}</a>
+        <li class="flex gap-x-3 lg:text-lg">
+            <a href="{{ entry.url | url }}" class="hover:underline text-brand_lightblue-a11y">{{ entry.title }}</a>
             {% if not loop.last %}
             <span class="text-brand_lightgrey">/</span>
             {% endif %}

@@ -1,7 +1,7 @@
 {%- from "system/component.html" import component -%}
 <article class="{{ params.wrapperClasses }}">
     <div class="mb-4 {{ params.imageWrapperClasses }}">
-        {% if params.link.url %}<a href="{{ params.link.url }}" {{ 'rel=noopener' if params.link.external }} aria-label="{{ params.link.text }}" class="block transform hover:scale-1025" target="{{ params.link.target or '_self' }}">{% endif %}
+        {% if params.link.url %}<a href="{{ params.link.url }}" {{ 'rel=noopener' if params.link.external }} aria-label="{{ params.title }}" class="block transform hover:scale-1025" target="{{ params.link.target or '_self' }}">{% endif %}
         {% if params.image.src %}
             {% image { 
                 src: params.image.src, 

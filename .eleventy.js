@@ -8,7 +8,7 @@ const Image = require("@11ty/eleventy-img");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const MarkdownIt = require("markdown-it");
 
-function imageShortcode({src, alt, cls, styleName}) {
+function imageShortcode({src, alt, cls, styleName, lazy = true}) {
 
   if(alt === undefined) {
     // You bet we throw an error on missing alt (alt="" works okay)
@@ -20,6 +20,15 @@ function imageShortcode({src, alt, cls, styleName}) {
   }
 
   let styles = {
+    avatar: {
+      sizes: ""
+    },
+    teasers_3: {
+      sizes: [
+        "(max-width: 640px) 510px",
+        "350px"
+      ]
+    },
     medium_half: {
       sizes: "(max-width: 767px) 100vw, 600px"
     },
@@ -32,7 +41,7 @@ function imageShortcode({src, alt, cls, styleName}) {
   }
 
   let options = {
-    widths: [640, 768, 1024, 1280],
+    widths: [350, 640, 768, 1024, 1280],
     formats: ['webp', 'jpeg'],
     urlPath: "/static/img/",
     outputDir: "./_site/static/img/"
@@ -46,9 +55,13 @@ function imageShortcode({src, alt, cls, styleName}) {
     class: cls,
     alt,
     sizes,
-    loading: "lazy",
     decoding: "async",
   };
+
+  // sometimes hero images should not lazy load if they impact LCP metrics. (top of page)
+  if (lazy == true) {
+    imageAttributes.loading = "lazy";
+  }
   // get metadata even the images are not fully generated
   metadata = Image.statsSync(src, options);
   return Image.generateHTML(metadata, imageAttributes);

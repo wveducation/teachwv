@@ -3,7 +3,7 @@
 {% macro renderNavListItem(item, parent = false, level = 0) -%}
 <li class="{% if item.url == page.url %}{% endif %} {% if level == 0 %}border-t{% endif %}" data-level="{{ level }}">
     <a href="{{ item.url | url }}" class="block  
-    {% if item.url == page.url %}bg-offwhite text-brand_lightblue border{% else %}text-brand_blue{% endif %} 
+    {% if item.url == page.url %}bg-offwhite text-brand_lightblue-a11y border{% else %}text-brand_blue{% endif %} 
     {% if level == 0 %}p-3 px-4 text-lg{% else %}py-1{% endif %}
     " style="{% if level > 0 %}padding-left: {{ 1 * level + 1 }}em;{% endif %}">
         {{ item.title }}

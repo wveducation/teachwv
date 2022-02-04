@@ -15,7 +15,12 @@ params:
     {% else %}
     <figcaption class="relative pl-4 bg-white overflow-x-hidden {{ overflowClasses }}">
     {% endif %}
-        <img src="{{ params.data.portrait }}" class="absolute block rounded-full -left-2 top-2 w-[80px] h-[80px]" alt="">
+        {% image { 
+            src: "./src" + params.data.portrait, 
+            alt: params.data.title,
+            cls: "absolute block rounded-full -left-2 top-2 w-[80px] h-[80px]",
+            styleName: "avatar"
+        } %}
         <div class="col-start-2 col-end-5 flex flex-col justify-center px-2 pt-2 pb-6">
             <cite class="text-xl font-bold not-italic">{{ params.data.title }}</cite>
             <div class="">{{ params.data.position }}</div>

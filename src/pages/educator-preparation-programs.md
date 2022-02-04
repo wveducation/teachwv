@@ -36,8 +36,8 @@ Programs can offer students specialized coursework in the grade level and subjec
 * [West Virginia Wesleyan College](https://www.wvwc.edu/programs/education/)
 * [Wheeling University](https://wheeling.edu/areas-of-study/education/)
 
-<a href="http://wvclassroom2career.com" class="btn">Classroom 2 Career</a>
-
-## Looking for a Program? 
+## Looking for a Program?
 
 <a href="https://wvde.state.wv.us/certification/approved-programs/?byschool">Explore the areas of certification</a> that each college/university offers.
+
+Navigate your future to find information on careers, colleges, military service, entrepreneurship, and on-the-job training through our [Classroom 2 Career Navigator](http://wvclassroom2career.com).

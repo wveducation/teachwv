@@ -30,9 +30,9 @@ Contact your [educator preparation program](/make-a-gameplan/educator-preparatio
 
 Download these helpful resources.
 
-<a href="/static/files/TeachWV Checklist-Traditional-FINAL.pdf" class="btn">Traditional Pathway Checklist</a>
+<a href="/static/files/TeachWV Checklist-Traditional-FINAL.pdf" class="btn">Checklist</a>
 
-<a href="/static/files/TeachWV Flow Chart-OPTION 1-FINAL.pdf" class="btn">Traditional Pathway Progress Map</a>
+<a href="/static/files/TeachWV Flow Chart-OPTION 1-FINAL.pdf" class="btn">Progress Map</a>
 
 - - -
 
@@ -50,9 +50,9 @@ Contact your county for details on cost and program completion time. 
 
 Download these helpful resources.
 
-<a href="/static/files/TeachWV Checklist-CountyBasedAltCert-FINAL.pdf" class="btn">County-Based Alternative Certification Checklist</a>
+<a href="/static/files/TeachWV Checklist-CountyBasedAltCert-FINAL.pdf" class="btn">Checklist</a>
 
-<a href="/static/files/TeachWV Flow Chart-OPTION 2-FINAL.pdf" class="btn">County-Based Alternative Certification Progress Map</a>
+<a href="/static/files/TeachWV Flow Chart-OPTION 2-FINAL.pdf" class="btn">Progress Map</a>
 
 - - -
 
@@ -74,9 +74,9 @@ Contact your program provider ([American Board](https://www.americanboard.org/) 
 
 Download these helpful resources.
 
-<a href="/static/files/TeachWV Checklist-StateApproved-FINAL.pdf" class="btn">State-Approved Teacher Prep Checklist</a>
+<a href="/static/files/TeachWV Checklist-StateApproved-FINAL.pdf" class="btn">Checklist</a>
 
-<a href="/static/files/TeachWV Flow Chart-OPTION 3-FINAL.pdf" class="btn">State-Approved Teacher Prep Progress Map</a>
+<a href="/static/files/TeachWV Flow Chart-OPTION 3-FINAL.pdf" class="btn">Progress Map</a>
 
 - - -
 
@@ -103,6 +103,8 @@ Contact your program provider for details on cost and program completion time. 
 
 Download these helpful resources.
 
-<a href="/static/files/TeachWV Checklist-WVDEAltCert-FINAL.pdf" class="btn">WVDE Alternative Certification Checklist</a>
+<a href="/static/files/WVDE Alt Cert Program Description on 20220202.pdf" class="btn">Resource Guide</a>
 
-<a href="/static/files/TeachWV Flow Chart-OPTION 4-FINAL.pdf" class="btn">WVDE Alternative Certification Checklist Progress Map</a>
+<a href="/static/files/TeachWV Checklist-WVDEAltCert-FINAL.pdf" class="btn">Checklist</a>
+
+<a href="/static/files/TeachWV Flow Chart-OPTION 4-FINAL.pdf" class="btn">Progress Map</a>

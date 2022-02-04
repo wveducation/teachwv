@@ -1,18 +1,17 @@
 ---
 title: Funding Your Education
-subtitle: There are many ways to fund your education – no matter which educator
-  preparation program you choose. Here are some of the best federal and
-  state-based financial aid programs available to future West Virginia teachers.
+subtitle: There are many ways to fund your education. Here are some of the best
+  federal and state-based financial aid programs available to future West
+  Virginia teachers.
 eleventyNavigation:
   order: 0
   title: Funding Your Education
   key: funding-your-education
   parent: make-a-gameplan
 meta:
-  description: There are many ways to fund your education – no matter which
-    educator preparation program you choose. Here are some of the best federal
-    and state-based financial aid programs available to future West Virginia
-    teachers.
+  description: There are many ways to fund your education. Here are some of the
+    best federal and state-based financial aid programs available to future West
+    Virginia teachers.
 ---
 * [Free Application for Federal Student Aid (FAFSA®)](https://studentaid.ed.gov/sa/fafsa)  
 * [Underwood-Smith Teaching Scholars](http://underwoodsmith.org/) 

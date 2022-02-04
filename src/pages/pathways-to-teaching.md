@@ -18,9 +18,13 @@ All licensure pathways require the following: 
 * Successful completion of state-approved program/coursework 
 * Qualifying outcome on criminal history checks as defined in WVBE policy. 
 
-If you’ve been asking, “How do I become a teacher in West Virginia?” check out this helpful resource which explains our four pathways to becoming an educator.
+If you’ve been asking, “How do I become a teacher in West Virginia?” check out these helpful resources, which provide a general overview of our four pathways to becoming an educator and an explanation of the application forms needed for licensure.
 
-<a href="/static/files/Our Pathways Explained.pdf" class="btn">Download “Our Pathways Explained” one-pager</a>
+<a href="/static/files/Our Pathways Explained.pdf" class="btn">“Our Pathways Explained” one-pager</a>
+
+<a href="/static/files/LicensureApplication FlowCart-v1.pdf" class="btn">Licensure Application Flowchart</a>
+
+---
 
 ## Pathways by Education Level
 

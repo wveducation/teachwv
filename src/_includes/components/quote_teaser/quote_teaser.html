@@ -9,7 +9,7 @@ params:
 #}
 {% set overflowClasses = "before:content-[''] before:absolute before:bottom-full before:left-0 before:w-full before:h-12 before:bg-quote-gradient" %}
 <figure class="flex flex-col justify-start border bg-white shadow rounded-md overflow-hidden {{ params.classes }}">
-    <blockquote class="relative p-6 text-lg h-48 overflow-y-scroll bg-offwhite">&ldquo;{{ params.data.quote }}&rdquo;</blockquote>
+    <blockquote class="relative p-6 text-lg h-48 overflow-y-scroll bg-offwhite" tabindex="0">&ldquo;{{ params.data.quote }}&rdquo;</blockquote>
     {% if params.data.portrait %}
     <figcaption class="relative bg-white pl-[80px] {{ overflowClasses }}">
     {% else %}

@@ -10,6 +10,10 @@ eleventyNavigation:
   title: High School Diploma or Equivalency
   key: high-school-diploma-equivalent
   parent: pathways-to-teaching
+meta:
+  description: If you have earned a high school diploma or your high school
+    equivalency, the best option to become a teacher in West Virginia is through
+    the traditional pathway.
 ---
 ## Traditional Programs that Lead to Licensure
 

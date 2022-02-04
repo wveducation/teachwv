@@ -7,6 +7,9 @@ eleventyNavigation:
   title: Educator Preparation Programs
   key: ed-prep-programs
   parent: make-a-gameplan
+meta:
+  description: Teacher preparation programs are designed to prepare both
+    undergraduate and graduate students to become licensed teachers.
 ---
 Programs can offer students specialized coursework in the grade level and subjects they are interested in teaching. 
 

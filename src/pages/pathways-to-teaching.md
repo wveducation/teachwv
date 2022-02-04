@@ -7,6 +7,9 @@ eleventyNavigation:
   title: Pathways to Teaching
   key: pathways-to-teaching
   parent: make-a-gameplan
+meta:
+  description: There are currently four overarching options for individuals to
+    acquire a Provisional (non-transferable) Professional Teaching Certificate.
 ---
 All licensure pathways require the following: 
 

@@ -12,6 +12,12 @@ eleventyNavigation:
   title: No Degree or Diploma
   key: no-degree-diploma
   parent: pathways-to-teaching
+meta:
+  description: If you’re a student who has yet to earn a degree or a diploma, we
+    encourage exploring our options available to high school students. If you
+    are an adult without a diploma or high school equivalency, visit
+    [wvadulted.com](http://wvadulted.com) to learn the next steps to achieving
+    that goal.
 ---
 ## Grow Your Own Pathway 
 

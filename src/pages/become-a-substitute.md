@@ -8,6 +8,10 @@ eleventyNavigation:
   title: Become a Substitute
   key: become-a-substitue
   parent: pathways-to-teaching
+meta:
+  description: Have you ever considered becoming a substitute teacher in West
+    Virginia? There is a great need for substitutes in our classrooms, and the
+    process to become a substitute has never been easier.
 ---
 ## How Do I Get Started? 
 

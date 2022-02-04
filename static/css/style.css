@@ -1735,6 +1735,11 @@ select {
   background-color: rgb(250 246 240 / var(--tw-bg-opacity));
 }
 
+.bg-brand_lightgrey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 211 212 / var(--tw-bg-opacity));
+}
+
 .bg-brand_lightblue {
   --tw-bg-opacity: 1;
   background-color: rgb(0 123 175 / var(--tw-bg-opacity));

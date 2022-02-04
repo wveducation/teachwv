@@ -14,7 +14,7 @@
     <div class="max-w-6xl mx-auto px-0 md:px-8">
     {% if collections.quotes %}
         {{ component('quotes_view', {
-            items: collections.quotes,
+            items: collections.quotes | sort(false, false, 'data.cardinality') | reverse,
             quantity: 6,
             columns: {
                 'md': 2,

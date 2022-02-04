@@ -53,7 +53,7 @@ collections:
       - { label: "Position", name: "position", widget: "string" }
       - { label: "Quote", name: "quote", widget: "text", hint: "Please do not wrap this field in quotation marks. This is added automatically." }
       - { label: "Portrait", name: "portrait", widget: "image", required: false }
-      - { label: "Cardinality", name: "cardinality", widget: "number"}
+      - { label: "Cardinality", name: "cardinality", widget: "number", default: 0}
 
   - label: "Settings"
     name: "settings"

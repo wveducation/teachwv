@@ -5,4 +5,5 @@ quote: To me, teaching in a rural school with smaller classes, fewer faculty and
   a more ‘family feel’, has allowed me to really take interest in each
   individual student.
 portrait: /static/img/WhitneyHealy-160x160.jpg
+cardinality: 0
 ---

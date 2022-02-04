@@ -1989,6 +1989,10 @@ select {
   font-size: clamp(1.5em, 7.5vw, 3rem);
 }
 
+.text-\[10vw\] {
+  font-size: 10vw;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -2020,6 +2024,10 @@ select {
 
 .leading-\[1\.2em\] {
   line-height: 1.2em;
+}
+
+.leading-\[1\] {
+  line-height: 1;
 }
 
 .tracking-widest {
@@ -2089,6 +2097,10 @@ select {
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+.opacity-90 {
+  opacity: 0.9;
 }
 
 .opacity-80 {

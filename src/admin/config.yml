@@ -40,6 +40,12 @@ collections:
             display_fields: ["{{title}} [{{eleventyNavigation.key}}]"]
           }
           - { label: "Order", name: "order", widget: "number", default: 0, value_type: "int" }
+      - label: "Metadata"
+        name: "meta"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Description", name: "description", widget: "text", required: false, hint: "This description is most often used beneath search results and when this page is shown on social networks." }
 
   - label: "Quote"
     label_plural: "Quotes"

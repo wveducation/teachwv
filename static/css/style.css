@@ -1864,6 +1864,11 @@ select {
   padding-right: 2rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1882,11 +1887,6 @@ select {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .pb-12 {
@@ -1980,6 +1980,10 @@ select {
   line-height: 1.5rem;
 }
 
+.text-hero-mobile {
+  font-size: clamp(1.5em, 7.5vw, 3rem);
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -2007,10 +2011,6 @@ select {
 
 .leading-6 {
   line-height: 1.5rem;
-}
-
-.leading-none {
-  line-height: 1;
 }
 
 .tracking-widest {
@@ -2824,6 +2824,11 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
     line-height: 2rem;
   }
 
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -3315,6 +3320,10 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:leading-\[1\.2em\] {
+    line-height: 1.2em;
   }
 
   .lg\:hover\:border-brand_yellow:hover {

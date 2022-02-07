@@ -57,6 +57,77 @@
             }
         });
 
+        CMS.registerEditorComponent({
+            id: 'list_links',
+            label: 'List of Links',
+            // A bogus field so that the component doesn't look weird when rendered:
+            fields: [
+                {
+                    name: 'links',
+                    label: 'Links',
+                    label_singular: 'Link',
+                    widget: 'list',
+                    field: {
+                        name: 'link',
+                        label: 'Link',
+                        widget: 'object',
+                        fields: [
+                            { 
+                                name: 'url',
+                                label: 'URL', 
+                                widget: 'string',
+                                default: '/'
+                            },
+                            { 
+                                name: 'text',
+                                label: 'Text', 
+                                widget: 'string',
+                                default: 'View More'
+                            }
+                        ]
+                    }
+                }
+            ],
+            // Never match anything so that the separator will be recognized as a horizontal rule when the document is reloaded:
+            pattern: /<div data-type="list-links">(.*?)<\/div>/ms,
+            fromBlock(match) {
+                const parser = new DOMParser();
+                const htmlDoc = parser.parseFromString(match[1], 'text/xml');
+                const linkTags = htmlDoc.getElementsByTagName('a');
+                const links = Object.keys(linkTags).map((key, index) => {
+                    return { 
+                        link: {
+                            url: `${linkTags[index].getAttribute("href")}`,
+                            text: `${linkTags[index].innerHTML}`
+                        }
+                    }
+                });
+
+                return { links: links };
+            },
+            toBlock(data) {
+                if (!data.links) return false;
+                let links = '';
+
+                data.links.forEach(item => {
+                    links  = `<li><a href="${item.link.url}" class="btn">${item.link.text}</a></li>${links}`;
+                });
+
+                return `<div data-type="list-links"><ul class="flex flex-wrap">${links}</ul></div>`;
+            },
+            toPreview(data) {
+                if (!data.links) return false;
+                let links = '';
+                console.log(data);
+
+                data.links.forEach(item => {
+                    links  = `${links}<li><a href="${item.link.url}" class="btn">${item.link.text}</a></li>`;
+                });
+
+                return `<div data-type="list-links"><ul class="flex flex-wrap">${links}</ul></div>`;
+            }
+        });
+
         </script>
 
         <!-- Netlify Identity Widget -->

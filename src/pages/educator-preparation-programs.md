@@ -13,7 +13,7 @@ meta:
 ---
 Programs can offer students specialized coursework in the grade level and subjects they are interested in teaching. 
 
-<iframe width="560" class="aspect-video w-full" src="https://www.youtube.com/embed/ZiFgMSrm0XM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" class="aspect-video w-full" src="https://www.youtube.com/embed/iV65AXO-vqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Teacher Prep Programs
 

@@ -1,0 +1,48 @@
+---
+layout: default
+title: 404 Page Not Found
+meta:
+    description: "Sorry, your page could not be found."
+---
+{%- from "system/component.html" import component -%}
+<div class="bg-brand_blue text-white">
+    <div class="container mb-6 py-16 pb-20">
+        {{ component('titlebar', {
+            title: {
+                text: title,
+                classes: "text-5xl text-white"
+            },
+            subtitle: {
+                text: meta.description
+            }
+        }) }}
+    </div>
+</div>
+{% set links = [
+    {
+        text: "Become a Teacher",
+        url: "/become-a-teacher"
+    },
+    {
+        text: "Explore Teaching in WV",
+        url: "/explore-the-profession"
+    },
+    {
+        text: "Stories from Teachers",
+        url: "/stories"
+    },
+    {
+        text: "Contact Us",
+        url: "/contact-us"
+    }
+] %}
+<div class="container">
+    <div class="-mt-16 max-w-3xl mx-auto p-6 border-2 bg-white mb-16">
+        <h3 class="text-2xl text-center mb-6">Try one of these popular links instead</h3>
+        <ul class="md:flex flex-wrap justify-center gap-x-4 text-center">
+        {% for link in links %}
+            <li class="mb-2"><a href="{{ link.url }}" class="text-lg hover:bg-brand_lightblue hover:text-white border-brand_lightblue border-b-2">{{ link.text }}</a></li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>

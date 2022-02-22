@@ -7,6 +7,7 @@ _site/
 *git/
 package-lock.json
 .env
+.cache
 
 # Importer Data
 /data/*

@@ -97,6 +97,14 @@ details[open] summary::before {
   content: "-"; 
 }
 
+/* Clip Path */
+@layer utilities {
+  
+  .clip-rounded-right {
+    clip-path: ellipse(100% 100% at 0% 50%);
+  }
+}
+
 /* Markdown Field styles */
 
 .markdown-field h1, 

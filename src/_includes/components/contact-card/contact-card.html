@@ -1,0 +1,36 @@
+{% set defaultClasses = 'flex justify-center items-center gap-x-6 text-white' %}
+{% switch params.theme %}
+    {% case '2' %}
+        <article class="h-card relative block md:flex mt-6 md:mt-0 md:overflow-hidden bg-white rounded-lg border bg-radial-offwhite-top md:bg-radial-offwhite-left {{ params.classes }}" style="">
+            <div class="relative block shrink-0 w-[120px] h-[120px] md:w-[150px] md:h-auto mx-auto -mt-4 md:-mt-0 md:mx-0 rounded-full md:rounded-none bg-cover bg-center md:clip-rounded-right" style="background-image: url('{{ params.image.src }}');">
+                <img class="u-photo sr-only" src="{{ params.image.src }}" width="300" height="300" />
+            </div>
+            <div class="p-8 pr-8 text-center md:text-left">
+                <h1 class="p-name font-display text-2xl">{{ params.name }}</h1>
+                <div class="text-xl">
+                    <div class="sr-only">Phone</div>
+                    <div class="p-tel"><a href="tel:{{ params.phone }}">{{ params.phone }}</a></div>
+                </div>
+                <div class="text-xl">
+                    <div class="sr-only">Email</div>
+                    <a class="u-email underline text-brand_lightblue whitespace-nowrap" href="mailto:{{ params.email }}">Email</a>
+                </div>
+            </div>
+        </article>
+    {% default %}
+        <article class="h-card flex justify-center items-center gap-x-6 text-white {{ params.classes }}">
+            <div class="shadow-[0px_0px_0px_4px_rgba(255,255,255,1)] rounded-full overflow-hidden">
+                <img class="u-photo" src="http://via.placeholder.com/100" width="100" height="100" />
+            </div>
+            <div class="">
+                <h1 class="p-name font-display text-xl text-white">{{ params.name }}</h1>
+                <div class="text-lg">
+                    <div class="sr-only">Phone</div>
+                    <div class="p-tel">{{ params.phone }}</div></div>
+                <div class="">
+                    <div class="sr-only">Email</div>
+                    <a class="u-email underline text-brand_yellow" href="mailto:{{ params.email }}">{{ params.email }}</a>
+                </div>
+            </div>
+        </article>
+{% endswitch %}

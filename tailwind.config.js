@@ -32,6 +32,8 @@ module.exports = {
         'hero-grid-titlebar': "url('/static/img/teachwv-grid-titlebar.webp')",
         'hero-small-white': "url('/static/img/teachwv-hero_small_white.webp')",
         'hero-large-offwhite': "url('/static/img/teachwv-hero_large_offwhite.webp')",
+        'radial-offwhite-left': "radial-gradient(circle at left, #faf6f0 250px, transparent 250px)",
+        'radial-offwhite-top': "radial-gradient(circle at bottom, #faf6f0 80%, transparent 80%)",
         'abstract-beams': "linear-gradient(to right, \
           #518CB2, \
           #518CB2 10%, \

@@ -28,7 +28,7 @@ Programs can offer students specialized coursework in the grade level and subjec
 * [Marshall University](https://www.marshall.edu/coepd)
 * [Salem University](https://www.salemu.edu/degrees/degrees/education/)
 * [Shepherd University](https://www.shepherd.edu/education)
-* [University of Charleston](https://www.ucwv.edu/academics/majors-degrees/)
+* [University of Charleston](https://www.ucwv.edu/academics/majors-degrees/elementary-education/)
 * [West Liberty University](https://westliberty.edu/education/)
 * [West Virginia State University](https://www.wvstateu.edu/academics/academic-colleges/college-of-professional-studies/education.aspx)
 * [West Virginia University-Parkersburg](https://www.wvup.edu/future-students/academics/education-division/)

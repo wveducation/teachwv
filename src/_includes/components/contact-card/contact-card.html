@@ -7,14 +7,18 @@
             </div>
             <div class="p-8 pr-8 text-center md:text-left">
                 <h1 class="p-name font-display text-2xl">{{ params.name }}</h1>
+                {% if params.phone %}
                 <div class="text-xl">
                     <div class="sr-only">Phone</div>
                     <div class="p-tel"><a href="tel:{{ params.phone }}">{{ params.phone }}</a></div>
                 </div>
+                {% endif %}
+                {% if params.email %}
                 <div class="text-xl">
                     <div class="sr-only">Email</div>
                     <a class="u-email underline text-brand_lightblue whitespace-nowrap" href="mailto:{{ params.email }}">Email</a>
                 </div>
+                {% endif %}
             </div>
         </article>
     {% default %}
@@ -24,13 +28,18 @@
             </div>
             <div class="">
                 <h1 class="p-name font-display text-xl text-white">{{ params.name }}</h1>
+                {% if params.phone %}
                 <div class="text-lg">
                     <div class="sr-only">Phone</div>
-                    <div class="p-tel">{{ params.phone }}</div></div>
+                    <div class="p-tel">{{ params.phone }}</div>
+                </div>
+                {% endif %}
+                {% if params.email %}
                 <div class="">
                     <div class="sr-only">Email</div>
                     <a class="u-email underline text-brand_yellow" href="mailto:{{ params.email }}">{{ params.email }}</a>
                 </div>
+                {% endif %}
             </div>
         </article>
 {% endswitch %}

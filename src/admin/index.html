@@ -10,6 +10,7 @@
         <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 
         <script>
+
         CMS.registerEditorComponent({
             id: 'link_button',
             label: 'Button Link',
@@ -57,6 +58,69 @@
             }
         });
 
+        async function getCounties() {
+            let response = await fetch('/api/state_counties.json');
+            let data = await response.json();
+            return data;
+        }
+        getCounties().then((data) => { 
+            registerCountyMap(data);
+        });
+
+        function registerCountyMap(data) {
+
+            const countyOptions = Object.keys(data.county_paths).map((item) => {
+                return {
+                    // capitalize the first letter for the label
+                    label: item.charAt(0).toUpperCase() + item.slice(1),
+                    value: item
+                }
+            });
+            
+            CMS.registerEditorComponent({
+                id: "countyMap",
+                label: "County Map Block",
+                fields: [
+                    {
+                        name: "highlighted_counties",
+                        label: "Highlighted Counties",
+                        widget: "list",
+                        field: {
+                            name: "county",
+                            label: "County",
+                            widget: "select",
+                            options: countyOptions
+                        }
+                    }
+                ],
+                pattern: /{{ "(.*)" }}/,
+                fromBlock: function(match) {
+                    return {
+                        attack: match[1]
+                    };
+                },
+                toBlock: function(obj) {
+                    if (!obj.highlighted_counties) return false;
+                    let component = '';
+                    component += `{ component('svgMap', {\n`;
+                    component += `highlights: ${JSON.stringify(obj.highlighted_counties)},\n`;
+                    component += `    width: 500,
+    height: 600,
+    style: {
+        fillColor: '#dedede',
+        highlightColor: '#007baf',
+        strokeColor: 'white',
+        strokeWidth: '1px',
+        hoverColor: '#004071'
+    }`;
+                    component += `}) }`;
+                    return component;
+                },
+                toPreview: function(obj) {
+                    return ``;
+                },
+            });
+        }
         </script>
 
         <!-- Netlify Identity Widget -->

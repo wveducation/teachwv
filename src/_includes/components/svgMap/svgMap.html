@@ -1,0 +1,42 @@
+<svg version="1.1" id="{{ params.id }}" role="img" 
+xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xml:space="preserve"
+viewBox="0 0 650 550" 
+{% if params.width %}width="{{ params.width }}"{% endif %}>
+    <title>A map of {{ params.data.state_name }} where the following counties are highlighted: {% for county in params.highlights %}{{ county|capitalize }}{{ ', ' if not loop.last }}{% endfor %}.</title>
+    {% for id, shape in params.data.county_paths %}
+    <g class="stateMap__county">
+        <path 
+        id="{{ id }}" 
+        fill="{{ params.style.highlightColor if params.highlights | inArray(id) else params.style.fillColor }}" 
+        data-label="{{ id }}"
+        {% if params.style.strokeColor %}
+        stroke="{{ params.style.strokeColor }}"
+        {% endif %}
+        {% if params.style.strokeWidth %}
+        stroke-width="{{ params.style.strokeWidth }}"
+        {% endif %}
+        d="{{ shape }}" />
+        <text x="100%" y="80%" width="100%" text-anchor="end" font-size="3rem">{{ id|capitalize }}</text>
+    </g>
+    {% endfor %}
+</svg>
+<style>
+    #{{ params.id }} .stateMap__county {
+        position: absolute;
+    }
+    #{{ params.id }} .stateMap__county:hover path {
+        cursor: crosshair;
+        {% if params.style.hoverColor %}
+        fill: {{ params.style.hoverColor }};
+        {% endif %}
+    }
+    #{{ params.id }} .stateMap__county text {
+        position: relative;
+        display: none;
+    }
+    #{{ params.id }} .stateMap__county:hover text {
+        display: block;
+    }
+</style>

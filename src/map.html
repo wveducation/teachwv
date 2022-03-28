@@ -1,0 +1,21 @@
+---
+layout: default
+title: Map Demo
+---
+{%- from "system/component.html" import component -%}
+<div class="pt-12">
+{{ component('svgMap', {
+    id: 'map_' + helpers.randomInt(4),
+    data: state_counties,
+    highlights: ['kanawha', 'ohio', 'mineral', 'clay', 'doddridge'],
+    width: 500,
+    height: 600,
+    style: {
+        fillColor: '#dedede',
+        highlightColor: '#007baf',
+        strokeColor: 'white',
+        strokeWidth: '1px',
+        hoverColor: '#004071'
+    }
+}) }}
+</div>

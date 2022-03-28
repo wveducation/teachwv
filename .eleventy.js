@@ -123,6 +123,11 @@ module.exports = function(eleventyConfig) {
     return data.sort((a, b) => (a.data.grade.localeCompare(b.data.grade) || a.data.subject.localeCompare(b.data.subject) || a.data.area.localeCompare(b.data.area)) );
   });
 
+  eleventyConfig.addFilter("inArray", (data, key) => {
+    if (data.includes(key)) return true;
+    return false;
+  });
+
   eleventyConfig.addFilter("checkIfInSubtree", (tree, item) => {
 
     const subtreeKeys = [];
@@ -174,6 +179,7 @@ module.exports = function(eleventyConfig) {
     "./src/static/fonts/icons/fonts/*": "./static/fonts/icons/fonts/",
     "./src/static/fonts/icons/style.css": "./static/fonts/icons/style.css",
     "./src/static/files/*": "./static/files/",
+    "./src/_data/state_counties.json": "./api/state_counties.json"
   });
 
   // Copy Image Folder to /_site

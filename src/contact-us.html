@@ -6,17 +6,19 @@ meta:
     description: "Questions about teaching in West Virginia? Schedule a one-on-one with an educator prep expert today!"
 ---
 {%- from "system/component.html" import component -%}
-<div class="container py-16">
-    {{ component('titlebar', {
-        title: {
-            text: title,
-            classes: "text-5xl"
-        },
-        subtitle: {
-            text: "Questions about teaching in West Virginia? Schedule a one-on-one with an educator prep expert today!"
-        }
-    }) }}
+<div class="bg-offwhite border-b">
+    <div class="container py-12 max-w-5xl">
+        {{ component('titlebar', {
+            title: {
+                text: title,
+                classes: "text-5xl"
+            },
+            subtitle: {
+                text: meta.description
+            }
+        }) }}
+    </div>
 </div>
-<div class="container mb-24">
+<div class="container mb-24 py-8">
     <iframe class="mx-auto" width="640px" height="4080px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=S7AZ4AwzekaLrgn7FzdNakMhuPZe2VpEvMHPdjJiS_VUOTMxUEtSWjJMTzI0MjJaN1o5UUE5VTEwUyQlQCN0PWcu&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 </div>

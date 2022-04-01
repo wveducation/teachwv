@@ -1,13 +1,13 @@
 ---
-title: Bachelor's Degree
-subtitle: If you hold a bachelor’s degree from an accredited institution of
+title: Bachelor's Degree and Higher
+subtitle: If you hold a bachelor’s degree or higher from an accredited institution of
   higher education, there are several ways you can become a teacher in West
   Virginia.
 tags:
   - pathways
 eleventyNavigation:
   order: 0
-  title: Bachelor's Degree
+  title: Bachelor's Degree and Higher
   key: bachelors-degree
   parent: pathways-to-teaching
 meta:

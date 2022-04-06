@@ -23,6 +23,10 @@ meta:
 
 Grow Your Own Programs are designed to harvest promising local high school students and facilitate a career path for them to pursue a career in education. The Grow Your Own (GYO) West Virginia Teaching Pathway is designed to address West Virginia’s critical teacher shortage. It will enable high school students who want to become classroom teachers to fast-track into their careers through a combination of dual enrollment/Advanced Placement courses, and an accelerated pathway. Through the program, these students can graduate from a partner institution of higher education (IHE) with a bachelor’s degree in three years.  
 
+![Grow Your Own Program counties](/static/img/wvmap-gyo-counties.jpg)
+
+*Grow Your Own Programs are being piloted in the following counties: Berkeley, Braxton, Cabell, Calhoun, Fayette, Grant, Greenbrier, Hardy, Jefferson, Kanawha, Lewis, Marion, Marshall, McDowell, Mercer, Mineral, Mingo, Monroe, Nicholas, Ohio, Pocahontas, Putnam, Summers, Taylor, Tyler, Upshur, and Wayne.*
+
 ### How it Works
 
 #### High school

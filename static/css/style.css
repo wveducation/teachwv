@@ -1425,12 +1425,12 @@ select {
   max-width: 64rem;
 }
 
-.max-w-6xl {
-  max-width: 72rem;
-}
-
 .max-w-2xl {
   max-width: 42rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .max-w-full {
@@ -1573,6 +1573,10 @@ select {
 
 .gap-y-2 {
   row-gap: 0.5rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
 }
 
 .gap-x-8 {
@@ -2787,16 +2791,16 @@ body :not(pre) > code[class*="language-"], body pre[class*="language-"] {
     flex-grow: 1;
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-rows-1 {

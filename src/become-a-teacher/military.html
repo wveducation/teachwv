@@ -1,0 +1,157 @@
+---
+layout: default
+title: Military and Veterans
+meta:
+    description: "Veterans can become excellent role models for students in the classroom."
+tags: static
+eleventyNavigation:
+  order: 0
+  title: Military and Veterans
+  key: military-veterans
+  parent: become-a-teacher
+---
+{%- from "system/component.html" import component -%}
+
+<div class="py-4">
+    <div class="px-4 lg:container text-sm">
+        {{ component('breadcrumb', {
+            items: collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key, { includeSelf: true })
+        }) }}
+    </div>
+</div>
+
+<div class="py-4 mb-24" style="background: #5a6236 url('/static/img/bg-flag-stars.jpg') no-repeat; background-size: cover;">
+    <div class="px-4 lg:container">
+        {% image { 
+            src: "./src/static/img/military-veterans_wide.jpg",
+            alt: "",
+            cls: "block rounded-lg -mb-24",
+            styleName: "large",
+            lazy: false
+        } %}
+    </div>
+</div>
+
+<div class="container pt-8 md:pt-12 text-center mb-12">
+    <h1 class="text-4xl md:text-5xl text-center text-brand_blue">{{ title }}</h1>
+    <p class="text-xl max-w-4xl mx-auto">Veterans can become excellent role models for students in the classroom. <br/>View resources specific to a background in the U.S. Armed Forces.</p>
+</div>
+
+{% set resources = [
+    {
+        title: 'Licensure Pathways',
+        body: '<p>Select your education level to review licensure pathways leading to a Provisional Professional Teaching Certificate.</p>',
+        link: {
+            url: '/become-a-teacher',
+            text: 'Get Started'
+        }
+    },
+    {
+        title: 'Licensure Testing Preparation',
+        body: '<p>Educator Development and Support Services offers information about licensure testing preparation resources.</p>',
+        link: {
+            url: 'https://wvde.us/educator-development-and-support/preparation/praxis-resources/',
+            text: 'View Resources',
+            target: '_blank'
+        }
+    },
+    {
+        title: 'Become a Substitute',
+        body: '<p>There is a great need for substitutes in our classrooms, and the process to become a substitute has never been easier.</p>',
+        link: {
+            url: '/pathways-to-teaching/become-a-substitute/',
+            text: 'Become a Substitute'
+        }
+    },
+    {
+        title: 'Rules for Licensure',
+        body: '<p>Complete details about the rules for licensure may be found in <a href="http://wvde.state.wv.us/policies/policy.php?p=5202">WVBE Policy 5202</a> and the <a href="https://wvde.us/certification/certification-info/#tab-67fa0185abe42415389">WV Licensure Testing Directory</a>.</p><p>If you have questions about these policies, please <a href="/contact-us">contact us</a>.</p>'
+    }
+] %}
+<section class="py-12 mb-12 bg-offwhite border-y">
+    <div class="container">
+        <div class="block lg:grid lg:grid-cols-5 gap-x-16">
+            <div class="lg:col-start-1 lg:col-end-3">
+                <h2 class="text-center lg:text-left text-3xl">Teacher Certification Requirements</h2>
+                <p class="max-w-3xl text-xl">Every state has its own unique requirements for acquiring a Professional Teaching Certificate, Substitute Teaching Permits, or other licenses necessary for teaching in public schools. These licensure requirements may include a combination of background checks, education level, testing, and coursework qualifications.</p>
+            </div>
+            <div class="lg:col-start-3 lg:col-end-6 md:grid grid-cols-2 gap-x-default">
+                {% for resource in resources %}
+                <article class="mb-10">
+                    <h1 class="text-lg font-bold">{{ resource.title }}</h1>
+                    <div class="markdown-field">{{ resource.body | safe }}</div>
+                    {% if resource.link.url %}
+                    <footer class="markdown-field">
+                        <a href="{{ resource.link.url }}" target="{{ resource.link.target if resource.link.target else '_self'}}">{{ resource.link.text }}</a>
+                    </footer>
+                    {% endif %}
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<aside class="mb-8">
+    <div class="container max-w-4xl">
+        <div class="md:grid grid-cols-2 gap-x-default overflow-hidden">
+            <div class="">
+                <h2 class="text-3xl">Contact a Specialist</h2>
+                <p class="text-lg mb-0">If you would like to teach in an area of Career and Technical Education or if you have questions about any of West Virginia’s available licensure pathways, contact us today.</p>
+            </div>
+            <div class="flex flex-col gap-y-0 justify-center items-center">
+                {{ component('contact-card', {
+                    name: 'Robert Mellace',
+                    phone: '1-833-627-2833',
+                    email: 'rmellace@k12.wv.us',
+                    classes: 'w-full',
+                    image: {
+                        src: '/static/img/mellace-robert_400x400.jpg'
+                    },
+                    theme: '2'
+                }) }}
+            </div>
+        </div>
+    </div>
+</aside>
+
+<section class="py-6 mb-12">
+    <div class="container max-w-4xl">
+        {{ component('accordion', {
+            classes: 'bg-white',
+            data: [
+                {
+                    title: 'Financial Assistance Available to Veterans',
+                    body: "<p>Visit the Veterans Benefits Administration website to learn about <a href='https://benefits.va.gov/gibill/'>qualification of GI Bills</a>.</p>
+                    <p>If you are currently serving in the military, please contact your organization's Educational Services Officer regarding the possibility of qualifying for their financial assistance programs. Many institutions of higher education also have specialists identified who work with veterans throughout their college experiences.</p>
+                    <p>Furthermore, the West Virginia Department of Veterans Assistance oversees service offices located throughout the state. Employees of these offices are trained to assist veterans and their dependents in applying for a variety of state and federal benefits. These services are offered at no charge to the veteran or dependent. If you are interested in applying for benefits, or just want to know what you may qualify for, please contact the service office closest to you.</p>
+                    <p>For additional information about financial assistance programs, please visit the Funding Your Education section of the website.</p>" +
+                    component('button', { url: '/make-a-gameplan/funding-your-education', text: 'Funding Your Education' })
+                },
+                {
+                    title: 'Military Transcripts for College Credit',
+                    body: "<p>Members of the Army, Coast Guard, Marine Corps, and Navy may request a <a href='https://jst.doded.mil/'>Joint Services Transcript</a> as an academically accepted document approved by ACE used to validate military occupational experience and training along with corresponding ACE college credit recommendations.</p>
+                    <p>Members of the Air Force or Space Force may request transcripts from the <a href='https://www.airuniversity.af.edu/Barnes/CCAF/Display/Article/803247/community-college-of-the-air-force-transcripts/'>Community College of the Air Force</a>.</p>
+                    <p>Generally, these transcripts must be evaluated by an accredited institution of higher education to determine how these transcripts may be utilized for credit towards a career in education.</p>"
+                },
+                {
+                    title: 'College Level Examination Program (CLEP)',
+                    body: "<p>Visit the College Board website for details about benefits provided by the Defense Activity for Non-Traditional Education Support (DANTES), available to qualifying military personnel for the purpose of taking College Level Examination Program exams for credit at <a href='https://clep.collegeboard.org/colleges-that-recognize-clep'>institutions of higher education which accept the program</a>.</p>" +
+                    component('button', { url: 'https://clep.collegeboard.org/clep-military-benefits', text: 'College Board', external: true})
+                },
+                {
+                    title: 'Rights Specific to Service Members Attending an Institution of Higher Education',
+                    body: "<p>Military service members who are attending a college or university may experience situations where their college experience is interrupted due to military orders. Become familiar with readmission requirements for service members in 20 United States Code (U.S.C.) Section 1091c.</p>" +
+                    component('button', { url: 'https://www.gpo.gov/fdsys/pkg/USCODE-2015-title20/pdf/USCODE-2015-title20-chap28-subchapIV-partF-sec1091c.pdf', text: 'Readmission Requirements', external: true})
+                },
+                {
+                    title: 'Rights Under the Uniformed Services Employment and Reemployment Rights Act (USERRA)',
+                    body: "<p> Military service members who experience a qualifying deployment status should become familiar with provisions of USERRA which pertains to civilian employment rights, freedom from discrimination or retaliation, health insurance protection, etc. To review USERRA rights, visit the US Department of Labor website. If you are experiencing active-duty deployment and require information related to the expiration of WVDE licensure, please contact Julie Morris in the Office of Certification Services at 1-833-627-2833.</p>" +
+                    component('button', { url: 'https://www.dol.gov/agencies/vets/programs/userra/aboutuserra', text: 'U.S. Department of Labor', external: true})
+                }
+            ]
+        }) }}
+    </div>
+</section>
+
+{% include 'blocks/contact-prefooter.html' %}

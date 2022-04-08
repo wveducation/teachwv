@@ -70,6 +70,41 @@ select {
   cursor: not-allowed !important;
 }
 
+/* Summary/Details */
+
+summary { position: relative; list-style: none}
+summary::-webkit-details-marker {display: none; }
+details summary::before { 
+  @apply bg-brand_lightblue;
+  content: "+";
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  /* you can style it however you want, use background-image for example */
+}
+
+/* By using [open] we can define different styles when the disclosure widget is open */
+details[open] summary::before { 
+  content: "-"; 
+}
+
+/* Clip Path */
+@layer utilities {
+  
+  .clip-rounded-right {
+    clip-path: ellipse(100% 100% at 0% 50%);
+  }
+}
+
 /* Markdown Field styles */
 
 .markdown-field h1, 

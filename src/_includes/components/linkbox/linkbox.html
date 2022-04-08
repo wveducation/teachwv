@@ -5,7 +5,11 @@
     {% default %}
         {% set themeClasses = defaultButtonClasses + ' bg-brand_lightblue text-white hover:bg-brand_lightblue-hover' %}
 {% endswitch %}
-<a href="{{ params.url }}" target="{{ params.target or '_self' }}" class="flex justify-center items-center text-center gap-x-6 rounded-lg md:text-lg {{ themeClasses }} {{ params.classes }}" {% if params.ariaLabel %}aria-label="{{ params.ariaLabel }}"{% endif %}>
+<a 
+href="{{ params.url }}" 
+target="{{ params.target or '_self' }}" 
+class="flex justify-center items-center text-center gap-x-6 rounded-lg md:text-lg {{ themeClasses }} {{ params.classes }}" {% if params.ariaLabel %}aria-label="{{ params.ariaLabel }}"{% endif %} 
+{% if params.alpineEvents.click %}@click.prevent="{{ params.alpineEvents.click }}"{% endif %}>
     {{ params.text }}
     {% include '../../../static/img/icon-chevron-right.svg' %}
 </a>

@@ -19,6 +19,48 @@ meta:
         }) }}
     </div>
 </div>
-<div class="container mb-24 py-8">
-    <iframe class="mx-auto" width="640px" height="4080px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=S7AZ4AwzekaLrgn7FzdNakMhuPZe2VpEvMHPdjJiS_VUOTMxUEtSWjJMTzI0MjJaN1o5UUE5VTEwUyQlQCN0PWcu&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+
+<div x-data="{ method: '' }">
+    <div class="container py-8 max-w-2xl">
+        <div class="grid md:grid-cols-2 gap-y-4 gap-x-4">
+            {{ component('linkbox', {
+                url: '/',
+                text: 'Phone',
+                theme: 'light',
+                alpineEvents: {
+                    click: "method = 'phone'"
+                }
+            }) }}
+
+            {{ component('linkbox', {
+                url: '/',
+                text: 'Contact Form',
+                theme: 'light',
+                alpineEvents: {
+                    click: "method = 'form'"
+                }
+            }) }}
+        </div>
+    </div>
+
+    <template x-if="method == 'phone'">
+        <div class="container py-4 mb-24 max-w-2xl">
+            {{ component('contact-card', {
+                name: 'Robert Mellace',
+                phone: '1-833-627-2833',
+                email: 'rmellace@k12.wv.us',
+                classes: 'w-full',
+                image: {
+                    src: '/static/img/mellace-robert_400x400.jpg'
+                },
+                theme: '2'
+            }) }}
+        </div>
+    </template>
+
+    <template x-if="method == 'form'">
+        <div class="container mb-24 py-4">
+            <iframe class="mx-auto" width="640px" height="4080px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=S7AZ4AwzekaLrgn7FzdNakMhuPZe2VpEvMHPdjJiS_VUOTMxUEtSWjJMTzI0MjJaN1o5UUE5VTEwUyQlQCN0PWcu&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+        </div>
+    </template>
 </div>

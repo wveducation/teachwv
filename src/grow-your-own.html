@@ -1,0 +1,168 @@
+---
+layout: default
+title: Grow Your Own
+meta:
+    description: "Designed to address West Virginia's critical teacher shortage, Grow Your Own Pathway to Teaching programs provide promising high school students a career path to pursue a career in education."
+tags: static
+eleventyNavigation:
+  order: 0
+  title: Grow Your Own
+  key: grow-your-own
+  parent: become-a-teacher
+---
+{%- from "system/component.html" import component -%}
+
+<div class="py-4">
+    <div class="px-4 lg:container text-sm">
+        {{ component('breadcrumb', {
+            items: collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key, { includeSelf: true })
+        }) }}
+    </div>
+</div>
+
+<div class="py-4 mb-24" style="background: #5a6236 url('/static/img/gyo-chalkboard.jpg') no-repeat; background-size: cover;">
+    <div class="px-4 lg:container">
+        {% image { 
+            src: "./src/static/img/gyo-hero_wide.jpg",
+            alt: "",
+            cls: "block rounded-lg -mb-24",
+            styleName: "large",
+            lazy: false
+        } %}
+    </div>
+</div>
+
+<div class="container pt-8 md:pt-12 text-center mb-12">
+    <h1 class="text-4xl md:text-5xl text-center text-brand_blue">{{ title }}</h1>
+    <p class="text-xl max-w-4xl mx-auto">{{ meta.description }}</p>
+</div>
+
+{% set reasons = [
+    "Early start on college.",
+    "Reduced time to complete a bachelor's degree.",
+    "Introduction to the education profession.",
+    "Classroom observations and field experiences before college.",
+    "Core Praxis exam for students in Year 2 (senior year) free of cost.",
+    "Ability to earn salary, benefits, and seniority in residency year.",
+    "Reduced cost (Students receive four tuition free dual credit courses in the 2022-23 year.)"
+] %}
+<section class="border-t py-8 bg-brand_lightblue">
+    <div class="container max-w-6xl">
+    <div class="block md:grid md:grid-cols-5 gap-x-default">
+        <div class="col-start-1 col-end-3">
+        {{ component('titlebar', {
+            title: {
+                text: "Benefits",
+                classes: "text-brand_yellow"
+            },
+            subtitle: {
+                text: "There are many reasons to Grow Your Own.",
+                classes: "text-white"
+            },
+            alignment: "left"
+        }) }}
+        </div>
+        <div class="col-start-3 col-end-6">
+            <ul class="grid md:grid-cols-2">
+                {% for reason in reasons %}
+                <li class="md:pr-8 mb-4">
+                    <span class="text-lg bg-black/10 text-white">{{ reason }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="py-12">
+    <div class="container max-w-6xl">
+        <div class="block md:grid md:grid-cols-5 gap-x-default">
+            <div class="col-start-1 col-end-3">
+                {{ component('titlebar', {
+                    title: {
+                        text: "How it Works"
+                    },
+                    alignment: "left"
+                }) }}
+        
+                <p class="text-lg">The Grow Your Own Pathway gives students a fast-track into the education field through a combination of dual enrollment/Advanced Placement courses and an accelerated pathway. Students can then graduate with a bachelor's degree in just three years.</p>
+            </div>
+            <div class="col-start-3 col-end-6">
+                {{ component('tabs', {
+                    tabs: [
+                        {
+                            title: "High School",
+                            body: "<p>High School counselors and partnering institution faculty advisors will assist with scheduling, financial aid, testing requirements, etc. to enroll in the teaching pathway. The goal is for students to graduate high school with a minimum of 30 hours of dual enrollment/AP credits, including the four introductory education courses. Participants will enter college classified as a sophomore. During their junior and senior years of high school, students will have the opportunity to spend time in real-time classrooms in their home county schools.</p>"
+                        },
+                        {
+                            title: "Year 1",
+                            body: "<p>Upon graduation from high school and completion of the pathway, students will be admitted into the education program and begin classes the fall after high school graduation. You will take courses in both spring and fall.</p>"
+                        },
+                        {
+                            title: "Year 2",
+                            body: "<p>Complete coursework and required testing in the fall, spring, and summer (if needed) semesters.</p>"
+                        },
+                        {
+                            title: "Year 3",
+                            body: "<p>Participate in yearlong residency as the teacher of record with high levels of support from both the university and the county. Simultaneously, students may complete any remaining university classes in the fall and spring semesters. The county system will provide a cohort supervisor to mentor, coach, and support multiple teacher residents serving as teachers of record.</p>"
+                        },
+                        {
+                            title: "After Graduation",
+                            body: "<p>At the end of the third year at the university, students will have earned required credit hours and graduate with a bachelor's degree in education. Participating school districts agree to give hiring preference for teaching positions, when possible, to graduates of the West Virginia Grow Your Own Teaching Pathway Program.</p>"
+                        }
+                    ]
+                }) }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% set pilotCounties = '<p class="text-lg">Grow Your Own Programs are being piloted in the following counties:</p> <p class="text-md">Berkeley, Braxton, Cabell, Calhoun, Fayette, Grant, Greenbrier, Hardy, Jefferson, Kanawha, Lewis, Marion, Marshall, McDowell, Mercer, Mineral, Mingo, Monroe, Nicholas, Ohio, Pocahontas, Putnam, Summers, Taylor, Tyler, Upshur, and Wayne.</p>' %}
+<section class="border-t py-8">
+    <div class="container max-w-6xl">
+    <div class="block md:grid md:grid-cols-5 gap-x-default">
+        <div class="col-start-1 col-end-3">
+        {{ component('titlebar', {
+            title: {
+                text: "Pilot Counties"
+            },
+            subtitle: {
+                text: pilotCounties | safe
+            },
+            alignment: "left"
+        }) }}
+        </div>
+        <div class="col-start-3 col-end-6">
+            <figure>
+                <img alt="Grow Your Own Program counties" src="/static/img/wvmap-gyo-counties.jpg" />
+                <figcaption class="hidden">{{ pilotCounties }}</figcaption>
+            </figure>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="border-t py-8">
+    <div class="container max-w-6xl">
+    <div class="block md:grid md:grid-cols-5 gap-x-default">
+        <div class="col-start-1 col-end-3">
+        {{ component('titlebar', {
+            title: {
+                text: "Downloads"
+            },
+            alignment: "left"
+        }) }}
+        </div>
+        <div class="col-start-3 col-end-6">
+            <a href="/static/files/23659 GYO Sample for HS Students-v1.pdf" class="inline-block p-2 bg-white border-2 rounded-md hover:bg-brand_lightblue hover:text-white">
+                <div class="mb-2 px-2 text-center">Download Sample Pathway</div>
+                <img src="/static/img/sample-gyo-pathway.png" alt="" width="300">
+            </a>
+        </div>
+    </div>
+    </div>
+</section>
+
+{% include 'blocks/become-a-teacher-resources.html' %}
+
+{% include 'blocks/contact-prefooter.html' %}

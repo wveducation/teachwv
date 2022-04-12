@@ -1,0 +1,57 @@
+{% 
+    set classes = {
+        tabAction: 'bg-white py-2 px-4 text-brand_blue hover:bg-brand_lightblue hover:text-white',
+        tabActionPrefix: 'mr-2 uppercase font-bold opacity-40',
+        tabActionText: 'text-lg'
+    }
+%}
+<div class="w-full" x-data="{ activeTab: 'tab_1' }">
+    <ul role="tablist" class="overflow-x-auto flex gap-x-2 w-full pt-2 pl-2 pr-2 md:overflow-hidden">
+        {% for tab in params.tabs %}
+        <li 
+        class="text-center leading-snug {{ 'active' if loop.index == 1 }}" 
+        role="tab" 
+        aria-selected="false" 
+        aria-setsize="{{ params.tabs | length }}" 
+        aria-posinset="{{ loop.index0 }}">
+            <button 
+            type="button" 
+            tabindex="0" 
+            @click="activeTab = 'tab_{{ loop.index }}'" 
+            aria-selected="{{ 'true' if loop.index == 1 else 'false' }}" 
+            class="h-full py-2 px-4 border-r-2 whitespace-nowrap md:whitespace-normal last-of-type:border-r-0 rounded-t-md hover:text-white hover:bg-brand_lightblue-hover" 
+            :class="[activeTab == 'tab_{{ loop.index }}' ? 'bg-brand_lightblue text-white' : 'text-brand_blue']">
+                {{ tab.title }}
+            </button>
+        </li>
+        {% endfor %}
+    </ul>
+    <div role="tabpanels" class="panels">
+        {% for tab in params.tabs %}
+        <section 
+        x-show="activeTab == 'tab_{{ loop.index }}'" 
+        class="{{ 'active-panel' if loop.index == 1 }}" 
+        role="tabpanel" 
+        aria-hidden="{{ 'false' if loop.index == 1 else 'true' }}">
+            <div class="md:px-6 pt-6 pb-6 text-lg bg-white">
+                <h1>{{ tab.title }}</h1>
+                {{ tab.body | safe }}
+            </div>
+            
+            <footer class="border-t-2 text-right">
+                {% if not loop.last %}
+                <button class="{{ classes.tabAction }}" @click="activeTab = 'tab_{{ loop.index + 1 }}'">
+                    <span class="{{ classes.tabActionPrefix }}">Next:</span> 
+                    <span class="{{ classes.tabActionText }}">{{ params.tabs[loop.index0 + 1].title }}</span>
+                </button>
+                {% else %}
+                <button class="{{ classes.tabAction }}" @click="activeTab = 'tab_1'">
+                    <span class="{{ classes.tabActionPrefix }}">Back:</span> 
+                    <span class="{{ classes.tabActionText }}">{{ params.tabs[0].title }}</span>
+                </button>
+                {% endif %}
+            </footer>
+        </section>
+        {% endfor %}
+    </div>
+</div>

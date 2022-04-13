@@ -157,6 +157,11 @@ module.exports = function(eleventyConfig) {
     return items[0].data.name;
   });
 
+  eleventyConfig.addShortcode("objIndexOf", (data, key) => {
+    const index = Object.keys(data).indexOf(key) + 1;
+    return index.toString();
+  });
+
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
 

@@ -1,0 +1,61 @@
+<div class="relative table-wrapper overflow-auto max-w-full max-h-[98vh] {{ params.classes.tableWrapper }}">
+    <table class="border-separate align-top text-sm" style="border-spacing: 0;">
+        {% block table_caption %}
+        {% if params.title %}
+        <caption class="sticky left-0 mb-2 text-left text-lg font-bold text-brand_blue">{{ params.title }}</caption>
+        {% endif %}
+        {% endblock %}
+        {% block table_head %}
+        <thead class="bg-white">
+            <tr class="text-white">
+                {% for key, heading in params.columns %}
+                <th class="{{ params.classes.cell }} {{ heading.classes['heading'] }} bg-brand_lightblue text-left" {% if heading.width %}width="{{ heading.width }}"{% endif %}>
+                    <div>
+                        {{ heading.label | safe }}
+                        {% if heading.footnotes %}
+                        {% for footnote in heading.footnotes %}
+                        <sup class="text-xs">
+                            <a href="#note-{{ footnote }}">{%- objIndexOf params.footnotes, footnote -%}</a>{% if not loop.last %}, {% endif %}
+                        </sup>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    {% if heading.subtext %}
+                    <div class="font-normal text-sm">{{ heading.subtext }}</div>
+                    {% endif %}
+                </th>
+                {% endfor %}
+            </tr>
+        </thead>
+        {% endblock %}
+        {% block table_body %}
+        <tbody class="bg-white">
+            {% for row in params.body %}
+            <tr>
+                {% for key, value in params.columns %}
+                <td class="{{ params.classes.cell }} {{ params.columns[key].classes.cell }} align-top {{ 'border-l' if loop.index0 == 0 }}"
+                {% if params.columns[key].width %}
+                width="{{ params.columns[key].width }}"
+                {% endif %}>
+                    {{ row[key] | safe }}
+                </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+        {% endblock %}
+        {% block table_foot %}
+        <tfoot>
+            {% for footnoteId, footnote in params.footnotes %}
+            <tr>
+                <td 
+                colspan="{{ params.columns | length }}" 
+                class="{{ 'pt-2' if loop.index0 == 0 }}">
+                    <sup class="text-xs scroll-mt-28" id="note-{{ footnoteId }}">{{ loop.index }}</sup> {{ footnote.text }}
+                </td>
+            </tr>
+            {% endfor %}
+        </tfoot>
+        {% endblock %}
+    </table>
+</div>

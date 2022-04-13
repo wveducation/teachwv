@@ -142,24 +142,115 @@ eleventyNavigation:
     </div>
 </section>
 
-<section class="border-t py-8">
-    <div class="container max-w-6xl">
-    <div class="block md:grid md:grid-cols-5 gap-x-default">
-        <div class="col-start-1 col-end-3">
+{% set tabledata = {
+    title: "Teaching Pathway 2022-2033: Student Sample Courses",
+    classes: {
+        tableWrapper: 'pl-4 md:px-4',
+        table: '',
+        cell: 'min-w-[8em] px-2 py-2 border-r border-b'
+    },
+    columns: {
+        grade: {
+            label: "Grade",
+            width: "60px",
+            classes: {
+                heading: "",
+                cell: "font-bold"
+            }
+        },
+        ela: {
+            label: "English Language Arts",
+            subtext: '(4 courses)',
+            footnotes: ['1', '2']
+        },
+        math: {
+            label: 'Math',
+            subtext: '(4 courses)',
+            footnotes: ['1', '2']
+        },
+        science: {
+            label: "Science",
+            subtext: '(4 courses)',
+            footnotes: ['1', '2']
+        },
+        social: {
+            label: "Social Studies",
+            subtext: '(4 courses)',
+            footnotes: ['1', '2']
+        },
+        other: {
+            label: "Other",
+            subtext: '(4 courses)',
+            footnotes: ['1', '2']
+        },
+        dualcredit: {
+            label: "Required Dual Credit Core Courses for GYO WV",
+            subtext: '(4 courses)',
+            footnotes: ['1', '2']
+        }
+    },
+    body: [
+        {
+            grade: "9",
+            ela: "English 9",
+            math: "Math I or Algebra I",
+            science: 'Earth and Space Science',
+            social: 'World Studies or AP Social Studies',
+            other: 'World Languages Elective',
+            dualcredit: "1306 Introduction to Education and the Classroom"
+        },
+        {
+            grade: "10",
+            ela: "English 10",
+            math: "Math II or Geometry",
+            science: 'Biology or AP Biology',
+            social: 'US Studies Comprehensive or AP US History',
+            other: 'The Arts',
+            dualcredit: "1307 Introduction to Child Development"
+        },
+        {
+            grade: "11",
+            ela: "English 11 or AP or Dual Credit English",
+            math: "Math III or Algebra II",
+            science: 'Chemistry or AP or Dual Credit Chemistry',
+            social: 'Civics or AP Government and Politics',
+            other: 'Physical Education',
+            dualcredit: "1308 Introduction to Educational Psychology"
+        },
+        {
+            grade: "12",
+            ela: "AP or Dual Credit English",
+            math: "Dual Credit College Algebra or AP Calculus",
+            science: "Dual Credit Physical Science",
+            social: "AP or Dual Credit Psychology",
+            other: "<ul>
+                <li class='mb-2'>Health</li>
+                <li class='mb-2'>BCA 1 (Business Computer Application)</li>
+                <li class='mb-2'>Other AP or Dual Credit Course</li>
+            </ul>",
+            dualcredit: "1309 Introduction to Social Emotional and Behavioral Wellness"
+        }
+    ],
+    footnotes: {
+        '1': {
+            text: "A minimum of 22 total credits required for high school graduation per WVBE Policy 2510 (counties may require additional credits)."
+        },
+        '2': {
+            text: "AP or Dual credit can replace any course."
+        }
+    }
+} %}
+<section class="border-t py-12">
+    <div class="container mb-12">
         {{ component('titlebar', {
             title: {
-                text: "Downloads"
-            },
-            alignment: "left"
+                text: "Sample Pathway"
+            }
         }) }}
-        </div>
-        <div class="col-start-3 col-end-6">
-            <a href="/static/files/23659 GYO Sample for HS Students-v1.pdf" class="inline-block p-2 bg-white border-2 rounded-md hover:bg-brand_lightblue hover:text-white">
-                <div class="mb-2 px-2 text-center">Download Sample Pathway</div>
-                <img src="/static/img/sample-gyo-pathway.png" alt="" width="300">
-            </a>
-        </div>
+        <p class="text-center text-lg">While each county Grow Your Own model defines their own specific program, this course menu serves as an example.<br/> This  pathway also provides support for Praxis preparation — including practice tests and financial support to cover costs associated with testing.</p>
     </div>
+    <div class="mx-auto max-w-6xl">
+        {{ component('table', tabledata) }}
     </div>
 </section>
 

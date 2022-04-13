@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -2343,9 +2343,6 @@ input[type=submit] {
   input[type=submit] {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-
-  input[type=submit] {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
@@ -2478,9 +2475,6 @@ details[open] summary::before {
   .markdown-field a.btn {
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-
-  .markdown-field a.btn {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }

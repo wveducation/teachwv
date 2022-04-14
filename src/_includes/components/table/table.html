@@ -51,7 +51,7 @@
                 <td 
                 colspan="{{ params.columns | length }}" 
                 class="{{ 'pt-2' if loop.index0 == 0 }}">
-                    <sup class="text-xs scroll-mt-28" id="note-{{ footnoteId }}">{{ loop.index }}</sup> {{ footnote.text }}
+                    <sup class="text-xs scroll-mt-28" id="note-{{ footnoteId }}">{{ loop.index }}</sup> {{ footnote.text | safe }}
                 </td>
             </tr>
             {% endfor %}

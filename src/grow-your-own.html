@@ -145,7 +145,7 @@ eleventyNavigation:
 {% set tabledata = {
     title: "Teaching Pathway 2022-2033: Student Sample Courses",
     classes: {
-        tableWrapper: 'pl-4 md:px-4',
+        tableWrapper: 'pl-6 md:pr-6',
         table: '',
         cell: 'min-w-[8em] px-2 py-2 border-r border-b'
     },
@@ -233,7 +233,7 @@ eleventyNavigation:
     ],
     footnotes: {
         '1': {
-            text: "A minimum of 22 total credits required for high school graduation per WVBE Policy 2510 (counties may require additional credits)."
+            text: 'A minimum of 22 total credits required for high school graduation per <a href="http://wvde.state.wv.us/policies/policy.php?p=2510" class="underline">WVBE Policy 2510</a> (counties may require additional credits).'
         },
         '2': {
             text: "AP or Dual credit can replace any course."
@@ -241,16 +241,42 @@ eleventyNavigation:
     }
 } %}
 <section class="border-t py-12">
-    <div class="container mb-12">
+    <div class="container mb-12 max-w-6xl max-auto">
         {{ component('titlebar', {
             title: {
                 text: "Sample Pathway"
             }
         }) }}
-        <p class="text-center text-lg">While each county Grow Your Own model defines their own specific program, this course menu serves as an example. This pathway also provides support for Praxis preparation — including practice tests and financial support to cover costs associated with testing.</p>
+        <div class="grid md:grid-cols-2 gap-x-default">
+            <p class="text-lg">The following course menu is a guidance template for students participating in the Grow Your Own teaching pathway with the goal to exit high school with a minimum of one year of college credit (24-30) hours toward a Bachelor's Degree in education.</p>
+            <p class="">Completion of the <abbr title="Grow Your Own">GYO</abbr> WV Teaching Career Pathway should be listed on the final transcript. Support for Praxis Preparation, including practice tests and financial support to cover the cost of testing, is available. For specific information, refer to individual county plans.</p>
+        </div>
     </div>
-    <div class="mx-auto max-w-6xl">
+
+    <div class="mx-auto mb-16 max-w-6xl">
         {{ component('table', tabledata) }}
+    </div>
+
+    <div class="container max-w-6xl">
+        <div class="grid grid-cols-5 gap-x-default">
+            <div class="col-start-1 col-end-3">
+                <h2 class="text-3xl">Information</h2>
+                <p class="mb-2">For more information about the Grow Your Own Pathway, please contact Dr. Carla Warren at the West Virginia Department of Education.</p>
+            </div>
+            <div class="col-start-3 col-end-6">
+                {{ component('contact-card', {
+                    name: 'Carla Warren, Ed.D., <abbr title="National Board Certified Teacher">NBCT</abbr>',
+                    position: 'Director, Education Development and Support Services',
+                    phone: '1-833-627-2833',
+                    email: 'carla.warren@k12.wv.us',
+                    classes: 'w-full',
+                    image: {
+                        src: '/static/img/portrait_warren-carla.jpg'
+                    },
+                    theme: '2'
+                }) }}
+            </div>
+        </div>
     </div>
 </section>
 

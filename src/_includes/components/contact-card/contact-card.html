@@ -6,7 +6,12 @@
                 <img class="u-photo sr-only" src="{{ params.image.src }}" width="300" height="300" />
             </div>
             <div class="p-8 pr-8 text-center md:text-left">
-                <h1 class="p-name font-display text-2xl">{{ params.name }}</h1>
+                <div class="mb-2">
+                    <h1 class="p-name mb-0 font-display text-2xl">{{ params.name | safe }}</h1>
+                    {% if params.position %}
+                    <div>{{ params.position | safe }}</div>
+                    {% endif %}
+                </div>
                 {% if params.phone %}
                 <div class="text-xl">
                     <div class="sr-only">Phone</div>

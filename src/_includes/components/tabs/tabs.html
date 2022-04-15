@@ -6,7 +6,7 @@
     }
 %}
 <div class="w-full" x-data="{ activeTab: 'tab_1' }">
-    <ul role="tablist" class="overflow-x-auto flex gap-x-2 w-full pt-2 pl-2 pr-2 md:overflow-hidden">
+    <ul role="tablist" class="overflow-x-auto flex gap-x-2 w-full pt-2 pl-2 pr-2 border-b-2">
         {% for tab in params.tabs %}
         <li 
         class="text-center leading-snug {{ 'active' if loop.index == 1 }}" 
@@ -19,21 +19,21 @@
             tabindex="0" 
             @click="activeTab = 'tab_{{ loop.index }}'" 
             aria-selected="{{ 'true' if loop.index == 1 else 'false' }}" 
-            class="h-full py-2 px-4 border-r-2 whitespace-nowrap md:whitespace-normal last-of-type:border-r-0 rounded-t-md hover:text-white hover:bg-brand_lightblue-hover" 
+            class="h-full py-2 px-4 border-r-2 whitespace-nowrap last-of-type:border-r-0 rounded-t-md hover:text-white hover:bg-brand_lightblue-hover" 
             :class="[activeTab == 'tab_{{ loop.index }}' ? 'bg-brand_lightblue text-white' : 'text-brand_blue']">
                 {{ tab.title }}
             </button>
         </li>
         {% endfor %}
     </ul>
-    <div role="tabpanels" class="panels">
+    <div role="tabpanels" class="panels flex">
         {% for tab in params.tabs %}
         <section 
-        x-show="activeTab == 'tab_{{ loop.index }}'" 
-        class="{{ 'active-panel' if loop.index == 1 }}" 
+        class="mr-[-100%] w-[100%] h-[100%] {{ 'active-panel' if loop.index == 1 }}" 
+        :class="[activeTab == 'tab_{{ loop.index }}' ? 'visible': 'invisible']" 
         role="tabpanel" 
         aria-hidden="{{ 'false' if loop.index == 1 else 'true' }}">
-            <div class="md:px-6 pt-6 pb-6 text-lg bg-white">
+            <div class="px-4 md:px-6 pt-6 pb-6 text-lg bg-white border-l-2 border-r-2">
                 <h1>{{ tab.title }}</h1>
                 {{ tab.body | safe }}
             </div>

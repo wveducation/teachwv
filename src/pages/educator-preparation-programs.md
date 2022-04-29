@@ -11,11 +11,11 @@ meta:
   description: Teacher preparation programs are designed to prepare both
     undergraduate and graduate students to become licensed teachers.
 ---
-Programs can offer students specialized coursework in the grade level and subjects they are interested in teaching. 
+Programs can offer students specialized coursework in the grade-level and subjects they are interested in teaching. 
 
 <iframe width="560" class="aspect-video w-full" src="https://www.youtube.com/embed/iV65AXO-vqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Teacher Prep Programs
+## Teacher Preparation Programs in West Virginia
 
 * [Alderson Broaddus University](https://ab.edu/academics/degrees-majors-minors/undergraduate-programs/)
 * [Appalachian Bible College](https://abc.edu/undergraduate/academics/majors/elementary-education/)
@@ -38,6 +38,8 @@ Programs can offer students specialized coursework in the grade level and subjec
 
 ## Looking for a Program?
 
-<a href="https://wvde.state.wv.us/certification/approved-programs/?byschool">Explore the areas of certification</a> that each college/university offers.
+[Explore the areas of certification](https://wvde.state.wv.us/certification/approved-programs/?byschool) that each college/university offers as part of a state-approved traditional program.
 
-Navigate your future to find information on careers, colleges, military service, entrepreneurship, and on-the-job training through our [Classroom 2 Career Navigator](http://wvclassroom2career.com).
+Explore the areas of certification that state-approved alternative certification and Option 3 programs provide by visiting the [Office of Educator Development and Support Services website](http://wvclassroom2career.com).
+
+Navigate your future to find information on careers, colleges, military service, entrepreneurship, and on-the-job training through our [Classroom 2 Career Navigator](http://wvclassroom2career.com/).

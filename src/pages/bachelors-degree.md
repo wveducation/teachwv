@@ -1,8 +1,8 @@
 ---
 title: Bachelor's Degree or Higher
-subtitle: If you hold a bachelor’s degree or higher from an accredited institution of
-  higher education, there are several ways you can become a teacher in West
-  Virginia.
+subtitle: If you hold a bachelor’s degree or higher from an accredited
+  institution of higher education, there are several ways you can become a
+  teacher in West Virginia.
 tags:
   - pathways
 eleventyNavigation:
@@ -46,6 +46,8 @@ This pathway is perfect for the following:
 
 Contact your county for details on cost and program completion time. 
 
+Review [state-approved county-based alternative certification programs](https://wvde.us/educator-development-and-support/preparation/state-approved-programs/#tab-42f961eb4b4e4dbb6d4) on the Educator Development and Support Services website.
+
 ### What Can I Expect?
 
 Download these helpful resources.
@@ -68,7 +70,9 @@ This pathway is perfect for the following:
 * Individuals who are looking for a career change 
 * Individuals in long-term substitute positions seeking initial certification 
 
-Contact your program provider ([American Board](https://www.americanboard.org/) or [Teach Now)](https://moreland.edu/teacher-certification) for details on cost and program completion time.
+Contact your program provider ([American Board](https://www.americanboard.org/), [iTeach](https://www.iteach.net/), or [Teach Now)](https://moreland.edu/teacher-certification) for details on cost and program completion time.
+
+Review [descriptions of state-approved teacher preparation coursework of Option 3 programs](https://wvde.us/educator-development-and-support/preparation/state-approved-programs/#tab-ed3c0c71874692302ff) and each program’s approved endorsements on the Educator Development and Support Services website.
 
 ### What Can I Expect?
 
@@ -98,6 +102,9 @@ Contact your program provider for details on cost and program completion time. 
 * West Liberty University Coursework: Dr. Nicole Ennis at [nicole.ennis@westliberty.edu](mailto:nicole.ennis@westliberty.edu). 
 * West Virginia University Coursework: Dr. Stephanie Lorenze at [stephanie.lorenze@mail.wvu.edu](mailto:stephanie.lorenze@mail.wvu.edu). 
 * Wheeling University Coursework: Dr. Dianna Vargo at [dvargo@wheeling.edu](mailto:dvargo@wheeling.edu). 
+* Glenville State University Coursework: Dr. Jeff Hunter at [jeffhunter@glenville.edu](mailto:jeffhunter@glenville.edu).
+
+[Review details on state-approved WVDE Alternative Certification Programs and their approved coursework options](https://wvde.us/educator-development-and-support/preparation/state-approved-programs/#tab-8a15ab4d449cd2b82bb) on the Educator Development and Support Services website. Eligible and ineligible endorsements for these programs are identified within the [WV Licensure Testing Directory](https://wvde.us/certification/certification-info/#tab-67fa0185abe42415389).
 
 ### What Can I Expect?
 

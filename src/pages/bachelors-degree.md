@@ -102,7 +102,7 @@ Contact your program provider for details on cost and program completion time. 
 * West Liberty University Coursework: Dr. Nicole Ennis at [nicole.ennis@westliberty.edu](mailto:nicole.ennis@westliberty.edu). 
 * West Virginia University Coursework: Dr. Stephanie Lorenze at [stephanie.lorenze@mail.wvu.edu](mailto:stephanie.lorenze@mail.wvu.edu). 
 * Wheeling University Coursework: Dr. Dianna Vargo at [dvargo@wheeling.edu](mailto:dvargo@wheeling.edu). 
-* Glenville State University Coursework: Dr. Jeff Hunter at [jeffhunter@glenville.edu](mailto:jeffhunter@glenville.edu).
+* Glenville State University Coursework: Dr. Connie Stout O'Dell at [connie.stout@glenville.edu](mailto:connie.stout@glenville.edu).
 
 [Review details on state-approved WVDE Alternative Certification Programs and their approved coursework options](https://wvde.us/educator-development-and-support/preparation/state-approved-programs/#tab-8a15ab4d449cd2b82bb) on the Educator Development and Support Services website. Eligible and ineligible endorsements for these programs are identified within the [WV Licensure Testing Directory](https://wvde.us/certification/certification-info/#tab-67fa0185abe42415389).
 

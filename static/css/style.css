@@ -1273,6 +1273,10 @@ select {
   margin-bottom: 1rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -1307,10 +1311,6 @@ select {
 
 .-mt-4 {
   margin-top: -1rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .mr-4 {
@@ -1877,6 +1877,11 @@ select {
   background-color: rgb(0 0 0 / 0.1);
 }
 
+.bg-\[\#E7C66E\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 198 110 / var(--tw-bg-opacity));
+}
+
 .bg-brand_lightgrey {
   --tw-bg-opacity: 1;
   background-color: rgb(209 211 212 / var(--tw-bg-opacity));
@@ -1983,6 +1988,11 @@ select {
   padding-bottom: 0.5rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -1991,11 +2001,6 @@ select {
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .px-5 {
@@ -2156,6 +2161,11 @@ select {
   line-height: 1.25rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -2174,11 +2184,6 @@ select {
   font-size: 10vw;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -2193,6 +2198,10 @@ select {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .not-italic {

@@ -191,44 +191,103 @@ eleventyNavigation:
     },
     body: [
         {
-            grade: "9",
-            ela: "English 9",
-            math: "Math I or Algebra I",
-            science: 'Earth and Space Science',
-            social: 'World Studies or AP Social Studies',
-            other: 'World Languages Elective',
-            dualcredit: "1306 Introduction to Education and the Classroom"
+            grade: {
+                text: "9"
+            },
+            ela: {
+                text: "English 9"
+            },
+            math: {
+                text: "Math I or Algebra I"
+            },
+            science: {
+                text: 'Earth and Space Science'
+            },
+            social: {
+                text: 'World Studies or AP Social Studies'
+            },
+            other: {
+                text: 'World Languages Elective'
+            },
+            dualcredit: {
+                text: "<ul>
+                    <li class='mb-2'>1306 Introduction to Education and the Classroom <sup class='text-xs'><a href='#note-3'>3</a>, <a href='#note-4'>4</a></sup></li>
+                    <li class='mb-2'>1307 Introduction to Child Development <sup class='text-xs'><a href='#note-3'>3</a>, <a href='#note-4'>4</a></sup></li>
+                    <li class='mb-2'>1308 Introduction to Educational Psychology <sup class='text-xs'><a href='#note-3'>3</a>, <a href='#note-4'>4</a></sup></li>
+                    <li class='mb-2'>1309 Introduction to Social Emotional and Behavioral Wellness <sup class='text-xs'><a href='#note-3'>3</a>, <a href='#note-4'>4</a></sup></li>
+                </ul>",
+                class: "bg-[#E7C66E]",
+                rowspan: "0"
+            }
         },
         {
-            grade: "10",
-            ela: "English 10",
-            math: "Math II or Geometry",
-            science: 'Biology or AP Biology',
-            social: 'US Studies Comprehensive or AP US History',
-            other: 'The Arts',
-            dualcredit: "1307 Introduction to Child Development"
+            grade: {
+                text: "10"
+            },
+            ela: {
+                text: "English 10"
+            },
+            math: {
+                text: "Math II or Geometry"
+            },
+            science: {
+                text: "AP or Dual Credit Biology <sup><a href='#note-4'>4</a></sup>",
+                class: "bg-[#E7C66E]"
+            },
+            social: {
+                text: "AP/Dual Credit U.S. Studies Comprehensive or U.S. History <sup><a href='#note-4'>4</a></sup>",
+                class: "bg-[#E7C66E]"
+            },
+            other: {
+                text: 'The Arts'
+            }
         },
         {
-            grade: "11",
-            ela: "English 11 or AP or Dual Credit English",
-            math: "Math III or Algebra II",
-            science: 'Chemistry or AP or Dual Credit Chemistry',
-            social: 'Civics or AP Government and Politics',
-            other: 'Physical Education',
-            dualcredit: "1308 Introduction to Educational Psychology"
+            grade: {
+                text: "11"
+            },
+            ela: {
+                text: "English 11: AP or Dual Credit English <sup><a href='#note-4'>4</a></sup>",
+                class: "bg-[#E7C66E]"
+            },
+            math: {
+                text: "Math III or Algebra II"
+            },
+            science: {
+                text: 'Chemistry or AP or Dual Credit Chemistry'
+            },
+            social: {
+                text: 'AP/Dual Credit U.S. Studies Comprehensive or U.S. History'
+            },
+            other: {
+                text: 'Physical Education'
+            }
         },
         {
-            grade: "12",
-            ela: "AP or Dual Credit English",
-            math: "Dual Credit College Algebra or AP Calculus",
-            science: "Dual Credit Physical Science",
-            social: "AP or Dual Credit Psychology",
-            other: "<ul>
-                <li class='mb-2'>Health</li>
-                <li class='mb-2'>BCA 1 (Business Computer Application)</li>
-                <li class='mb-2'>Other AP or Dual Credit Course</li>
-            </ul>",
-            dualcredit: "1309 Introduction to Social Emotional and Behavioral Wellness"
+            grade: {
+                text: "12"
+            },
+            ela: {
+                text: "English 12: AP or Dual Credit English <sup><a href='#note-4'>4</a></sup>",
+                class: "bg-[#E7C66E]"
+            },
+            math: {
+                text: "Dual Credit College Algebra; or AP Calculus <sup><a href='#note-4'>4</a></sup>",
+                class: "bg-[#E7C66E]"
+            },
+            science: {
+                text: "Dual Credit Physical Science"
+            },
+            social: {
+                text: "AP or Dual Credit Psychology"
+            },
+            other: {
+                text: "<ul>
+                    <li class='mb-2'>Health</li>
+                    <li class='mb-2'>BCA 1 (Business Computer Application)</li>
+                    <li class='mb-2'>Other AP or Dual Credit Course</li>
+                    </ul>"
+            }
         }
     ],
     footnotes: {
@@ -237,6 +296,12 @@ eleventyNavigation:
         },
         '2': {
             text: "AP or Dual credit can replace any course."
+        },
+        '3': {
+            text: "or equivalent courses as determined by county plan."
+        },
+        '4': {
+            text: "Guaranteed transferable between participating institutions in the Grow Your Own WV Teaching Pathway network."
         }
     }
 } %}
@@ -250,12 +315,14 @@ eleventyNavigation:
         <div class="grid md:grid-cols-2 gap-x-default">
             <p class="text-lg">The following course menu is a guidance template for students participating in the Grow Your Own teaching pathway with the goal to exit high school with a minimum of one year of college credit (24-30) hours toward a Bachelor's Degree in education.</p>
 
-            <p class="">Completion of the Grow Your Own teaching pathway should be listed on the final transcript. Support for Praxis preparation, including practice tests and financial support to cover the cost of testing, is available. For specific information, refer to individual county plans.</p>
+            <p>Highlighted courses are guaranteed transferable between participating institutions in the Grow Your Own WV Teaching Pathway network. Students should consult with their chosen post-secondary educational institution when choosing other course options and electives. For specific information, refer to individual county plans.</p>
         </div>
     </div>
 
     <div class="mx-auto mb-16 max-w-6xl">
         {{ component('table', tabledata) }}
+
+        <div class="mt-4 px-6"><p class="italic">Completion of the Grow Your Own teaching pathway should be listed on the final transcript. Support for Praxis preparation, including practice tests and financial support to cover the cost of testing, is available. For specific information, refer to individual county plans.</p></div>
     </div>
 
     <div class="container max-w-6xl">

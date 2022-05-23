@@ -33,12 +33,13 @@
             {% for row in params.body %}
             <tr>
                 {% for key, value in params.columns %}
-                <td class="{{ params.classes.cell }} {{ params.columns[key].classes.cell }} align-top {{ 'border-l' if loop.index0 == 0 }}"
-                {% if params.columns[key].width %}
-                width="{{ params.columns[key].width }}"
-                {% endif %}>
-                    {{ row[key] | safe }}
+                {% if row[key].text %}
+                <td class="{{ params.classes.cell }} {{ params.columns[key].classes.cell }} align-top {{ 'border-l' if loop.index0 == 0 }} {{ row[key].class }}"
+                {% if params.columns[key].width %}width="{{ params.columns[key].width }}" {% endif %}
+                {% if row[key].rowspan %}rowspan="{{ row[key].rowspan }}" {% endif %}>
+                    {{ row[key].text | safe }}
                 </td>
+                {% endif %}
                 {% endfor %}
             </tr>
             {% endfor %}

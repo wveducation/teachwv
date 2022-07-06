@@ -86,7 +86,7 @@ Download these helpful resources.
 
 ## Option 4: WVDE Alternative Certification Programs
 
-This option was designed to provide an accelerated pathway for individuals who possess a bachelor’s degree and meet minimal qualifications to complete WVDE-approved training and coursework options which are substantially aligned to the West Virginia Professional Teaching Standards to acquire a Provisional Professional Teaching Certificate.
+This option was designed to provide an accelerated pathway for individuals who possess a bachelor’s degree and meet minimal qualifications to complete West Virginia Department of Education (WVDE)-approved training and coursework options which are substantially aligned to the West Virginia Professional Teaching Standards to acquire a Provisional Professional Teaching Certificate.
 
 This pathway is perfect for the following:
 
@@ -96,7 +96,9 @@ This pathway is perfect for the following:
 * Individuals who are looking for a career change 
 * Individuals in long-term substitute positions seeking initial certification 
 
-Contact your program provider for details on cost and program completion time.  
+Review complete details on [state-approved WVDE Alternative Certification Programs](https://wvde.us/educator-development-and-support/preparation/state-approved-programs/#tab-8a15ab4d449cd2b82bb), and approved coursework options, on the Educator Development and Support Services website. Endorsements for these programs are identified within the [West Virginia Licensure Testing Directory](https://wvde.us/certification/certification-info/#tab-67fa0185abe42415389).
+
+For more information on cost and completion time, contact any of the following WVDE Alternative Certification Program coursework providers:
 
 * Bluefield State College Coursework: Dr. Terene Stiltner at [tstiltner@bluefieldstate.edu](mailto:tstiltner@bluefieldstate.edu). 
 * West Liberty University Coursework: Dr. Nicole Ennis at [nicole.ennis@westliberty.edu](mailto:nicole.ennis@westliberty.edu). 
@@ -104,7 +106,7 @@ Contact your program provider for details on cost and program completion time. 
 * Wheeling University Coursework: Dr. Dianna Vargo at [dvargo@wheeling.edu](mailto:dvargo@wheeling.edu). 
 * Glenville State University Coursework: Dr. Connie Stout O'Dell at [connie.stout@glenville.edu](mailto:connie.stout@glenville.edu).
 
-[Review details on state-approved WVDE Alternative Certification Programs and their approved coursework options](https://wvde.us/educator-development-and-support/preparation/state-approved-programs/#tab-8a15ab4d449cd2b82bb) on the Educator Development and Support Services website. Eligible and ineligible endorsements for these programs are identified within the [WV Licensure Testing Directory](https://wvde.us/certification/certification-info/#tab-67fa0185abe42415389).
+After reviewing the resources below, [apply for enrollment](https://forms.office.com/Pages/ResponsePage.aspx?id=S7AZ4AwzekaLrgn7FzdNattQ2GWIIWhGvThuGKqgKs5UMFBVNlZGRUhFUk4yRjBPVUxQTlpUUllSWS4u&wdLOR=cE1BB2B23-CBED-452D-B24B-39BEF8BA3362) into the WVDE Alternative Certification Program.
 
 ### What Can I Expect?
 

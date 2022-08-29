@@ -319,12 +319,16 @@ eleventyNavigation:
         </div>
     </div>
 
-    <div class="mx-auto mb-16 max-w-6xl">
+    <div class="mx-auto max-w-6xl">
         {{ component('table', tabledata) }}
 
         <div class="mt-4 px-6"><p class="italic">Completion of the Grow Your Own teaching pathway should be listed on the final transcript. Support for Praxis preparation, including practice tests and financial support to cover the cost of testing, is available. For specific information, refer to individual county plans.</p></div>
     </div>
+</section>
 
+{% include 'blocks/study_com-teaser.html' %}
+
+<section class="py-12">
     <div class="container max-w-6xl">
         <div class="block md:grid grid-cols-5 gap-x-default">
             <div class="col-start-1 col-end-3">

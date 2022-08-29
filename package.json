@@ -1,5 +1,7 @@
 {
   "scripts": {
+    "dev": "npm-run-all --parallel start local-server",
+    "local-server": "npx netlify-cms-proxy-server",
     "start": "npm-run-all --parallel css eleventy browsersync",
     "eleventy": "eleventy --watch",
     "debug": "set DEBUG=* & eleventy",

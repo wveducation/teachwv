@@ -6,6 +6,7 @@ params:
         url <string>
         text <string>
         external <boolean>
+        ariaLabel <string>
     image:
         src <string>
         alt <string>
@@ -23,11 +24,15 @@ params:
 <section class="lg:py-8 border-b md:border-b-0" style="background: {% if params.theme.background %}{{ params.theme.background }}{% else %}#FBF9F3{% endif %};">
     <div class="lg:container">
     <div class="block overflow-hidden md:grid lg:grid-rows-1 lg:grid-cols-6">
-        <img class="{{ imagePositionClasses }} lg:rounded-xl w-full" src="{{ params.image.src }}" alt="{{ params.image.alt }}" />
+        <div class="{{ imagePositionClasses }}">
+            {% if params.action.url %}<a href="{{ params.action.url }}" class="block" aria-label="{{ params.action.ariaLabel }}">{% endif %}
+            <img class="lg:rounded-xl w-full" src="{{ params.image.src }}" alt="{{ params.image.alt }}" />
+            {% if params.action.url %}</a>{% endif %}
+        </div>
         <div class="{{ cardPositionClasses }} md:mx-6 lg:mx-auto md:-mt-8 lg:-mt-0 md:mb-8 lg:mb-auto flex flex-col justify-center">
             <div class="bg-white p-8 text-left">
                 <h1 class="text-4xl">{{ params.title }}</h1>
-                <p class="text-xl">{{ params.text }}</p>
+                <p class="text-xl">{{ params.text | safe }}</p>
                 {{ component('button', {
                     url: params.action.url,
                     text: params.action.text,

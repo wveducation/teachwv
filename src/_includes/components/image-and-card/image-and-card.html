@@ -25,7 +25,7 @@ params:
     <div class="block overflow-hidden md:grid lg:grid-rows-1 lg:grid-cols-6">
         <img class="{{ imagePositionClasses }} lg:rounded-xl w-full" src="{{ params.image.src }}" alt="{{ params.image.alt }}" />
         <div class="{{ cardPositionClasses }} md:mx-6 lg:mx-auto md:-mt-8 lg:-mt-0 md:mb-8 lg:mb-auto flex flex-col justify-center">
-            <div class="bg-white p-8 text-center md:text-left">
+            <div class="bg-white p-8 text-left">
                 <h1 class="text-4xl">{{ params.title }}</h1>
                 <p class="text-xl">{{ params.text }}</p>
                 {{ component('button', {

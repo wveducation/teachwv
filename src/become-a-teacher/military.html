@@ -37,6 +37,32 @@ eleventyNavigation:
     <p class="text-xl max-w-4xl mx-auto">Veterans can become excellent role models for students in the classroom. <br/>View resources specific to a background in the U.S. Armed Forces.</p>
 </div>
 
+{% set videos = [
+    {
+        youtubeID: 'OC2vrG6DTSg',
+        title: 'Keeping ConnectED: Veterans in The Classroom',
+        subtitle: 'Highlighting the impact of West Virginia teachers who previously were in military service.'
+    }
+]
+%}
+<div class="container snap-y snap-mandatory">
+    {% for video in videos %}
+    <article class="py-8 border-b snap-start">
+        <div class="max-w-3xl mx-auto">
+            <div class="mb-6">
+                <iframe id="ytplayer" class="w-full aspect-video bg-brand_lightgrey" type="text/html"
+            src="https://www.youtube.com/embed/{{ video.youtubeID }}"
+            frameborder="0" allowfullscreen>
+            </div>
+            <div class="text-center">
+                <h2 class="text-3xl">{{ video.title | safe }}</h2>
+                <p class="text-lg markdown-field">{{ video.subtitle | safe }}</p>
+            </div>
+        </div>
+    </article>
+    {% endfor %}
+</div>
+
 {% set resources = [
     {
         title: 'Licensure Pathways',

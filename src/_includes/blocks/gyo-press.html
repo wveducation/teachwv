@@ -1,0 +1,26 @@
+{% set links = [
+    {
+        title: "West Virginia High School Student Wishes to Strengthen Teacher Pipeline",
+        source: "Matter of Fact with Soledad O'Brien",
+        url: 'https://www.matteroffact.tv/west-virginia-is-recruiting-high-school-students-amidst-teacher-shortage/'
+    }
+] %}
+<section class="border-t py-12">
+    <div class="container mb-12 max-w-6xl max-auto">
+        <div class="mb-12">
+            {{ component('titlebar', {
+                title: {
+                    text: "In the Press"
+                }
+            }) }}
+        </div>
+        <div class="mt-4">
+            {% for link in links %}
+            <article class="relative text-center">
+                <h1 class="mb-0 text-xl hover:underline"><a href="{{ link.url }}">{{ link.title }}</a></h1>
+                <cite class="not-italic">{{ link.source }}</cite>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>

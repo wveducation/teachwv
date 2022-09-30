@@ -1,6 +1,6 @@
 ---
 title: "New teachers: Six strategies for making your first year more manageable"
-subtitle: The first year of teaching can be a difficult time for new teachers. They are faced with the challenge of building relationships with their students, managing their classrooms and taking care of themselves. However, there are ways to make the first year more manageable. Dr. Carla Warren shares these six strategies for new teachers.
+subtitle: The first year of teaching can be a difficult time for new teachers. They face the challenges of building relationships with their students, managing their classrooms and self-care; however, there are ways to make the first year more manageable. WVDE Director of Educator Development and Support Dr. Carla Warren shares six strategies for new teachers.
 eleventyNavigation:
   order: 0
   title: "New teachers: Six strategies for making your first year more manageable"
@@ -34,4 +34,5 @@ Observing other teachers is a great way to learn instructional strategies and cl
 
 ---
 
-The first year of teaching can be difficult, but it is manageable with these six strategies. New teachers should focus on relationship building, classroom management, self-care and reflecting on their practice. Asking questions and observing other teachers can also be helpful. By using these strategies, new teachers will be successful in their first year!
+For more first-year teacher resources, contact Carla Warren, Ed. D., NBCT by phone at  1-833-627-2833 or by email at [carla.warren@k12.wv.us](carla.warren@k12.wv.us).
+

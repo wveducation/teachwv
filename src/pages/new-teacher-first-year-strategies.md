@@ -6,7 +6,7 @@ eleventyNavigation:
   title: "New teachers: Six strategies for making your first year more manageable"
   key: new-teacher-first-year-strategies
 meta:
-  description: ______
+  description: WVDE Director of Educator Development and Support Dr. Carla Warren shares six strategies for new teachers.
 ---
 ## Relationship Building
 

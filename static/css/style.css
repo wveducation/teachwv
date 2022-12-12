@@ -1268,12 +1268,12 @@ select {
   grid-column-start: 3;
 }
 
-.col-start-7 {
-  grid-column-start: 7;
-}
-
 .col-start-4 {
   grid-column-start: 4;
+}
+
+.col-start-7 {
+  grid-column-start: 7;
 }
 
 .col-start-2 {
@@ -1288,12 +1288,12 @@ select {
   grid-column-end: 6;
 }
 
-.col-end-13 {
-  grid-column-end: 13;
-}
-
 .col-end-4 {
   grid-column-end: 4;
+}
+
+.col-end-13 {
+  grid-column-end: 13;
 }
 
 .col-end-5 {
@@ -2018,6 +2018,10 @@ select {
   padding: 1.5rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -2032,10 +2036,6 @@ select {
 
 .p-1 {
   padding: 0.25rem;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .py-16 {

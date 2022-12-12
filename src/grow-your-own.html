@@ -117,6 +117,32 @@ eleventyNavigation:
     </div>
 </section>
 
+<section class="border-t py-12">
+    <div class="container max-w-6xl">
+    <div class="block md:grid md:grid-cols-5 gap-x-default">
+        <div class="col-start-1 col-end-4">
+            {{ component('titlebar', {
+                title: {
+                    text: "Apprenticeship Model"
+                },
+                alignment: "left"
+            }) }}
+            <p class="text-lg">Designed to provide paid, on the job training, the WV Apprenticeship Model provides Grow Your Own students with wage-earning field experiences, preparing them for the teaching career while alleviating financial burdens. Students who have graduated high school and complete the Youth Apprenticeship are certified as a Teacher Apprentice by the U.S. Department of Labor.</p>
+        </div>
+        <div class="col-start-4 col-end-6">
+            <div class="block p-8 border-2 rounded-lg bg-white text-center">
+                <h2 class="text-xl">Free Resource</h2>
+                <p>Download our guide to the West Virginia Apprenticeship Model.</p>
+                {{ component('button', {
+                    text: "Download",
+                    url: "/static/files/teachwv-grow-your-own-apprenticeships.pdf"
+                }) }}
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
 {% set pilotCounties = '<p class="text-lg">Grow Your Own Programs are being piloted in the following counties:</p> <p class="text-md">Berkeley, Braxton, Brooke, Cabell, Calhoun, Fayette, Grant, Greenbrier, Hardy, Hampshire, Jefferson, Kanawha, Lewis, Logan, Marshall, Mason, McDowell, Mercer, Mingo, Monroe, Nicholas, Ohio, Pendleton, Pocahontas, Putnam, Summers, Tyler, Upshur, Wayne, and Webster.</p>' %}
 <section class="border-t py-8">
     <div class="container max-w-6xl">

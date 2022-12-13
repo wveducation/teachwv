@@ -3,7 +3,7 @@
     {% case '2' %}
         <article class="h-card relative block md:flex mt-6 md:mt-0 md:overflow-hidden bg-white rounded-lg border bg-radial-offwhite-top md:bg-radial-offwhite-left {{ params.classes }}" style="">
             <div class="relative block shrink-0 w-[120px] h-[120px] md:w-[150px] md:h-auto mx-auto -mt-4 md:-mt-0 md:mx-0 rounded-full md:rounded-none bg-cover bg-center md:clip-rounded-right" style="background-image: url('{{ params.image.src }}');">
-                <img class="u-photo sr-only" src="{{ params.image.src }}" width="300" height="300" />
+                <img class="u-photo sr-only" src="{{ params.image.src }}" width="300" height="300" alt="" />
             </div>
             <div class="p-8 pr-8 text-center md:text-left">
                 <div class="mb-2">
@@ -29,7 +29,7 @@
     {% default %}
         <article class="h-card flex justify-center items-center gap-x-6 text-white {{ params.classes }}">
             <div class="shadow-[0px_0px_0px_4px_rgba(255,255,255,1)] rounded-full overflow-hidden">
-                <img class="u-photo" src="http://via.placeholder.com/100" width="100" height="100" />
+                <img class="u-photo" src="http://via.placeholder.com/100" width="100" height="100" alt="" />
             </div>
             <div class="">
                 <h1 class="p-name font-display text-xl text-white">{{ params.name }}</h1>

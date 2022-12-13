@@ -143,20 +143,24 @@ eleventyNavigation:
     </div>
 </section>
 
-{% set pilotCounties = '<p class="text-lg">Grow Your Own Programs are being piloted in the following counties:</p> <p class="text-md">Berkeley, Braxton, Brooke, Cabell, Calhoun, Fayette, Grant, Greenbrier, Hardy, Hampshire, Jefferson, Kanawha, Lewis, Logan, Marshall, Mason, McDowell, Mercer, Mingo, Monroe, Nicholas, Ohio, Pendleton, Pocahontas, Putnam, Summers, Tyler, Upshur, Wayne, and Webster.</p>' %}
+{% set pilotCounties = '<p class="text-lg">Grow Your Own Programs are being piloted in the following counties:</p> <p class="text-md">Berkeley, Braxton, Brooke, Cabell, Calhoun, Fayette<sup>*</sup>, Grant, Greenbrier, Hard<sup>*</sup>, Hampshire, Jefferson, Kanawha, Lewis<sup>*</sup>, Logan, Marshall<sup>*</sup>, Mason, McDowell, Mercer<sup>*</sup>, Mingo, Monroe, Nicholas, Ohio<sup>*</sup>, Pendleton, Pocahontas<sup>*</sup>, Putnam, Summers, Tyler, Upshur<sup>*</sup>, Wayne, and Webster.</p>
+<div class="flex gap-x-4">
+    <div><div class="block w-[14px] h-[14px] bg-brand_yellow"></div></div>
+    <div><p class="leading-tight"><sup>*</sup>Apprenticeship pilot county</p></div>
+</div>' %}
 <section class="border-t py-8">
     <div class="container max-w-6xl">
     <div class="block md:grid md:grid-cols-5 gap-x-default">
-        <div class="col-start-1 col-end-3">
-        {{ component('titlebar', {
-            title: {
-                text: "Pilot Counties"
-            },
-            subtitle: {
-                text: pilotCounties | safe
-            },
-            alignment: "left"
-        }) }}
+        <div class="col-start-1 col-end-3 md:flex flex-col justify-center">
+            {{ component('titlebar', {
+                title: {
+                    text: "Pilot Counties"
+                },
+                subtitle: {
+                    text: pilotCounties | safe
+                },
+                alignment: "left"
+            }) }}
         </div>
         <div class="col-start-3 col-end-6">
             <figure>

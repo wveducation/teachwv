@@ -1449,8 +1449,8 @@ select {
   aspect-ratio: 16 / 9;
 }
 
-.h-\[14px\] {
-  height: 14px;
+.h-\[18px\] {
+  height: 18px;
 }
 
 .h-4 {
@@ -1505,8 +1505,8 @@ select {
   width: 100%;
 }
 
-.w-\[14px\] {
-  width: 14px;
+.w-\[18px\] {
+  width: 18px;
 }
 
 .w-1\/2 {
@@ -1970,11 +1970,6 @@ select {
   background-color: rgb(0 0 0 / 0.1);
 }
 
-.bg-brand_yellow {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 181 29 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#E7C66E\] {
   --tw-bg-opacity: 1;
   background-color: rgb(231 198 110 / var(--tw-bg-opacity));
@@ -2306,8 +2301,8 @@ select {
   font-style: normal;
 }
 
-.leading-tight {
-  line-height: 1.25;
+.leading-none {
+  line-height: 1;
 }
 
 .leading-6 {

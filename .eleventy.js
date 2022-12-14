@@ -113,6 +113,16 @@ module.exports = function(eleventyConfig) {
     return data.sort((a, b) => { b.data.name.localeCompare(a.data.name) });
   })
 
+  eleventyConfig.addFilter("filterGYOPilotCounties", (items) => {
+    let data = [...items];
+    return data.filter((county) => county.pilot == true);
+  });
+
+  eleventyConfig.addFilter("filterByGYOCountyLabel", (items, label) => {
+    let data = [...items];
+    return data.filter((county) => county[label] == true);
+  });
+
   eleventyConfig.addFilter("sortResultsDirectory", (results) => {
     // Using sort for multiple columns
     // https://dev.to/markbdsouza/js-sort-an-array-of-objects-on-multiple-columns-keys-2bj1

@@ -152,7 +152,7 @@ eleventyNavigation:
                     text: "Pilot Counties"
                 },
                 subtitle: {
-                    text: "Grow Your Own Programs are being piloted in these " + growyourown.counties | filterByGYOCountyLabel("pilot") | length + " West Virginia counties."
+                    text: "Grow Your Own Programs are being piloted in these " + growyourown.counties | filterByGYOCountyLabels(["pilot", "apprenticeship"]) | length + " West Virginia counties."
                 },
                 alignment: "left"
             }) }}

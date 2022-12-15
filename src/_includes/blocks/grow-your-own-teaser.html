@@ -1,6 +1,6 @@
 {{ component('image-and-card', {
     title: 'Grow Your Own',
-    text: "Designed to address West Virginia's critical teacher shortage, Grow Your Own Pathway to Teaching programs provide promising high school students a career path to pursue a career in education in " + growyourown.counties | filterByGYOCountyLabel("pilot") | length + " counties.",
+    text: "Designed to address West Virginia's critical teacher shortage, Grow Your Own Pathway to Teaching programs provide promising high school students a career path to pursue a career in education in " + growyourown.counties | filterByGYOCountyLabels(["pilot", "apprenticeship"]) | length + " counties.",
     image: {
         src: "/static/img/gyo-hero_9-5.jpg"
     },

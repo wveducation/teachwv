@@ -123,6 +123,20 @@ module.exports = function(eleventyConfig) {
     return data.filter((county) => county[label] == true);
   });
 
+  eleventyConfig.addFilter("filterByGYOCountyLabels", (items, labels) => {
+    let data = [...items];
+    return data.filter((county) => {
+      let isLabel = false;
+
+      // if any of the labels are true, return true
+      labels.forEach(label => {
+        if (county[label] == true) { isLabel = true; }
+      });
+
+      return isLabel;
+    });
+  });
+
   eleventyConfig.addFilter("getPropertyValues", (items, property) => {
     let data = [...items];
     return data.map((item) => item.id);

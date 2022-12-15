@@ -173,7 +173,36 @@ eleventyNavigation:
             </div>
         </div>
         <div class="col-start-3 col-end-6">
-            <img alt="Grow Your Own Program counties" src="/static/img/wvmap-gyo-counties.jpg" alt="" />
+            {{ component('countymap', {
+                styles: {
+                    global: [
+                        ".shape { stroke: white; stroke-width: 2px; }",
+                        ".label { paint-order: stroke; display: none; stroke-linejoin: bevel; text-transform: uppercase; font-family: Fira Sans, sans-serif; font-weight: 400; }"
+                    ],
+                    counties: [
+                        {
+                            ids: growyourown.counties | filterByGYOCountyLabel("pilot") | getPropertyValues("id"),
+                            styles: [
+                                ".shape { fill: #037baf; }", 
+                                ".label { display: block; fill: white; stroke: #037baf; stroke-width: 7px; }"
+                            ]
+                        },
+                        {
+                            ids: growyourown.counties | filterByGYOCountyLabel("apprenticeship") | getPropertyValues("id"),
+                            styles: [
+                                ".shape { fill: #e7ac18; }",
+                                ".label { display: block; fill: white; }"
+                            ]
+                        },
+                        {
+                            ids: ['brooke', 'ohio', 'marshall'],
+                            styles: [
+                                ".label { display: block; fill: #037baf; stroke-width: 0px; }"
+                            ]
+                        }
+                    ]
+            }
+            }) }}
         </div>
     </div>
     </div>

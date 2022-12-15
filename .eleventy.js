@@ -123,6 +123,11 @@ module.exports = function(eleventyConfig) {
     return data.filter((county) => county[label] == true);
   });
 
+  eleventyConfig.addFilter("getPropertyValues", (items, property) => {
+    let data = [...items];
+    return data.map((item) => item.id);
+  });
+
   eleventyConfig.addFilter("sortResultsDirectory", (results) => {
     // Using sort for multiple columns
     // https://dev.to/markbdsouza/js-sort-an-array-of-objects-on-multiple-columns-keys-2bj1

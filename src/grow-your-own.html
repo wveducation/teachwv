@@ -160,9 +160,10 @@ eleventyNavigation:
             <p>
             {% for county in growyourown.counties | filterByGYOCountyLabel("pilot") %}
                 {% if loop.last %} and {% endif %}
-                {{ county.label }}{% if not loop.last %},{% endif %}{% if loop.last %}.{% endif %}
+                {{ county.label }}{% if county.fallstart %}<sup>*</sup>{% endif %}{% if not loop.last %},{% endif %}{% if loop.last %}.{% endif %}
             {% endfor %}
             </p>
+            <p class="text-sm"><sup>*</sup> Pilot begins fall 2023.</p>
             <div>
                 {% for label in growyourown.labels %}
                 <div class="flex gap-x-4 align-center mb-2">

@@ -60,7 +60,7 @@ Download these helpful resources.
 
 ## Option 3: State-Approved Teacher Preparation Coursework
 
-In response to the passage of Senate Bill 14, this new pathway has been created to allow individuals who possess a bachelor’s degree from a regionally accredited institution of higher education and an overall 2.5 GPA to complete coursework pursuant to §§18A-3-2a(a)(1)(C) for receiving a Professional Teaching Certificate.
+In response to the passage of Senate Bill 14, this new pathway has been created to allow individuals who possess a bachelor’s degree from a regionally accredited institution of higher education and an overall 2.5 GPA (or qualifying exemption of the WV Licensure Testing Directory) to complete coursework pursuant to §§18A-3-2a(a)(1)(C) for receiving a Professional Teaching Certificate.
 
 This pathway is perfect for the following:
 
@@ -70,9 +70,9 @@ This pathway is perfect for the following:
 * Individuals who are looking for a career change 
 * Individuals in long-term substitute positions seeking initial certification 
 
-Contact your program provider ([American Board](https://www.americanboard.org/), [iTeach](https://www.iteach.net/), or [Teach Now)](https://moreland.edu/teacher-certification) for details on cost and program completion time.
+Contact your program provider ([American Board](https://www.americanboard.org/), [iTeach](https://www.iteach.net/), or [Teach for America Appalachia](https://www.teachforamerica.org/where-we-work/appalachia) or [Teach Now)](https://moreland.edu/teacher-certification) for details on cost, requirements and program completion time.
 
-Review [descriptions of state-approved teacher preparation coursework of Option 3 programs](https://wvde.us/educator-development-and-support/preparation/state-approved-programs/#tab-ed3c0c71874692302ff) and each program’s approved endorsements on the Educator Development and Support Services website.
+Review [descriptions of state-approved teacher preparation coursework of Option 3 programs](https://wvde.us/educator-development-and-support/preparation/state-approved-programs/#tab-ed3c0c71874692302ff) and each program’s approved endorsements on the Office of Educator Development and Support website.
 
 ### What Can I Expect?
 

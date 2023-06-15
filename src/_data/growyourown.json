@@ -48,7 +48,7 @@
         { "id": "taylor", "label": "Taylor", "pilot": false, "apprenticeship": false, "fallstart": false },
         { "id": "tucker", "label": "Tucker", "pilot": false, "apprenticeship": false, "fallstart": false },
         { "id": "tyler", "label": "Tyler", "pilot": true, "apprenticeship": false, "fallstart": false },
-        { "id": "upshur", "label": "Upshur", "pilot": false, "apprenticeship": true, "fallstart": false },
+        { "id": "upshur", "label": "Upshur", "pilot": true, "apprenticeship": false, "fallstart": false },
         { "id": "wayne", "label": "Wayne", "pilot": true, "apprenticeship": false, "fallstart": false },
         { "id": "webster", "label": "Webster", "pilot": true, "apprenticeship": false, "fallstart": true },
         { "id": "wetzel", "label": "Wetzel", "pilot": false, "apprenticeship": false, "fallstart": false },

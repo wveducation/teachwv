@@ -84,8 +84,12 @@ This site is deployed to Github Pages through a Github Action ([look here](https
 
 ------
 
-## Developers
+## Who Made This?
 
-Aaron Silber, *Developer at [WV Department of Education](https://wvde.us)*
+Aaron Silber, *Design, Development at [WV Department of Education](https://wvde.us)*
 
-Shaun Dover, *Developer at [WV Department of Education](https://wvde.us)*
+Shaun Dover, *Development at [WV Department of Education](https://wvde.us)*
+
+Kristina Hawley, *Graphic Design at [WV Department of Education](https://wvde.us)*
+
+Megan Archer, *Content Creation at [WV Department of Education](https://wvde.us)*

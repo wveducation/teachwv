@@ -1,5 +1,5 @@
 <div class="relative table-wrapper overflow-auto max-w-full max-h-[98vh] {{ params.classes.tableWrapper }}">
-    <table class="border-separate align-top text-sm" style="border-spacing: 0;">
+    <table class="border-separate align-top text-sm {{ params.classes.table }}" style="border-spacing: 0;">
         {% block table_caption %}
         {% if params.title %}
         <caption class="sticky left-0 mb-2 text-left text-lg font-bold text-brand_blue">{{ params.title }}</caption>

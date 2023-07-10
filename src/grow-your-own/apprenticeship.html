@@ -1,0 +1,333 @@
+---
+layout: default
+title: Grow Your Own Teacher Apprenticeship Model
+meta:
+    description: "Designed to provide paid, on-the-job training, the West Virginia Apprenticeship Model provides Grow Your Own Pathway to Teaching (Grow Your Own) students with wage-earning field experiences, preparing them for the teaching career while alleviating financial burdens. All apprentices are Grow Your Own students, but not all Grow Your Own students are apprentices."
+tags: static
+eleventyNavigation:
+  order: 0
+  title: Apprenticeship Model
+  key: gyo-apprenticeship
+  parent: grow-your-own
+---
+{%- from "system/component.html" import component -%}
+
+<div class="py-4">
+    <div class="px-4 lg:container text-sm">
+        {{ component('breadcrumb', {
+            items: collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key, { includeSelf: true })
+        }) }}
+    </div>
+</div>
+
+<div class="py-4 mb-24" style="background: #5a6236 url('/static/img/gyo-chalkboard.jpg') no-repeat; background-size: cover;">
+    <div class="px-4 lg:container">
+        {% image { 
+            src: "./src/static/img/gyo-apprenticeship-group.jpeg",
+            alt: "",
+            cls: "block rounded-lg -mb-24",
+            styleName: "large",
+            lazy: false
+        } %}
+    </div>
+</div>
+
+<div class="container pt-8 md:pt-12 text-center mb-12">
+    <h1 class="text-4xl md:text-5xl text-center text-brand_blue">Grow Your Own Teacher <br/>Apprenticeship Model</h1>
+    <p class="text-xl max-w-4xl mx-auto">{{ meta.description }}</p>
+</div>
+
+{% set benefits = [
+    "Early start to college education",
+    "Voucher for Praxis Core Exam",
+    "Potential to earn one year of teaching experience and benefits",
+    "Department of Labor certification"
+] %}
+<section class="border-t py-8 bg-brand_lightblue">
+    <div class="container max-w-6xl">
+    <div class="block md:grid md:grid-cols-5 gap-x-default">
+        <div class="col-start-1 col-end-3">
+        {{ component('titlebar', {
+            title: {
+                text: "Benefits",
+                classes: "text-brand_yellow"
+            },
+            subtitle: {
+                text: "The apprenticeship model provides many opportunities to registered students.",
+                classes: "text-white"
+            },
+            alignment: "left"
+        }) }}
+        </div>
+        <div class="col-start-3 col-end-6">
+            <ul class="grid md:grid-cols-2">
+                {% for benefit in benefits %}
+                <li class="md:pr-8 mb-4">
+                    <span class="text-lg bg-black/10 text-white">{{ benefit }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="py-12">
+    <div class="container max-w-6xl">
+        <div class="block">
+            {{ component('titlebar', {
+                title: {
+                    text: "Apprenticeship Program Basis"
+                },
+                subtitle: {
+                    text: "The apprenticeship program is based on three core elements.",
+                    classes: "mb-12"
+                },
+                alignment: "left"
+            }) }}
+        </div>
+        <div class="block md:grid md:grid-cols-3 gap-x-default">
+            <div class="col-start-1 col-end-2">
+                <h2 class="text-xl">Related instruction</h2>
+                <p>Coursework related to a bachelor's degree in education, which includes required general education courses and education/methods courses focused on educator preparation.</p>
+            </div>
+            <div class="col-start-2 col-end-3">
+                <h2 class="text-xl">On the job learning (work hours)</h2>
+                <p>Employable field hours for the apprentice hired by the county to earn wages. These hours include the required observation placements in high school, field experience during college placements, and teacher of record or clinical experience during the senior year of college. An apprentice must provide evidence of 2,000 hours of on-the-job learning at minimum. Counties may provide additional opportunities through hiring apprentices for summer school, holiday breaks, etc.</p>
+            </div>
+            <div class="col-start-3">
+                <h2 class="text-xl">Incremental wages</h2>
+                <p>A progressive wage apprentices will earn once hired by a county as a teacher apprentice (see wage schedule below).</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-12">
+    <div class="container max-w-4xl">
+        <div class="block">
+            {{ component('titlebar', {
+                title: {
+                    text: 'How Does it Work?',
+                    classes: 'text-brand_blue'
+                },
+                subtitle: {
+                    text: "The Apprenticeship model provides students with paid field experience and a Teacher Aide certification upon high school graduation. Earned field experience to date can then be applied to teacher candidacy during their sophomore and junior years of college. Students can graduate with a bachelor's degree in 3 years. Students must be hired by the county through county job postings."
+                }
+            }) }}
+        </div>
+        <div>
+            {{ component('accordion', {
+                classes: 'bg-white',
+                data: [
+                    {
+                        title: 'High School - Junior Year (Year 1)',
+                        body: "<p>Working with high school counselors and Grow Your Own West Virginia Pathway (GYO WV) representatives for scheduling and apprenticeship registration assistance, students will enroll in their county GYO WV program. Once students enroll in the program, they can apply for apprenticeship positions available on their county school job boards. Once hired, the GYO WV Apprentice (apprentice) will register with the Department of Labor Youth-Apprenticeship program before their junior year. During their junior and senior years of high school, students can earn at least 115 hours of paid field experience in a school in their county as On the Job learning (OJL) experience.</p>"
+                    },
+                    {
+                        title: 'High School - Senior Year (Year 1)',
+                        body: "<p>Apprentices will remain enrolled in their county GYO WV program and registered in the Department of Labor Youth-Apprentice program through their senior year of college. High school senior apprentices will continue to earn paid field experience toward teacher candidacy while completing related instruction and OJL experiences. Students who complete the Youth-Apprenticeship program will graduate high school as a Department of Labor certified Teacher Aide.</p>"
+                    },
+                    {
+                        title: 'Sophomore and Junior Year of College (Years 2 and 3)',
+                        body: "<p>During sophomore and junior year of college, apprentices, now considered “pre-service teachers,” are enrolled in an educator preparation program (EPP). Pre-service teachers will complete related instruction through college coursework outlined by the EEP provider, and a minimum of 125 hours of field experience in the employing county as OJL, earning a county-determined wage.</p>"
+                    },
+                    {
+                        title: 'Senior Year of College (Year 4)',
+                        body: "<p>Apprentice teachers remain enrolled in the Department of Labor Apprenticeship program. With support from university and county systems, they will complete a yearlong clinical experience as the teacher of record at a salary no less than 65% of the State Aid Formula, along with seniority and benefits, if a county vacancy exists. If there are no vacancies, apprentice teachers complete a traditional yearlong residency experience in a co-teacher setting at a county school board-approved hourly rate.</p>"
+                    },
+                    {
+                        title: 'Post-program',
+                        body: "<p>Apprentices who successfully complete a West Virginia educator preparation program offered at partnering institutions of higher education attain a Bachelor of Arts in Education and receive Department of Labor certification as a teacher, making them eligible to apply for a teaching license with the West Virginia Department of Education. Apprentices who complete clinical rounds as the teacher of record earn the equivalent of one year of experience and associated benefits from the employing county.</p>"
+                    }
+                ]
+            }) }}
+        </div>
+    </div>
+</section>
+
+{{ component('image-and-card', {
+    title: 'First West Virginia Grow Your Own Teacher Apprentice',
+    text: "Jazzlyn Teter from Pocahontas County is the first student to register for West Virginia Grow Your Own Teacher Apprenticeship program. She plans to study education at Glenville State University.",
+    image: {
+        src: "/static/img/gyo-apprenticeship-teter.jpg"
+    },
+    theme: {
+        image_position: 'left',
+        background: '#192a52'
+    }
+}) }}
+
+<section class="border-t py-8 bg-white">
+    <div class="container max-w-6xl">
+    <div class="block md:grid md:grid-cols-5 gap-x-default">
+        <div class="col-start-1 col-end-3 md:flex flex-col justify-center">
+            {{ component('titlebar', {
+                title: {
+                    text: "Apprenticeship Counties"
+                },
+                subtitle: {
+                    text: "Grow Your Own apprenticeships are available in these " + growyourown.counties | filterByGYOCountyLabels(["apprenticeship"]) | length + " West Virginia counties."
+                },
+                alignment: "left"
+            }) }}
+
+            <p>
+            {% for county in growyourown.counties | filterByGYOCountyLabel("apprenticeship") %}
+                {% if loop.last %} and {% endif %}
+                {{ county.label }}{% if county.fallstart %}<sup>*</sup>{% endif %}{% if not loop.last %},{% endif %}{% if loop.last %}.{% endif %}
+            {% endfor %}
+            </p>
+        </div>
+        <div class="col-start-3 col-end-6">
+            {{ component('countymap', {
+                title: 'A Map of Grow Your Own Apprenticeship Counties',
+                styles: {
+                    global: [
+                        ".shape { stroke: white; stroke-width: 2px; }",
+                        ".label { paint-order: stroke; display: none; stroke-linejoin: bevel; text-transform: uppercase; font-family: Fira Sans, sans-serif; font-weight: 400; }"
+                    ],
+                    counties: [
+                        {
+                            ids: growyourown.counties | filterByGYOCountyLabel("apprenticeship") | getPropertyValues("id"),
+                            styles: [
+                                ".shape { fill: #037baf; }",
+                                ".label { display: block; fill: white; stroke: #037baf; stroke-width: 7px; }"
+                            ]
+                        }
+                    ]
+            }
+            }) }}
+        </div>
+    </div>
+    </div>
+</section>
+
+{% set tabledata = {
+    classes: {
+        tableWrapper: 'pl-6 md:pr-6',
+        table: 'mx-auto',
+        cell: 'min-w-[8em] px-2 py-2 border-r border-b'
+    },
+    columns: {
+        period: {
+            label: "Period",
+            width: "200px",
+            classes: {
+                heading: "",
+                cell: "font-bold"
+            }
+        },
+        journeyworker: {
+            label: "Percentage of Journeyworker wage",
+            width: "160px"
+        },
+        duration: {
+            label: 'Duration',
+            subtext: '(Hours)'
+        },
+        wage: {
+            label: "Wage",
+            subtext: '(Hourly)'
+        }
+    },
+    body: [
+        {
+            period: {
+                text: "1st (Jr year 1)"
+            },
+            journeyworker: {
+                text: "46%"
+            },
+            duration: {
+                text: "15 Hours"
+            },
+            wage: {
+                text: '$11.00'
+            }
+        },
+        {
+            period: {
+                text: "2nd (Sr year 2)"
+            },
+            journeyworker: {
+                text: "50.5%"
+            },
+            duration: {
+                text: "100 Hours"
+            },
+            wage: {
+                text: "$12.00"
+            }
+        },
+        {
+            period: {
+                text: "3rd (College year 3-4)"
+            },
+            journeyworker: {
+                text: "55%"
+            },
+            duration: {
+                text: "125 Hours"
+            },
+            wage: {
+                text: "$13.00"
+            }
+        },
+        {
+            period: {
+                text: "End Wage, Res I, II (year 5, teacher of record)"
+            },
+            journeyworker: {
+                text: "65%"
+            },
+            duration: {
+                text: "2,080 Hours"
+            },
+            wage: {
+                text: "$15.42"
+            }
+        }
+    ]
+} %}
+<section class="border-t py-12">
+    <div class="container mb-12 max-w-4xl max-auto">
+        {{ component('titlebar', {
+            title: {
+                text: "Sample Pay Scale"
+            },
+            subtitle: {
+                text: "Grow Your Own Teacher Apprentices will earn a salary that progressively increases based on journeyworker wages. While wages can be higher than what is listed below, these amounts are the minimum."
+            }
+        }) }}
+    </div>
+
+    <div class="mx-auto max-w-6xl">
+        {{ component('table', tabledata) }}
+    </div>
+</section>
+
+<section class="py-12">
+    <div class="container max-w-6xl">
+        <div class="block md:grid grid-cols-5 gap-x-default">
+            <div class="col-start-1 col-end-3">
+                <h2 class="text-3xl">Information</h2>
+                <p class="mb-2">For more information about the Grow Your Own Pathway, please contact Dr. Carla Warren at the West Virginia Department of Education.</p>
+            </div>
+            <div class="col-start-3 col-end-6">
+                {{ component('contact-card', {
+                    name: 'Carla Warren, Ed.D., <abbr title="National Board Certified Teacher">NBCT</abbr>',
+                    position: 'Officer, Educator Development and Support Services',
+                    phone: '1-833-627-2833',
+                    email: 'carla.warren@k12.wv.us',
+                    classes: 'w-full',
+                    image: {
+                        src: '/static/img/portrait_warren-carla.jpg'
+                    },
+                    theme: '2'
+                }) }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'blocks/contact-prefooter.html' %}

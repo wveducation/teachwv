@@ -131,11 +131,10 @@ eleventyNavigation:
         </div>
         <div class="col-start-4 col-end-6">
             <div class="block p-8 border-2 rounded-lg bg-white text-center">
-                <h2 class="text-xl">Free Resource</h2>
-                <p>Download our guide to the West Virginia Apprenticeship Model.</p>
+                <h2 class="text-xl">More Information</h2>
                 {{ component('button', {
-                    text: "Download",
-                    url: "/static/files/teachwv-grow-your-own-apprenticeships.pdf"
+                    text: "Learn more",
+                    url: "apprenticeship"
                 }) }}
             </div>
         </div>
@@ -175,6 +174,7 @@ eleventyNavigation:
         </div>
         <div class="col-start-3 col-end-6">
             {{ component('countymap', {
+                title: 'A Map of Grow Your Own Participating Counties',
                 styles: {
                     global: [
                         ".shape { stroke: white; stroke-width: 2px; }",

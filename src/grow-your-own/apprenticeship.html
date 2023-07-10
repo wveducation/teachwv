@@ -23,7 +23,7 @@ eleventyNavigation:
 <div class="py-4 mb-24" style="background: #5a6236 url('/static/img/gyo-chalkboard.jpg') no-repeat; background-size: cover;">
     <div class="px-4 lg:container">
         {% image { 
-            src: "./src/static/img/gyo-hero_wide.jpg",
+            src: "./src/static/img/gyo-apprenticeship-group.jpeg",
             alt: "",
             cls: "block rounded-lg -mb-24",
             styleName: "large",
@@ -33,7 +33,7 @@ eleventyNavigation:
 </div>
 
 <div class="container pt-8 md:pt-12 text-center mb-12">
-    <h1 class="text-4xl md:text-5xl text-center text-brand_blue">{{ title }}</h1>
+    <h1 class="text-4xl md:text-5xl text-center text-brand_blue">Grow Your Own Teacher <br/>Apprenticeship Model</h1>
     <p class="text-xl max-w-4xl mx-auto">{{ meta.description }}</p>
 </div>
 
@@ -76,8 +76,7 @@ eleventyNavigation:
         <div class="block">
             {{ component('titlebar', {
                 title: {
-                    text: "Apprenticeship Program Basis",
-                    classes: "text-brand_yellow"
+                    text: "Apprenticeship Program Basis"
                 },
                 subtitle: {
                     text: "The apprenticeship program is based on three core elements.",
@@ -146,6 +145,18 @@ eleventyNavigation:
     </div>
 </section>
 
+{{ component('image-and-card', {
+    title: 'First West Virginia Grow Your Own Teacher Apprentice',
+    text: "Jazzlyn Teter from Pocahontas County is the first student to register for West Virginia Grow Your Own Teacher Apprenticeship program. She plans to study education at Glenville State University.",
+    image: {
+        src: "/static/img/gyo-apprenticeship-teter.jpg"
+    },
+    theme: {
+        image_position: 'left',
+        background: '#192a52'
+    }
+}) }}
+
 <section class="border-t py-8 bg-white">
     <div class="container max-w-6xl">
     <div class="block md:grid md:grid-cols-5 gap-x-default">
@@ -192,7 +203,6 @@ eleventyNavigation:
 </section>
 
 {% set tabledata = {
-    title: "Sample Pay Scale",
     classes: {
         tableWrapper: 'pl-6 md:pr-6',
         table: 'mx-auto',

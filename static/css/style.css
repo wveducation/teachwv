@@ -1293,6 +1293,10 @@ select {
   grid-column-end: 13;
 }
 
+.col-end-2 {
+  grid-column-end: 2;
+}
+
 .col-end-3 {
   grid-column-end: 3;
 }

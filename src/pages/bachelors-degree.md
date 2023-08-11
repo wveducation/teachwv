@@ -96,7 +96,7 @@ This pathway is perfect for the following:
 * Individuals who are looking for a career change 
 * Individuals in long-term substitute positions seeking initial certification 
 
-Review details on [state-approved WVDE Alternative Certification Programs](https://wvde.us/educator-development-and-support/preparation/state-approved-programs/#tab-8a15ab4d449cd2b82bb)on the Educator Development and Support website. Eligible endorsements for these programs are identified within the [West Virginia Licensure Testing Directory](https://wvde.us/certification/certification-info/#tab-67fa0185abe42415389)and the program’s guidance document.
+Review details on [state-approved WVDE Alternative Certification Programs](https://wvde.us/educator-development-and-support/preparation/state-approved-programs/#tab-8a15ab4d449cd2b82bb) on the Educator Development and Support website. Eligible endorsements for these programs are identified within the [West Virginia Licensure Testing Directory](https://wvde.us/certification/certification-info/#tab-67fa0185abe42415389) and the program’s guidance document.
 
 After reviewing the [WVDE Alternative Certification Program’s guidance document](</static/files/WVDE Alternative Certification Program Guidance Document 20230814.pdf>), candidates may [apply for enrollment](https://forms.office.com/Pages/ResponsePage.aspx?id=S7AZ4AwzekaLrgn7FzdNattQ2GWIIWhGvThuGKqgKs5UMFBVNlZGRUhFUk4yRjBPVUxQTlpUUllSWS4u&wdLOR=cE1BB2B23-CBED-452D-B24B-39BEF8BA3362) in the program.
 

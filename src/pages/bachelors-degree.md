@@ -17,7 +17,7 @@ meta:
 ---
 ## Option 1: Traditional Programs that Lead to Licensure
 
-West Virginia is home to a variety of colleges and universities that offer education preparation programs leading to a bachelor’s degree, master’s degree or providing coursework required for licensure at the graduate level as part of a post-bachelor’s certification program.
+West Virginia is home to a variety of colleges and universities that offer education preparation programs leading to a bachelor’s degree, master’s degree, or providing coursework required for licensure at the graduate level as part of a post-bachelor certification program.
 
 This pathway is perfect for the following: 
 
@@ -70,7 +70,7 @@ This pathway is perfect for the following:
 * Individuals who are looking for a career change 
 * Individuals in long-term substitute positions seeking initial certification 
 
-Contact your program provider ([American Board](https://www.americanboard.org/), [iTeach](https://www.iteach.net/), [Teach for America Appalachia](https://www.teachforamerica.org/where-we-work/appalachia) or [Teach Now)](https://moreland.edu/teacher-certification) for details on cost, requirements and program completion time.
+Contact your program provider ([American Board](https://www.americanboard.org/), [iTeach](https://www.iteach.net/), [Teach for America Appalachia](https://www.teachforamerica.org/where-we-work/appalachia) or [Teach Now)](https://moreland.edu/teacher-certification) for details on cost, requirements, and program completion time.
 
 Review [descriptions of state-approved teacher preparation coursework of Option 3 programs](https://wvde.us/educator-development-and-support/preparation/state-approved-programs/#tab-ed3c0c71874692302ff) and each program’s approved endorsements on the Office of Educator Development and Support website.
 
@@ -86,7 +86,7 @@ Download these helpful resources.
 
 ## Option 4: WVDE Alternative Certification Programs
 
-This option was designed to provide an accelerated pathway for individuals who possess a bachelor’s degree and meet minimal qualifications to complete West Virginia Department of Education (WVDE)-approved training and coursework options which are substantially aligned to the West Virginia Professional Teaching Standards to acquire a Provisional Professional Teaching Certificate.
+This option was designed to provide an accelerated pathway for individuals who possess a bachelor’s degree and meet minimal qualifications to complete required testing and Virginia Department of Education (WVDE)-approved training/coursework options that are substantially aligned to the West Virginia Professional Teaching Standards to acquire a Professional Teaching Certificate.
 
 This pathway is perfect for the following:
 
@@ -96,9 +96,11 @@ This pathway is perfect for the following:
 * Individuals who are looking for a career change 
 * Individuals in long-term substitute positions seeking initial certification 
 
-Review complete details on [state-approved WVDE Alternative Certification Programs](https://wvde.us/educator-development-and-support/preparation/state-approved-programs/#tab-8a15ab4d449cd2b82bb), and approved coursework options, on the Educator Development and Support Services website. Endorsements for these programs are identified within the [West Virginia Licensure Testing Directory](https://wvde.us/certification/certification-info/#tab-67fa0185abe42415389).
+Review details on [state-approved WVDE Alternative Certification Programs](https://wvde.us/educator-development-and-support/preparation/state-approved-programs/#tab-8a15ab4d449cd2b82bb)on the Educator Development and Support website. Eligible endorsements for these programs are identified within the [West Virginia Licensure Testing Directory](https://wvde.us/certification/certification-info/#tab-67fa0185abe42415389)and the program’s guidance document.
 
-For more information on cost and completion time, contact any of the following WVDE Alternative Certification Program coursework providers:
+After reviewing the [WVDE Alternative Certification Program’s guidance document](</static/files/WVDE Alternative Certification Program Guidance Document 20230814.pdf>), candidates may [apply for enrollment](https://forms.office.com/Pages/ResponsePage.aspx?id=S7AZ4AwzekaLrgn7FzdNattQ2GWIIWhGvThuGKqgKs5UMFBVNlZGRUhFUk4yRjBPVUxQTlpUUllSWS4u&wdLOR=cE1BB2B23-CBED-452D-B24B-39BEF8BA3362) in the program.
+
+For information on WVDE-approved coursework option cost and completion time, contact any of the following WVDE Alternative Certification Program coursework providers:
 
 * Bluefield State College Coursework: Dr. Terene Stiltner at [tstiltner@bluefieldstate.edu](mailto:tstiltner@bluefieldstate.edu). 
 * West Liberty University Coursework: Dr. Nicole Ennis at [nicole.ennis@westliberty.edu](mailto:nicole.ennis@westliberty.edu). 
@@ -106,13 +108,13 @@ For more information on cost and completion time, contact any of the following W
 * Wheeling University Coursework: Dr. Dianna Vargo at [dvargo@wheeling.edu](mailto:dvargo@wheeling.edu). 
 * Glenville State University Coursework: Mrs. Connie Stout O'Dell at [connie.stout@glenville.edu](mailto:connie.stout@glenville.edu).
 
-After reviewing the resources below, [apply for enrollment](https://forms.office.com/Pages/ResponsePage.aspx?id=S7AZ4AwzekaLrgn7FzdNattQ2GWIIWhGvThuGKqgKs5UMFBVNlZGRUhFUk4yRjBPVUxQTlpUUllSWS4u&wdLOR=cE1BB2B23-CBED-452D-B24B-39BEF8BA3362) into the WVDE Alternative Certification Program.
+Upon successful completion of all program requirements (coursework, training and testing), WVDE Alternative Certification Program participants may request a [Comprehensive Evaluation Report](https://forms.office.com/Pages/ResponsePage.aspx?id=S7AZ4AwzekaLrgn7FzdNattQ2GWIIWhGvThuGKqgKs5URjNSQk1ZRTE2V1JHMDc0VzlDUUpTRFo3NS4u). Once an approved rating is received on the report, program completers may apply for a Professional Teaching Certificate. 
 
 ### What Can I Expect?
 
 Download these helpful resources.
 
-<a href="/static/files/WVDE Alt Cert Program Description on 20220202.pdf" class="btn">Resource Guide</a>
+<a href="/static/files/WVDE Alternative Certification Program Guidance Document 20230814.pdf" class="btn">Resource Guide</a>
 
 <a href="/static/files/TeachWV Checklist-WVDEAltCert-FINAL.pdf" class="btn">Checklist</a>
 

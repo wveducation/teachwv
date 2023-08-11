@@ -86,7 +86,7 @@ Download these helpful resources.
 
 ## Option 4: WVDE Alternative Certification Programs
 
-This option was designed to provide an accelerated pathway for individuals who possess a bachelor’s degree and meet minimal qualifications to complete required testing and Virginia Department of Education (WVDE)-approved training/coursework options that are substantially aligned to the West Virginia Professional Teaching Standards to acquire a Professional Teaching Certificate.
+This option was designed to provide an accelerated pathway for individuals who possess a bachelor’s degree and meet minimal qualifications to complete required testing and West Virginia Department of Education (WVDE)-approved training/coursework options that are substantially aligned to the West Virginia Professional Teaching Standards to acquire a Professional Teaching Certificate.
 
 This pathway is perfect for the following:
 
@@ -108,7 +108,7 @@ For information on WVDE-approved coursework option cost and completion time, con
 * Wheeling University Coursework: Dr. Dianna Vargo at [dvargo@wheeling.edu](mailto:dvargo@wheeling.edu). 
 * Glenville State University Coursework: Mrs. Connie Stout O'Dell at [connie.stout@glenville.edu](mailto:connie.stout@glenville.edu).
 
-Upon successful completion of all program requirements (coursework, training and testing), WVDE Alternative Certification Program participants may request a [Comprehensive Evaluation Report](https://forms.office.com/Pages/ResponsePage.aspx?id=S7AZ4AwzekaLrgn7FzdNattQ2GWIIWhGvThuGKqgKs5URjNSQk1ZRTE2V1JHMDc0VzlDUUpTRFo3NS4u). Once an approved rating is received on the report, program completers may apply for a Professional Teaching Certificate. 
+Upon successful completion of all program requirements (coursework, training and testing), WVDE Alternative Certification Program participants may request a [Comprehensive Evaluation Report](https://forms.office.com/Pages/ResponsePage.aspx?id=S7AZ4AwzekaLrgn7FzdNattQ2GWIIWhGvThuGKqgKs5URjNSQk1ZRTE2V1JHMDc0VzlDUUpTRFo3NS4u). Once an approved rating is received on the report, program completers may apply for a Professional Teaching Certificate.
 
 ### What Can I Expect?
 

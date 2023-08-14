@@ -114,7 +114,7 @@ Upon successful completion of all program requirements (coursework, training and
 
 Download these helpful resources.
 
-<a href="/static/files/WVDE Alternative Certification Program Guidance Document 20230814.pdf" class="btn">Guidance Document</a>
+<a href="/static/files/WVDE Alternative Certification Program Guidance Document" class="btn">Guidance Document</a>
 
 <a href="/static/files/TeachWV Checklist-WVDEAltCert-FINAL.pdf" class="btn">Checklist</a>
 

@@ -1,0 +1,10 @@
+<ul class="!ml-0 mr-0 p-0">
+    {% for link in params.links %}
+    <li class="list-none">
+        <a href="{{ link.url }}" class="group flex flex-row flex-nowrap justify-between items-center p-4 border-2 !border-brand_lightgrey hover:!border-brand_lightblue rounded-lg text-brand_blue">
+            {{ link.title }}
+            {% include "../../../static/icons/arrow.svg" %}
+        </a>
+    </li>
+    {% endfor %}
+</ul>

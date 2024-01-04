@@ -26,7 +26,7 @@
         { "id": "marion", "label": "Marion", "pilot": false, "apprenticeship": false, "fallstart": false },
         { "id": "marshall", "label": "Marshall", "pilot": false, "apprenticeship": true, "fallstart": false },
         { "id": "mason", "label": "Mason", "pilot": true, "apprenticeship": false, "fallstart": true },
-        { "id": "mcdowell", "label": "Mcdowell", "pilot": true, "apprenticeship": false, "fallstart": false },
+        { "id": "mcdowell", "label": "Mcdowell", "pilot": true, "apprenticeship": true, "fallstart": false },
         { "id": "mercer", "label": "Mercer", "pilot": false, "apprenticeship": true, "fallstart": false },
         { "id": "mineral", "label": "Mineral", "pilot": false, "apprenticeship": false, "fallstart": false },
         { "id": "mingo", "label": "Mingo", "pilot": true, "apprenticeship": false, "fallstart": false },

@@ -17,16 +17,9 @@ Programs can offer students specialized coursework in the grade-level and subjec
 
 ## Teacher Preparation Programs in West Virginia
 
-* [Alderson Broaddus University](https://ab.edu/academics/degrees-majors-minors/undergraduate-programs/)
 * [Appalachian Bible College](https://abc.edu/undergraduate/academics/majors/elementary-education/)
-* [Bethany College](https://www.bethanywv.edu/academics/areas-of-study/education/)
-* [Bluefield State College](https://bluefieldstate.edu/academics/schools/education-humanities-social-sciences)
-* [Concord University](https://www.concord.edu/academics/college-of-professional-studies/department-of-education.aspx)
 * [Davis and Elkins College](https://www.dewv.edu/academics/majors/education/)
-* [Fairmont State University](https://www.fairmontstate.edu/schoolofeducation/teacher-education)
-* [Glenville State College](https://www.glenville.edu/departments/education)
 * [Marshall University](https://www.marshall.edu/coepd)
-* [Salem University](https://www.salemu.edu/degrees/degrees/education/)
 * [Shepherd University](https://www.shepherd.edu/education)
 * [University of Charleston](https://www.ucwv.edu/academics/majors-degrees/elementary-education/)
 * [West Liberty University](https://westliberty.edu/education/)
@@ -40,6 +33,6 @@ Programs can offer students specialized coursework in the grade-level and subjec
 
 [Explore the areas of certification](https://wvde.state.wv.us/certification/approved-programs/?byschool) that each college/university offers as part of a state-approved traditional program.
 
-Explore the areas of certification that state-approved alternative certification and Option 3 programs provide by visiting the [Office of Educator Development and Support Services website](http://wvclassroom2career.com).
+Explore the areas of certification that state-approved alternative certification and Option 3 programs provide by visiting the [Office of Educator Preparation website](https://wvde.us/educator-development-and-support/preparation/state-approved-programs/).
 
 Navigate your future to find information on careers, colleges, military service, entrepreneurship, and on-the-job training through our [Classroom 2 Career Navigator](http://wvclassroom2career.com/).

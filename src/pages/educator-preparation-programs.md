@@ -18,8 +18,14 @@ Programs can offer students specialized coursework in the grade-level and subjec
 ## Teacher Preparation Programs in West Virginia
 
 * [Appalachian Bible College](https://abc.edu/undergraduate/academics/majors/elementary-education/)
+* [Bethany College](https://www.bethanywv.edu/academics/areas-of-study/education/)
+* [Bluefield State College](https://bluefieldstate.edu/academics/degrees/elementary-education-bs)
+* [Concord University](https://bluefieldstate.edu/academics/degrees/elementary-education-bs)
 * [Davis and Elkins College](https://www.dewv.edu/academics/majors/education/)
+* [Fairmont State University](https://www.fairmontstate.edu/coehhp/default.aspx)
+* [Glenville State College](https://www.glenville.edu/departments/education)
 * [Marshall University](https://www.marshall.edu/coepd)
+* [Salem University](https://www.salemu.edu/degrees/#education)
 * [Shepherd University](https://www.shepherd.edu/education)
 * [University of Charleston](https://www.ucwv.edu/academics/majors-degrees/elementary-education/)
 * [West Liberty University](https://westliberty.edu/education/)

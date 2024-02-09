@@ -1,0 +1,199 @@
+---
+layout: default
+title: Teaching Career Tech
+meta:
+    description: ""
+tags: ['pages', 'static']
+eleventyNavigation:
+  order: 0
+  title: Career Tech
+  key: career-tech
+  parent: become-a-teacher
+---
+{%- from "system/component.html" import component -%}
+
+<div class="py-4">
+    <div class="px-4 lg:container text-sm">
+        {{ component('breadcrumb', {
+            items: collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key, { includeSelf: true })
+        }) }}
+    </div>
+</div>
+
+<div class="py-4 mb-24" style="background: #4477A4;">
+    <div class="px-4 lg:container">
+        {% image { 
+            src: "./src/static/img/cte-welder_21-9.jpg",
+            alt: "",
+            cls: "block rounded-lg -mb-24",
+            styleName: "large",
+            lazy: false
+        } %}
+    </div>
+</div>
+
+<div class="container pt-8 md:pt-12 text-center mb-12">
+    <h1 class="text-4xl md:text-5xl text-center text-brand_blue">{{ title }}</h1>
+    <p class="text-xl max-w-4xl mx-auto">Page Intro Description</p>
+</div>
+
+{% set reasons = [
+  "Empower students by sharing your knowledge and expertise.",
+  "Desirable schedule of time off on weekends, holidays, and summers.",
+  "Participate in National affiliations and partnerships with colleges, business and industry, as well as educational agencies like <abbr title='Southern Regional Education Board'>SREB</abbr> and Mountain State <abbr title='Educational Cooperative Services'>ESC</abbr>",
+  "Receive an extensive package that includes both retirement and health insurance benefits.",
+  "Assist students in preparing for a successful future."
+] %}
+<section class="border-t py-8 bg-brand_lightblue">
+  <div class="container max-w-6xl">
+  <div class="block md:grid md:grid-cols-5 gap-x-default">
+      <div class="col-start-1 col-end-3">
+      {{ component('titlebar', {
+          title: {
+              text: "Benefits",
+              classes: "text-brand_yellow"
+          },
+          subtitle: {
+              text: "There are many reasons to teach Career Technical Education.",
+              classes: "text-white"
+          },
+          alignment: "left"
+      }) }}
+      </div>
+      <div class="col-start-3 col-end-6">
+          <ul class="grid md:grid-cols-2">
+              {% for reason in reasons %}
+              <li class="md:pr-8 mb-4">
+                  <span class="text-lg bg-black/10 text-white">{{ reason | safe }}</span>
+              </li>
+              {% endfor %}
+          </ul>
+      </div>
+  </div>
+</section>
+
+{% 
+    set steps = [{
+        title: "Step 1: Skills Verification and/or Degree",
+        body: "<p>Verify your degree and/or your wageearning work experience in accordance with the requirements outlined in the CTE Endorsement and Testing Manual. Once confirmed, register for the CTE Educator Prep Program. For more information and to register for courses, visit <a href='https://teachwv.com'>teachwv.com</a>.</p>"
+    },
+    {
+        title: "Step 2: Employability Testing",
+        body: "<p>Contact your local school district and register to take the NOCTI Employability Exam. This exam measures the skills needed for success in the workplace and covers reading, math, collaboration, and decision making. A <a href='https://www.nocti.org/credentials/blueprints/'>testing blueprint and access to study guides and practice tests</a> has been made available online.</p>"
+    },
+    {
+        title: "Step 3: Mentorship",
+        body: "<p>During your first year of teaching, you will be required to complete a mentorship program hosted by a WVDE Coordinator. The mentorship program will include in-person collaborative trainings, classroom visits, virtual discussions, and individualized support.</p>"
+    },
+    {
+        title: "Step 4: Certification",
+        body: "<p>Depending on your Program of Study, you may be required to take the NOCTI Content and Performance Assessment and/or hold the required industry credential per the CTE Endorsement and Testing Manual. Please refer to the <a href='https://www.nocti.org'>NOCTI website</a> for testing blueprints.</p>"
+    },
+    {
+        title: "Completion",
+        body: "<p>Congratulations, you have completed all requirements to become a CTE teacher in West Virginia.</p>",
+        classes: {
+            title: "bg-brand_green text-[white]",
+            body: "pt-4"
+        }
+    }]
+%}
+<section class="py-12 bg-offwhite">
+    <div class="container max-w-3xl">
+        <div class="">
+            {{ component('titlebar', {
+                title: {
+                    text: "Become a CTE Teacher"
+                },
+                subtitle: {
+                    text: "Summary of program..."
+                },
+                alignment: "center"
+            }) }}
+        </div>
+        <div class="mb-6">
+            {{ component('accordion', {
+                classes: 'bg-white',
+                data: steps
+            }) }}
+        </div>
+        <div class="text-center">
+            <p>View the <a href="/become-a-teacher/career-tech/checklist/" class="underline">complete program checklist</a> for detailed information.</p>
+        </div>
+    </div>
+</section>
+
+{% set resourceTypes = {
+    flyer: {
+        label: 'Flyer',
+        classes: 'bg-brand_green text-white'
+    },
+    form: {
+        label: 'Form',
+        classes: 'bg-brand_lightblue text-white'
+    },
+    document: {
+        label: 'Document',
+        classes: 'bg-brand_yellow'
+    }
+} %}
+{% set resources = [
+    {
+        title: 'Pathway Flyer',
+        url: '/',
+        description: 'Flyer illustrating the steps to become a CTE teacher in WV.',
+        tags: [ resourceTypes.flyer ]
+    },
+    {
+        title: 'Hiring Flyer',
+        url: '/',
+        description: 'Download and modify this flyer to list your current CTE openings and contact information.',
+        tags: [ resourceTypes.flyer ]
+    },
+    {
+        title: 'Educator Commitment Form',
+        url: '/',
+        description: 'A mutual commitment between the county and CTE teacher for program completion, offering guidance, support, and resources for success in teaching.',
+        tags: [ resourceTypes.form ]
+    },
+    {
+        title: 'Course Descriptions',
+        url: '/',
+        description: 'Download the full catalog or <a href="/become-a-teacher/career-tech/courses" class="underline">browse course descriptions online</a>.',
+        tags: [ resourceTypes.document ]
+    },
+    {
+        title: 'Program Checklist',
+        url: '/',
+        description: 'This program checklist contains details for the accelerated pathway for individuals who desire to teach career technical education.',
+        tags: [ resourceTypes.document ]
+    }
+] %}
+<section class="py-12 bg-white">
+    <div class="container max-w-5xl">
+        <div class="mb-12">
+            {{ component('titlebar', {
+                title: {
+                    text: "Printable Resources"
+                },
+                subtitle: {
+                    text: "Summary of resources..."
+                },
+                alignment: "center"
+            }) }}
+        </div>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-1 bg-offwhite">
+            {% for resource in resources %}
+            {{ component('resource-card', {
+                url: resource.url,
+                title: resource.title,
+                description: resource.description,
+                tags: resource.tags,
+                classes: {
+                    container: 'bg-white p-4'
+                }
+            }) }}
+            {% endfor %}
+        </div>
+    </div>
+</section>

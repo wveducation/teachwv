@@ -1,14 +1,19 @@
-{% set defaultButtonClasses = 'px-4 md:px-4 py-2 md:py-2 font-bold' %}
+{% set defaultButtonClasses = 'inline-block rounded-full px-4 md:px-4 py-2 md:py-2 font-bold' %}
 {% switch params.theme %}
     {% case 'light' %}
         {% set themeClasses = defaultButtonClasses + ' bg-white text-brand_lightblue border-2' %}
+        {% set iconClasses = 'fill-brand_light-yellow' %}
     {% case 'mobilelink' %}
         {% set themeClasses = 'px-0 md:px-6 py-0 md:py-3 md:bg-white text-brand_lightblue md:bg-brand_lightblue md:text-white md:hover:bg-brand_lightblue-hover' %}
+    {% case 'plain' %}
+        {% set themeClasses = '' %}
+        {% set iconClasses = '' %}
     {% default %}
         {% set themeClasses = defaultButtonClasses + ' bg-brand_lightblue text-white hover:bg-brand_lightblue-hover' %}
+        {% set iconClasses = 'fill-brand_light-yellow' %}
 {% endswitch %}
 {% if params.url %}
-<a href="{{ params.url }}" target="{{ params.target or '_self' }}" class="inline-block rounded-full {{ themeClasses }} {{ params.classes }}" {% if params.ariaLabel %}aria-label="{{ params.ariaLabel }}"{% endif %}>
+<a href="{{ params.url }}" target="{{ params.target or '_self' }}" class="{{ themeClasses }} {{ params.classes }}" {% if params.ariaLabel %}aria-label="{{ params.ariaLabel }}"{% endif %}>
     {% if params.text %}
         {{ params.text }}
     {% else %}
@@ -16,8 +21,14 @@
     {% endif %}
     {% if params.external == true %}
     <svg width="12" height="12" class="inline-block ml-2" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M40 32.5554L40 2.5808e-06L7.44455 0L7.44455 9.48877L23.838 9.4502L0 33.2882L6.71153 39.9997L30.5495 16.1617L30.5109 32.5552L40 32.5554Z" fill="white" />
+        <path class="fill-white {{ params.icon.color }}" d="M40 32.5554L40 2.5808e-06L7.44455 0L7.44455 9.48877L23.838 9.4502L0 33.2882L6.71153 39.9997L30.5495 16.1617L30.5109 32.5552L40 32.5554Z" />
     </svg>
+    {% endif %}
+    {% if params.download == true %}
+    <svg width="16" height="16" viewBox="0 0 44 44" class="inline-block top-1" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="{{ iconClasses }} {{ params.icon.color }}" d="M40 41.2C40 40.537 39.463 40 38.8 40C33.317 40 10.683 40 5.20001 40C4.53701 40 4 40.537 4 41.2C4 41.706 4 42.294 4 42.8C4 43.463 4.53701 44 5.20001 44C10.683 44 33.317 44 38.8 44C39.463 44 40 43.463 40 42.8C40 42.294 40 41.706 40 41.2Z" fill="black"/>
+        <path class="{{ iconClasses }} {{ params.icon.color }}" d="M24 28C24 28 29.91 22.09 32.151 19.849C32.377 19.623 32.682 19.497 33 19.497C33.318 19.497 33.623 19.623 33.849 19.849C34.256 20.256 34.744 20.744 35.151 21.151C35.377 21.377 35.503 21.682 35.503 22C35.503 22.318 35.377 22.623 35.151 22.849C32.654 25.346 25.346 32.654 22.849 35.151C22.38 35.62 21.62 35.62 21.151 35.151C18.654 32.654 11.346 25.346 8.849 22.849C8.623 22.623 8.49701 22.318 8.49701 22C8.49701 21.682 8.623 21.377 8.849 21.151C9.256 20.744 9.744 20.256 10.151 19.849C10.377 19.623 10.682 19.497 11 19.497C11.318 19.497 11.623 19.623 11.849 19.849C14.09 22.09 20 28 20 28V1.20001C20 0.882012 20.126 0.577013 20.351 0.351013C20.577 0.126013 20.882 0 21.2 0C21.706 0 22.294 0 22.8 0C23.118 0 23.423 0.126013 23.649 0.351013C23.874 0.577013 24 0.882012 24 1.20001C24 6.55401 24 28 24 28Z" fill="black"/>
+    </svg>        
     {% endif %}
 </a>
 {% endif %}

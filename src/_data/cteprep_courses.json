@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "title": "Instructional Planning",
+    "description": "Putting careful thought and planning into teaching is essential for becoming an effective teacher. Teachers who dedicate time to planning are more successful in assisting students in achieving course objectives. In this module participants will learn about the various teaching strategies associated with proper course, unit, and daily planning. Participants will acknowledge the importance of educators comprehending the varied backgrounds and requirements of students. This knowledge is utilized by teachers to create and adapt instructional plans. Furthermore, certain students may possess unique learning requirements that necessitate modifications to the lesson plan to accommodate their Individualized Education Plans (IEPs).",
+    "units": [
+      "Introduction to Teaching CTE",
+      "Instructional Planning Process",
+      "Knowledge of Content",
+      "Knowledge of Students",
+      "Reflective Practice"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Engagement Strategies",
+    "description": "The purpose of this module is to cultivate a thorough comprehension of the practice of actively involving students in intellectually stimulating instruction. Faced with the challenge of preparing students for both college and careers, CTE teachers need effective strategies to develop students' critical thinking, problem solving, academic and technical skills. Participants will explore cooperative learning, Webb's Depth of Knowledge (DOK), and review how to embed academics and apply technology tools to the CTE classroom. CTE educators will learn to create top-notch projects that adhere to technical and academic standards. Project-based learning is a vital technique in CTE, and teachers must understand how projects can focus on a unit of study and link classroom learning to the workplace.",
+    "units": [
+      "Creating a Vision for CTE Instruction",
+      "Using Project Based Learning (PBL)",
+      "Utilizing Cooperative Learning",
+      "Integrating Academics in CTE",
+      "Integrating Instructional Technology"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Assessment and Feedback",
+    "description": "Teachers will acquire knowledge regarding assessment tools that offer valuable feedback and effectively gauge the progress of their students. This module is designed to help beginning teachers use two types of assessment: summative and formative. Both constructs provide important ongoing feedback to improve student motivation and learning, as well as to measure what students learn. The module also helps teachers design ways to record assessment data and determine a course grade.",
+    "units": [
+      "Understanding Assessment and Feedback",
+      "Designing and Using Assessment Tools",
+      "Implementing Effective Grading Practices",
+      "Using Assessment Data"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Classroom Culture",
+    "description": "A positive classroom culture is essential for student learning and development. This module showcases the importance of a positive classroom culture that impacts learning, behavior, and motivation. To establish a positive classroom culture, it is imperative to develop a well-defined plan that incorporates strategies aimed at supporting student motivation, understanding their mindset, and establishing clear classroom rules and procedures. The module further illustrates how to enhance student achievement by fostering positive connections with families, actively participating in career and technical student organizations, and collaborating with advisory committees. Additionally, teachers will assess classroom management situations and utilize the levels of intervention to tackle undesirable conduct.",
+    "units": [
+      "Setting the Stage for a Positive Classroom Culture",
+      "Creating a Motivating Personalized Learning Environment",
+      "Supporting Student Success",
+      "Implementing Classroom Interventions"
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Principles of WV CTE",
+    "description": "The central focus of this course is to gain a comprehensive understanding of West Virginia CTE including the imperative need for accountability, the prevailing state and federal mandates for CTE, and the crucial role of instructional leadership in a CTE setting. Participants will delve further into the implementation of Simulated Workplace, a program that enables students to assume responsibility for their technical performance and classroom environment. Participants will attain knowledge about work-based learning opportunities available to students as well as the diverse range of financing options accessible to facilitate the advancement of career technical education. Additional CTE initiatives and expectations will also be addressed.",
+    "units": [
+      "CTE Accountability",
+      "Simulated Workplace",
+      "CTE Initiatives and Student Opportunities",
+      "Policy and Finances",
+      "Work-based Learning - Classroom 2 Career"
+    ]
+  },
+  {
+    "id": "6",
+    "title": "CTE Teacher Mentorship",
+    "description": "The CTE Teacher Mentoring Program is a mentorship program that spans a year and is specifically designed to provide support to new CTE teachers in developing their teaching skills with confidence. CTE teachers bring content knowledge of their craft to the classroom, but often need additional assistance with the transition to education. Every newly appointed CTE teacher will be assigned a mentor who will offer continuous guidance and induction-style professional development centered around standards-based lesson planning, classroom management, assessments, and student engagement. In conjunction with instructional coaching, newly hired CTE teachers will be offered mentoring assistance regarding West Virginia CTE specific initiatives and expectations. To be deemed eligible for licensure, it is mandatory for all new CTE teachers to successfully complete the CTE Teacher Mentoring Program.",
+    "units": [
+      "Classroom Arrangement, Equipment and Safety",
+      "Classroom Visits",
+      "Monthly Virtual Collaborative Sessions",
+      "Multiple In-Person Trainings",
+      "Program Specific Topics (credentials, embedded credits, etc)"
+    ]
+  }
+]

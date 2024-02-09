@@ -1,0 +1,27 @@
+{% set ariaLabelString = ["Download ", params.title] | join %}
+<article class="relative flex flex-col {{ params.classes.container }}">
+  <div class="mb-2">
+    <h2 class="text-xl mb-0">{{ params.title }}</h2>
+    {% if params.tags %}
+    <ul class="">
+      {% for tag in params.tags %}
+      <li><span class="inline-block text-xs rounded-xl py-0 px-2 {{ tag.classes }}">{{ tag.label }}</span></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  <div class="mb-2 text-sm">{{ params.description | safe }}</div>
+  <div class="">
+    {{ component('button', {
+      url: params.url,
+      text: "Download",
+      ariaLabel: ariaLabelString,
+      classes: "p-1 inline-block border text-brand_lightblue hover:bg-brand_lightblue hover:text-white hover:border-[transparent] group text-sm",
+      download: true,
+      theme: 'plain',
+      icon: {
+        color: 'text-brand_yellow group-hover:fill-white'
+      }
+    }) }}
+  </div>
+</article>

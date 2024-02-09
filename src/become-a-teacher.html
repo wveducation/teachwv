@@ -4,7 +4,7 @@ title: Become a Teacher in WV
 path: /become-a-teacher
 meta:
     description: "There are many ways to become a teacher in West Virginia, and the pathway you choose will depend on your educational background and professional experiences."
-tags: static
+tags: ['pages', 'static']
 eleventyNavigation:
   order: 0
   title: Become a Teacher
@@ -42,9 +42,51 @@ eleventyNavigation:
     </div>
 </section>
 
-{% include 'blocks/grow-your-own-teaser.html' %}
-
-{% include 'blocks/military-teaser.html' %}
+<section class="pb-4 pt-12 bg-white border-t">
+    <div class="container">
+        <div class="grid lg:grid-cols-3 gap-x-default gap-y-default">
+            <div>
+                {{ component('teaser', {
+                    image: {
+                        src: './src/static/img/gyo-hero_9-5.jpg',
+                        alt: ''
+                    },
+                    title: 'Grow Your Own',
+                    body: "Designed to address West Virginia's need for teachers, Grow Your Own Pathway to Teaching programs provide promising high school students a career path to pursue a career in education in 37 counties.",
+                    link: {
+                        url: '/grow-your-own'
+                    },
+                    linkButton: false
+                }) }}
+            </div>
+            <div>
+                {{ component('teaser', {
+                    image: {
+                        src: './src/static/img/military-hero_9-5.jpg',
+                        alt: ''
+                    },
+                    title: 'Veterans in the Classroom',
+                    body: "West Virginia recognizes veterans' unique qualities in the classroom and provides specialized career counseling that can aid in transitioning veterans into a career in education.",
+                    link: {
+                        url: '/become-a-teacher/military'
+                    },
+                    linkButton: false
+                }) }}   
+            </div>
+            <div>
+                {{ component('teaser', {
+                    image: {
+                        src: './src/static/img/cte-welder_16-9.jpg',
+                        alt: ''
+                    },
+                    title: 'Teaching Career Tech',
+                    body: 'Coming Soon!',
+                    linkButton: false
+                }) }}
+            </div>
+        </div>
+    </div>
+</section>
 
 {{ component('image-and-card', {
     title: 'New teachers: Six strategies for making your first year more manageable',

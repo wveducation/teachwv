@@ -1303,6 +1303,10 @@ select {
   top: 0px;
 }
 
+.top-1 {
+  top: 0.25rem;
+}
+
 .top-1\/2 {
   top: 50%;
 }
@@ -1468,6 +1472,10 @@ select {
   margin-bottom: 2rem;
 }
 
+.ml-0 {
+  margin-left: 0px;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -1490,6 +1498,10 @@ select {
 
 .mr-\[-100\%\] {
   margin-right: -100%;
+}
+
+.mt-0 {
+  margin-top: 0px;
 }
 
 .mt-4 {
@@ -1790,6 +1802,10 @@ select {
   justify-content: space-between;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -2060,6 +2076,11 @@ select {
   background-color: rgb(0 64 113 / var(--tw-bg-opacity));
 }
 
+.bg-brand_green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 181 80 / var(--tw-bg-opacity));
+}
+
 .bg-brand_lightblue {
   --tw-bg-opacity: 1;
   background-color: rgb(0 123 175 / var(--tw-bg-opacity));
@@ -2073,6 +2094,11 @@ select {
 .bg-brand_lightgrey {
   --tw-bg-opacity: 1;
   background-color: rgb(209 211 212 / var(--tw-bg-opacity));
+}
+
+.bg-brand_yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 181 29 / var(--tw-bg-opacity));
 }
 
 .bg-footer {
@@ -2124,6 +2150,14 @@ select {
 
 .fill-black {
   fill: #000;
+}
+
+.fill-brand_light-yellow {
+  fill: #FFEEBF;
+}
+
+.fill-white {
+  fill: #fff;
 }
 
 .p-0 {
@@ -2292,12 +2326,20 @@ select {
   padding-right: 2rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .pt-6 {
@@ -2436,6 +2478,11 @@ select {
 .text-\[\#34575C\] {
   --tw-text-opacity: 1;
   color: rgb(52 87 92 / var(--tw-text-opacity));
+}
+
+.text-\[white\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-brand_blue {
@@ -3183,6 +3230,10 @@ body pre[class*="language-"] {
   border-color: rgb(52 87 92 / var(--tw-border-opacity));
 }
 
+.hover\:border-\[transparent\]:hover {
+  border-color: transparent;
+}
+
 .hover\:border-brand_blue:hover {
   --tw-border-opacity: 1;
   border-color: rgb(0 64 113 / var(--tw-border-opacity));
@@ -3249,6 +3300,12 @@ body pre[class*="language-"] {
 
 .group:hover .group-hover\:fill-white {
   fill: #fff;
+}
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 768px) {

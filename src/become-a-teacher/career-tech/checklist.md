@@ -2,6 +2,11 @@
 layout: page
 title: Program Checklist
 tags: ['pages', 'static']
+eleventyNavigation:
+  order: 0
+  title: Program Checklist
+  key: program-checklist
+  parent: career-tech
 meta:
   description: ""
 ---

@@ -70,7 +70,7 @@ This pathway is perfect for the following:
 * Individuals who are looking for a career change 
 * Individuals in long-term substitute positions seeking initial certification 
 
-Contact your program provider ([American Board](https://www.americanboard.org/), [iTeach](https://www.iteach.net/), [MathTrack](https://https://www.mathtrack.co), [Teach for America Appalachia](https://www.teachforamerica.org/where-we-work/appalachia) or [Teach Now)](https://moreland.edu/teacher-certification) for details on cost, requirements, and program completion time.
+Contact your program provider ([American Board](https://www.americanboard.org/), [iTeach](https://www.iteach.net/), [MathTrack](https://www.mathtrack.co), [Teach for America Appalachia](https://www.teachforamerica.org/where-we-work/appalachia) or [Teach Now)](https://moreland.edu/teacher-certification) for details on cost, requirements, and program completion time.
 
 Review [descriptions of state-approved teacher preparation coursework of Option 3 programs](https://wvde.us/educator-development-and-support/preparation/state-approved-programs/#tab-ed3c0c71874692302ff) and each program’s approved endorsements on the Office of Educator Preparation website.
 

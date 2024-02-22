@@ -13,7 +13,7 @@ meta:
 ---
 {%- from "system/component.html" import component -%}
 
-<p>Include an introductory paragraph here.</p>
+<p>This page contains descriptions and projected learning outcomes of coursework within the Career Technical Education (CTE) Educator Prep program. A CTE Teaching Certificate is awarded upon satisfactory completion of all coursework.</p>
 
 {% for course in cteprep_courses %}
 <article id="course-{{ course.id }}" class="mb-10 border-b">
@@ -22,8 +22,9 @@ meta:
     <h1 class="mt-0 text-3xl text-brand_lightblue">{{ course.title }}</h1>
   </div>
   <div class="mb-6">{{ course.description | safe }}</div>
+
   {% if course.units %}
-  <h2 class="text-xl">Units</h2>
+  <h2 class="text-xl">Learning Outcomes</h2>
   <ul class="ml-0 mb-4 grid grid-cols-2 gap-x-default">
     {% for unit in course.units %}
       <li class="mb-2">{{ unit }}</li>

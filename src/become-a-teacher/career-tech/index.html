@@ -2,7 +2,7 @@
 layout: default
 title: Teaching Career Tech
 meta:
-    description: ""
+    description: "Career technical education (CTE) exposes students to various career options. CTE teachers bring industry experience to the classroom, providing students with firsthand knowledge of their chosen career pathway."
 tags: ['pages', 'static']
 eleventyNavigation:
   order: 0
@@ -34,16 +34,16 @@ eleventyNavigation:
 
 <div class="container pt-8 md:pt-12 text-center mb-12">
     <h1 class="text-4xl md:text-5xl text-center text-brand_blue">{{ title }}</h1>
-    <p class="text-xl max-w-4xl mx-auto">Page Intro Description</p>
+    <p class="text-xl max-w-4xl mx-auto">{{ meta.description }}</p>
 </div>
 
 {% set reasons = [
-  "Empower students by sharing your knowledge and expertise.",
-  "Desirable schedule of time off on weekends, holidays, and summers.",
-  "Participate in National affiliations and partnerships with colleges, business and industry, as well as educational agencies like <abbr title='Southern Regional Education Board'>SREB</abbr> and Mountain State <abbr title='Educational Cooperative Services'>ESC</abbr>",
-  "Receive an extensive package that includes both retirement and health insurance benefits.",
-  "Assist students in preparing for a successful future."
-] %}
+  "Empower students by sharing your industry knowledge and expertise.",
+  "Prepare students for a successful career.",
+  "Paid time off on holidays and through the summer months.",
+  "An extensive package that includes retirement and healthcare benefits.",
+  "Partner with colleges, businesses, industry leaders and educational industries such as the Southern Regional Education Board and Mountain State Educational Cooperative Services."
+  ] %}
 <section class="border-t py-8 bg-brand_lightblue">
   <div class="container max-w-6xl">
   <div class="block md:grid md:grid-cols-5 gap-x-default">
@@ -54,7 +54,7 @@ eleventyNavigation:
               classes: "text-brand_yellow"
           },
           subtitle: {
-              text: "There are many reasons to teach Career Technical Education.",
+              text: "There are many benefits to teaching CTE.",
               classes: "text-white"
           },
           alignment: "left"
@@ -64,7 +64,7 @@ eleventyNavigation:
           <ul class="grid md:grid-cols-2">
               {% for reason in reasons %}
               <li class="md:pr-8 mb-4">
-                  <span class="text-lg bg-black/10 text-white">{{ reason | safe }}</span>
+                  <span class="text-lg text-white">{{ reason | safe }}</span>
               </li>
               {% endfor %}
           </ul>
@@ -75,19 +75,19 @@ eleventyNavigation:
 {% 
     set steps = [{
         title: "Step 1: Skills Verification and/or Degree",
-        body: "<p>Verify your degree and/or your wageearning work experience in accordance with the requirements outlined in the CTE Endorsement and Testing Manual. Once confirmed, register for the CTE Educator Prep Program. For more information and to register for courses, visit <a href='https://teachwv.com'>teachwv.com</a>.</p>"
+        body: "<p>Verify that your degree and/or industry experience comply with the requirements outlined in the CTE Endorsement and Testing Manual. Next, register for the CTE Educator Preparation program.</p>"
     },
     {
         title: "Step 2: Employability Testing",
-        body: "<p>Contact your local school district and register to take the NOCTI Employability Exam. This exam measures the skills needed for success in the workplace and covers reading, math, collaboration, and decision making. A <a href='https://www.nocti.org/credentials/blueprints/'>testing blueprint and access to study guides and practice tests</a> has been made available online.</p>"
+        body: "<p>Contact your local school district and register for the NOCTI Employability Exam, which measures the necessary skills for success in the workplace through reading, mathematics, collaboration and decision-making.</p>"
     },
     {
-        title: "Step 3: Mentorship",
-        body: "<p>During your first year of teaching, you will be required to complete a mentorship program hosted by a WVDE Coordinator. The mentorship program will include in-person collaborative trainings, classroom visits, virtual discussions, and individualized support.</p>"
+        title: "Step 3: CTE Mentorship",
+        body: "<p>In the first year of teaching, you must complete a CTE mentorship program led by a West Virginia Department of Education coordinator. This program includes in-person collaborative training, classroom visits, individualized support and more.</p>"
     },
     {
-        title: "Step 4: Certification",
-        body: "<p>Depending on your Program of Study, you may be required to take the NOCTI Content and Performance Assessment and/or hold the required industry credential per the CTE Endorsement and Testing Manual. Please refer to the <a href='https://www.nocti.org'>NOCTI website</a> for testing blueprints.</p>"
+        title: "Step 4: CTE Teacher Certification",
+        body: "<p>Depending on your CTE discipline, you may be required to take the NOCTI Content and Performance Assessment and/or hold a CTE credential per the CTE Endorsement and Testing Manual. Refer to the NOCTI website for testing blueprints.</p>"
     },
     {
         title: "Completion",
@@ -106,7 +106,7 @@ eleventyNavigation:
                     text: "Become a CTE Teacher"
                 },
                 subtitle: {
-                    text: "Summary of program..."
+                    text: "The CTE Teacher Certification program provides an accelerated pathway for CTE industry professionals to seek certification as a K-12 educator to teach CTE courses in schools across the Mountain State."
                 },
                 alignment: "center"
             }) }}
@@ -119,6 +119,58 @@ eleventyNavigation:
         </div>
         <div class="text-center">
             <p>View the <a href="/become-a-teacher/career-tech/checklist/" class="underline">complete program checklist</a> for detailed information.</p>
+        </div>
+    </div>
+</section>
+
+{% 
+    set actions = [
+        {
+            title: "Performance Exam",
+            description: "Lorem ipsum dolor sit amet.",
+            link: {
+                text: "Register",
+                url: cte.perfExam.url
+            }
+        },
+        {
+            title: "Program Registration",
+            description: "Register for the CTE Educator Prep program.",
+            link: {
+                text: "Register",
+                url: cte.prepProgramRegistration.url
+            }
+        }
+    ]
+%}
+<section class="py-12 bg-white">
+    <div class="container max-w-3xl">
+        <div class="">
+            {{ component('titlebar', {
+                title: {
+                    text: "Ready to get Started?"
+                },
+                subtitle: {
+                    text: "Summary of this..."
+                },
+                alignment: "center"
+            }) }}
+        </div>
+        <div class="grid md:grid-cols-2 gap-4 mb-6">
+            {% for action in actions %}
+            <div class="p-4 border rounded-lg bg-offwhite">
+                <h2 class="text-center text-xl">{{ action.title }}</h2>
+                {% if action.description %}
+                <div class="mb-3 text-center">{{ action.description }}</div>
+                {% endif %}
+                <div class="text-center">
+                    {{ component('button', {
+                        text: action.link.text,
+                        url: action.link.url
+                    }) }}
+                </div>
+            </div>
+            {% endfor %}
         </div>
     </div>
 </section>

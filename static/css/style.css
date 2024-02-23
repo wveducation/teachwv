@@ -2475,14 +2475,14 @@ select {
   letter-spacing: 0.1em;
 }
 
+.\!text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
 .text-\[\#34575C\] {
   --tw-text-opacity: 1;
   color: rgb(52 87 92 / var(--tw-text-opacity));
-}
-
-.text-\[white\] {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-brand_blue {

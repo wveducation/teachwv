@@ -206,9 +206,11 @@ module.exports = function(eleventyConfig) {
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/prismjs/themes/prism-tomorrow.css": "./static/css/prism-tomorrow.css",
     "./src/static/fonts/icons/fonts/*": "./static/fonts/icons/fonts/",
-    "./src/static/fonts/icons/style.css": "./static/fonts/icons/style.css",
-    "./src/static/files/*": "./static/files/",
+    "./src/static/fonts/icons/style.css": "./static/fonts/icons/style.css"
   });
+
+  // Copy Files to /_site
+  eleventyConfig.addPassthroughCopy("./src/static/files/**/*");
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");

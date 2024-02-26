@@ -123,54 +123,19 @@ eleventyNavigation:
     </div>
 </section>
 
-{% 
-    set actions = [
-        {
-            title: "Performance Exam",
-            description: "Register to take the performance exam.",
-            link: {
-                text: "Register",
-                url: cte.perfExam.url
-            }
-        },
-        {
-            title: "Program Registration",
-            description: "Register for the CTE Educator Prep program.",
-            link: {
-                text: "Register",
-                url: cte.prepProgramRegistration.url
-            }
-        }
-    ]
-%}
-<section class="py-12 bg-white">
-    <div class="container max-w-3xl">
-        <div class="">
-            {{ component('titlebar', {
-                title: {
-                    text: "Ready to get Started?"
-                },
-                subtitle: {
-                    text: "Summary of this..."
-                },
-                alignment: "center"
-            }) }}
-        </div>
-        <div class="grid md:grid-cols-2 gap-4 mb-6">
-            {% for action in actions %}
-            <div class="p-4 border rounded-lg bg-offwhite">
-                <h2 class="text-center text-xl">{{ action.title }}</h2>
-                {% if action.description %}
-                <div class="mb-3 text-center">{{ action.description }}</div>
-                {% endif %}
-                <div class="text-center">
-                    {{ component('button', {
-                        text: action.link.text,
-                        url: action.link.url
-                    }) }}
-                </div>
+<section class="md:sticky bottom-0 left-0 py-4 bg-white border-t border-b">
+    <div class="container max-w-6xl">
+        <div class="md:flex md:flex-wrap items-center text-center md:text-left">
+            <div class="grow mb-4 md:mb-0">
+                <h1 class="md:mb-0 text-3xl text-brand_blue font-bold">Ready to get Started?</h1>
+                <p class="md:mb-0 text-lg">Register for the CTE Educator Prep Program today.</p>
             </div>
-            {% endfor %}
+            <div class="shrink">
+                {{ component('button', {
+                    text: "Register Now",
+                    url: cte.prepProgramRegistration.url
+                }) }}
+            </div>
         </div>
     </div>
 </section>
@@ -229,7 +194,7 @@ eleventyNavigation:
                     text: "Printable Resources"
                 },
                 subtitle: {
-                    text: "Summary of resources..."
+                    text: "The following resources are for use by Human Resources personnel."
                 },
                 alignment: "center"
             }) }}

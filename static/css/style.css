@@ -1170,19 +1170,19 @@ select {
   margin-bottom: 0.75em;
 }
 
-.prose :where(.prose > ul > li > *:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+.prose :where(.prose > ul > li > p:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   margin-top: 1.25em;
 }
 
-.prose :where(.prose > ul > li > *:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+.prose :where(.prose > ul > li > p:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   margin-bottom: 1.25em;
 }
 
-.prose :where(.prose > ol > li > *:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+.prose :where(.prose > ol > li > p:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   margin-top: 1.25em;
 }
 
-.prose :where(.prose > ol > li > *:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+.prose :where(.prose > ol > li > p:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   margin-bottom: 1.25em;
 }
 
@@ -2629,8 +2629,7 @@ html {
 
 .clip-rounded-right {
   /* clip-path: circle(100.0% at -1% 50%); */
-  -webkit-clip-path: ellipse(100% 140% at left);
-          clip-path: ellipse(100% 140% at left);
+  clip-path: ellipse(100% 140% at left);
 }
 
 /* Typography */
@@ -3074,19 +3073,19 @@ body pre[class*="language-"] {
     margin-bottom: 0.8em;
   }
 
-  .lg\:prose-xl :where(.lg\:prose-xl > ul > li > *:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  .lg\:prose-xl :where(.lg\:prose-xl > ul > li > p:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
     margin-top: 1.2em;
   }
 
-  .lg\:prose-xl :where(.lg\:prose-xl > ul > li > *:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  .lg\:prose-xl :where(.lg\:prose-xl > ul > li > p:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
     margin-bottom: 1.2em;
   }
 
-  .lg\:prose-xl :where(.lg\:prose-xl > ol > li > *:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  .lg\:prose-xl :where(.lg\:prose-xl > ol > li > p:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
     margin-top: 1.2em;
   }
 
-  .lg\:prose-xl :where(.lg\:prose-xl > ol > li > *:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  .lg\:prose-xl :where(.lg\:prose-xl > ol > li > p:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
     margin-bottom: 1.2em;
   }
 
@@ -3736,8 +3735,7 @@ body pre[class*="language-"] {
   }
 
   .md\:clip-rounded-right {
-    -webkit-clip-path: ellipse(100% 100% at 0% 50%);
-            clip-path: ellipse(100% 100% at 0% 50%);
+    clip-path: ellipse(100% 100% at 0% 50%);
   }
 
   .md\:hover\:bg-brand_lightblue-hover:hover {

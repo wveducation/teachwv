@@ -124,7 +124,9 @@ Download these helpful resources.
 
 ## Teachers Ascend
 
-Teachers Ascend into West Virginia is a two-year program that welcomes you to <em>live, teach and play</em> in the Mountain State. To help you feel at home, we’re building a tight-knit community of educators who share enthusiasm for the outdoors with a love for teaching, innovating and imagining new and exciting ways to engage students. Learn more below to see all the benefits, including tuition assistance, professional development and more.
+<img src="/static/img/coopers-rock-state-forest.jpg" alt="" title="" class="rounded-md mb-4" loading="lazy" />
+
+Teachers Ascend into West Virginia is a two-year program that welcomes you to *live, teach and play* in the Mountain State. To help you feel at home, we’re building a tight-knit community of educators who share enthusiasm for the outdoors with a love for teaching, innovating and imagining new and exciting ways to engage students. Learn more below to see all the benefits, including tuition assistance, professional development and more.
 
 This pathway is perfect for the following:
 

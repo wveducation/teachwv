@@ -119,3 +119,18 @@ Download these helpful resources.
 <a href="/static/files/TeachWV Checklist-WVDEAltCert-FINAL.pdf" class="btn">Checklist</a>
 
 <a href="/static/files/TeachWV Flow Chart-OPTION 4-FINAL.pdf" class="btn">Progress Map</a>
+
+- - -
+
+## Teachers Ascend
+
+Teachers Ascend into West Virginia is a two-year program that welcomes you to <em>live, teach and play</em> in the Mountain State. To help you feel at home, we’re building a tight-knit community of educators who share enthusiasm for the outdoors with a love for teaching, innovating and imagining new and exciting ways to engage students. Learn more below to see all the benefits, including tuition assistance, professional development and more.
+
+This pathway is perfect for the following:
+
+* Individuals who have completed a college degree by summer 2024.
+* Individuals who hold a teaching certification or can obtain one through our program the summer before you enter the classroom.
+* Individuals who apply and get hired for a teaching position in Monongalia or Preston County.
+* Individuals who currently reside outside of West Virginia, then relocate to the state to teach in Monongalia or Preston County.
+
+<a href="https://wvpec.wvu.edu/events-and-initiatives/teachers-ascend" class="btn">Learn more and apply</a>

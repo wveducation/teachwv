@@ -37,4 +37,4 @@ If you have a bachelor’s degree or higher, you may obtain a: 
 
 ## Who Can I Contact for Assistance? 
 
-For additional information, please contact Christina Haymaker in Certification Services at (304) 558-7010 or via email at [chaymaker@k12.wv.us](mailto:chaymaker@k12.wv.us) with questions.
+For additional information, please contact Alyssa Keedy in the Office of Certification at (304) 558-7010 or [alyssa.keedy@k12.wv.us](mailto:alyssa.keedy@k12.wv.us).

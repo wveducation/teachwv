@@ -117,7 +117,7 @@ For information on WVDE-approved coursework options, including their cost and co
 
 * Bluefield State University: [Dr. Terene Stiltner](mailto:tstiltner@bluefieldstate.edu). 
 * West Liberty University: [Dr. Sherri Theaker](mailto:sherri.theaker@westliberty.edu). 
-* West Virginia University: [Dr. Matthew Campbell](mailto:mpcampbell@mail.wvu.edu). 
+* West Virginia University: [Dr. Matthew Campbell](mailto:teachereducation@mail.wvu.edu). 
 * Wheeling University: [Dr. Dianna Vargo](mailto:dvargo@wheeling.edu). 
 * Glenville State University: [Connie Stout O'Dell](mailto:connie.stout@glenville.edu).
 * Marshall University: [Dr. Teresa Eagle](mailto:thardman@marshall.edu).

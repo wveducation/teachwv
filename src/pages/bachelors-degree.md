@@ -102,14 +102,14 @@ Review details on [state-approved WVDE Alternative Certification Programs](https
 
 After reviewing the [WVDE Alternative Certification Program’s guidance document](</static/files/WVDE Alternative Certification Program Guidance Document on 20240826.pdf>), candidates may [apply for enrollment](https://forms.office.com/Pages/ResponsePage.aspx?id=S7AZ4AwzekaLrgn7FzdNattQ2GWIIWhGvThuGKqgKs5UMFBVNlZGRUhFUk4yRjBPVUxQTlpUUllSWS4u&wdLOR=cE1BB2B23-CBED-452D-B24B-39BEF8BA3362) in the program.
 
-Applications for <strong>candidates seeking participation in Spring 2025 semester coursework</strong> must apply for program enrollment by the following dates:
+Applications for <strong></strong>candidates seeking participation in Summer or Fall 2025 semester coursework</strong> must apply for program enrollment by the following dates:
 
-* <strong>Bluefield State University</strong> - 12/21/2024
-* <strong>West Liberty University</strong> - 12/13/2024
-* <strong>West Virginia University</strong> - 12/13/2024
-* <strong>Wheeling University</strong> - 12/6/2024
-* <strong>Glenville State University</strong> - 12/13/2024
-* <strong>Marshall University</strong> - 12/8/2024
+* <strong>Bluefield State University</strong> - 7/18/2025 Fall
+* <strong>West Liberty University</strong> - 7/25/2025 Fall
+* <strong>West Virginia University</strong> - 4/13/2025 Summer; TBD Fall
+* <strong>Wheeling University</strong> - 4/12/2025 Summer; 7/25/2025 Fall
+* <strong>Glenville State University</strong> - 7/18/2025 Fall
+* <strong>Marshall University</strong> - 4/19/2025 Summer; TBD Fall 
 
 Program applications received after these dates will likely not result in receiving approval in time to enroll with a coursework provider. 
 
@@ -117,10 +117,10 @@ For information on WVDE-approved coursework options, including their cost and co
 
 * Bluefield State University: [Dr. Terene Stiltner](mailto:tstiltner@bluefieldstate.edu). 
 * West Liberty University: [Dr. Sherri Theaker](mailto:sherri.theaker@westliberty.edu). 
-* West Virginia University: [Dr. Matthew Campbell](mailto:teachereducation@mail.wvu.edu). 
+* West Virginia University: [Kristen Pinkney](mailto:kristen.pinkney@mail.wvu.edu). 
 * Wheeling University: [Dr. Dianna Vargo](mailto:dvargo@wheeling.edu). 
 * Glenville State University: [Connie Stout O'Dell](mailto:connie.stout@glenville.edu).
-* Marshall University: [Dr. Teresa Eagle](mailto:thardman@marshall.edu).
+* Marshall University: [Dr. Thomas Cooper](mailto:thomas.cooper@marshall.edu).
 
 Upon successful completion of all program requirements (coursework, training and testing), WVDE Alternative Certification Program participants may request a [Comprehensive Evaluation Report](https://forms.office.com/Pages/ResponsePage.aspx?id=S7AZ4AwzekaLrgn7FzdNattQ2GWIIWhGvThuGKqgKs5URjNSQk1ZRTE2V1JHMDc0VzlDUUpTRFo3NS4u). Once an approved rating is received on the report, program completers may apply for a Professional Teaching Certificate.
 

@@ -14,9 +14,9 @@ To access West Virginia Board of Education (WVBE) testing requirements and exemp
 
 ## Praxis Test Preparation Resources
 
-If you are planning to sign-up for Praxis basic skills, content or professional education testing, please review [Praxis Test Preparation Resources](https://wvde.us/educator-development-and-support/preparation/praxis-resources/) which provides information about resources that may help increase your success on these exam(s).
+If you are planning to sign-up for Praxis basic skills, content or professional education testing, please review [Praxis Test Preparation Resources](https://wvde.us/educator-staff-development/become-teacher/praxis-resources) which provides information about resources that may help increase your success on these exam(s).
 
-<a href="https://wvde.us/educator-development-and-support/preparation/praxis-resources/" class="btn">Praxis Testing Preparation Resources</a>
+<a href="https://wvde.us/educator-staff-development/become-teacher/praxis-resources" class="btn">Praxis Testing Preparation Resources</a>
 
 ## Educational Testing Service (ETS)
 

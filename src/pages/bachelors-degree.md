@@ -98,19 +98,6 @@ This pathway is perfect for the following:
 
 Review details on [state-approved WVDE Alternative Certification Programs](https://wvde.us/educator-development-and-support/preparation/state-approved-programs/#tab-8a15ab4d449cd2b82bb) on the Educator Development and Support website. Eligible endorsements for these programs are identified within the [West Virginia Licensure Testing Directory](https://wvde.us/certification/certification-info/#tab-67fa0185abe42415389) and the program’s guidance document.
 
-- - -
-
-## Option 5: Qualifying Veterans
-
-This option was created by the passage of HB 3125 and SB 765 in 2025. It provides a set of conditions by which qualifying veterans may be issued a Professional Teaching Certificate. Criteria include the following:
-
-1. Honorably discharged member of the armed forces (requires the submission of the veteran’s most recently received DD 214, NGB 22, or NGB 23)
-2. Pass the basic skills and subject matter test or tests required by the state board for teachers to become certified in the area for which the licensure is sought (requires the submission of official documentation meeting requirements described in the WV Licensure Testing Directory)
-3. Hold at least a bachelor's degree from an accredited institution of higher education that is related to the available position which the veteran has applied to (requires submission of official transcripts and an acceptable county recommendation on the application for certification)
-
-This option does not require additional coursework or completion of a WVBE-approved program. To apply, please visit the Office of Certification’s application website. Veterans who do not qualify for this certification option may explore options 1, 2, 3, and 4 for available pathways. To access additional information useful to veterans seeking classroom careers, please visit [military and veterans](</become-a-teacher/military/>) section of TeachWV. 
-
-
 ### Applying For Enrollment
 
 After reviewing the [WVDE Alternative Certification Program’s guidance document](</static/files/WVDE Alternative Certification Program Guidance Document on 20240826.pdf>), candidates may [apply for enrollment](https://forms.office.com/Pages/ResponsePage.aspx?id=S7AZ4AwzekaLrgn7FzdNattQ2GWIIWhGvThuGKqgKs5UMFBVNlZGRUhFUk4yRjBPVUxQTlpUUllSWS4u&wdLOR=cE1BB2B23-CBED-452D-B24B-39BEF8BA3362) in the program.
@@ -146,6 +133,18 @@ Download these helpful resources.
 <a href="/static/files/TeachWV Checklist-WVDEAltCert-FINAL.pdf" class="btn">Checklist</a>
 
 <a href="/static/files/TeachWV Flow Chart-OPTION 4-FINAL.pdf" class="btn">Progress Map</a>
+
+- - -
+
+## Option 5: Qualifying Veterans
+
+This option was created by the passage of HB 3125 and SB 765 in 2025. It provides a set of conditions by which qualifying veterans may be issued a Professional Teaching Certificate. Criteria include the following:
+
+1. Honorably discharged member of the armed forces (requires the submission of the veteran’s most recently received DD 214, NGB 22, or NGB 23)
+2. Pass the basic skills and subject matter test or tests required by the state board for teachers to become certified in the area for which the licensure is sought (requires the submission of official documentation meeting requirements described in the WV Licensure Testing Directory)
+3. Hold at least a bachelor's degree from an accredited institution of higher education that is related to the available position which the veteran has applied to (requires submission of official transcripts and an acceptable county recommendation on the application for certification)
+
+This option does not require additional coursework or completion of a WVBE-approved program. To apply, please visit the [WVDE Office of Certification’s application page](<https://wvde.us/certifications/applications>). Veterans who do not qualify for this certification option may explore options 1, 2, 3, and 4 for available pathways. To access additional information useful to veterans seeking classroom careers, please visit [military and veterans](</become-a-teacher/military/>) section of TeachWV. 
 
 - - -
 

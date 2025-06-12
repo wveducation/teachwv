@@ -15,6 +15,9 @@ meta:
     higher education, there are several ways you can become a teacher in West
     Virginia.
 ---
+
+All options require meeting the minimum requirements for licensure (WVBE Policy 5901).
+
 ## Option 1: Traditional Programs that Lead to Licensure
 
 West Virginia is home to a variety of colleges and universities that offer education preparation programs leading to a bachelor’s degree, master’s degree, or providing coursework required for licensure at the graduate level as part of a post-bachelor certification program.
@@ -142,9 +145,9 @@ This option was created by the passage of HB 3125 and SB 765 in 2025. It provide
 
 1. Honorably discharged member of the armed forces (requires the submission of the veteran’s most recently received DD 214, NGB 22, or NGB 23)
 2. Pass the basic skills and subject matter test or tests required by the state board for teachers to become certified in the area for which the licensure is sought (requires the submission of official documentation meeting requirements described in the WV Licensure Testing Directory)
-3. Hold at least a bachelor's degree from an accredited institution of higher education that is related to the available position which the veteran has applied to (requires submission of official transcripts and an acceptable county recommendation on the application for certification)
+3. Hold at least a bachelor's degree from an accredited institution of higher education that is related to the available position which the veteran has applied to (requires submission of qualifying official transcripts and an acceptable county recommendation on the application for certification)
 
-This option does not require additional coursework or completion of a WVBE-approved program. To apply, please visit the [WVDE Office of Certification’s application page](<https://wvde.us/certifications/applications>). Veterans who do not qualify for this certification option may explore options 1, 2, 3, and 4 for available pathways. To access additional information useful to veterans seeking classroom careers, please visit [military and veterans](</become-a-teacher/military/>) section of TeachWV. 
+To apply, please visit the [WVDE Office of Certification’s application page](<https://wvde.us/certifications/applications>). Veterans who do not qualify for this certification option may explore options 1, 2, 3, and 4 for available pathways. To access additional information useful to veterans seeking classroom careers, please visit [military and veterans](</become-a-teacher/military/>) section of TeachWV. 
 
 - - -
 

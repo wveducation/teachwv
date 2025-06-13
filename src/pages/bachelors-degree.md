@@ -16,7 +16,7 @@ meta:
     Virginia.
 ---
 
-All options require meeting the minimum requirements for licensure ([WVBE Policy 5901](https://wveis.k12.wv.us/wvboe/policies/policy.php?p=5901&alt=1)).
+All options require meeting the minimum requirements for licensure ([WVBE Policy 5202](https://wveis.k12.wv.us/wvboe/policies/policy.php?p=5202&alt=1)).
 
 ## Option 1: Traditional Programs that Lead to Licensure
 

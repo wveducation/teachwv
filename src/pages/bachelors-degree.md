@@ -147,9 +147,9 @@ This option was created by the passage of HB 3125 and SB 765 in 2025. It provide
 2. Pass the basic skills and subject matter test or tests required by the state board for teachers to become certified in the area for which the licensure is sought (requires the submission of official documentation meeting requirements described in the WV Licensure Testing Directory)
 3. Hold at least a bachelor's degree from an accredited institution of higher education that is related to the available position which the veteran has applied to (requires submission of qualifying official transcripts and an acceptable county recommendation on the application for certification)
 
-To apply, please visit the [WVDE Office of Certification’s application page](<https://wvde.us/certifications/applications>). Application Form MR (military review) is used to evaluate qualifications (military documentation and official transcripts) prior to seeking employment required for this teacher certification option. 
+[Application Form MR (military review)](<https://wvde.us/certifications/applications/form-mr>) is used to review requried qualifications such as military documentation and official transcripts before seeking employment. 
 
-[Application Form 20M](<https://wvde.us/certifications/applications/form-20m>) is used to apply for an initial Professional Teaching Certificate, to verify all necessary criteria is met (including general requirements, military documentation, official transcripts, required testing, and employment conditions). 
+[Submit Certification Form 20M](<https://wvde.us/certifications/applications/form-20m>) to apply for an initial Professional Teaching Certificate, to verify all necessary criteria is met (including general requirements, military documentation, official transcripts, required testing, and employment conditions).
 
 Veterans who do not qualify for this certification option may explore options 1, 2, 3, and 4 for available pathways. To access additional information useful to veterans seeking classroom careers, please visit [military and veterans](</become-a-teacher/military/>) section of TeachWV. 
 
